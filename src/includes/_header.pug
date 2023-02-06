@@ -1,0 +1,90 @@
+include _mixins
+block header
+
+    header#header.header
+
+        .container
+
+            .header__wrap
+
+                .header__logo
+                    a(href="/")
+                        img(src="assets/images/logo.svg", alt="logo")
+
+                nav.navbar
+
+                    .navbar__lang.navbar__lang--mobile
+                        .current-lang Rus
+                        .select-lang
+                            a Rus
+                            a Eng
+                            a Tur
+
+                    ul.nav
+                        li.nav__item.has-child
+                            a.nav__item-link(href="about.html")  О нас
+                            .arrow-down
+
+                            ul.nav__submenu
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") История развития
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Наша команда
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Наша команда
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Наша команда
+
+                        li.nav__item
+                            a.nav__item-link(href="prices.html")  Цены
+
+                        li.nav__item.has-child
+                            a.nav__item-link(href="cases.html")  Кейсы
+                            .arrow-down
+
+                            ul.nav__submenu
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Кейс 01
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Кейс 02
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Кейс 03
+                                li.nav__submenu-item
+                                    a.nav__submenu-link(href="#") Кейс 04
+
+                        li.nav__item
+                            a.nav__item-link(href="reviews.html")  Отзывы
+
+                        li.nav__item
+                            a.nav__item-link(href="contacts.html")  Контакты
+
+                    .navbar__right
+
+                        .navbar__lang
+                            .current-lang Ru
+                            .select-lang
+                                a Ru
+                                a En
+                                a Tur
+
+                        .navbar__socials
+                            .socials-item
+                                a(href="")
+                                    img(src="assets/images/viber.svg", alt="icon")
+                            .socials-item
+                                a(href="")
+                                    img(src="assets/images/telegram.svg", alt="icon")
+                            .socials-item
+                                a(href="")
+                                    img(src="assets/images/whatsapp.svg", alt="icon")
+
+                        .navbar__phone
+                            a(href="tel:+7 (495) 797-16-77")
+                                img(src="assets/images/phone.svg", alt="icon")
+                                p +7 (495) 797-16-77
+
+                .header__burger
+
+        .header__marquee
+            marquee(loop onmouseover="this.stop();" onmouseout="this.start();")
+                p Вести бизнес легко – если с вами надежные партнеры!&nbsp;&nbsp;&nbsp;&nbsp;Вести бизнес легко – если с вами надежные партнеры! Вести бизнес легко – если с вами надежные партнеры! Вести бизнес легко – если с вами надежные партнеры!

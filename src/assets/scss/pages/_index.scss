@@ -1,0 +1,72 @@
+.hero-section {
+    padding-top: 30px;
+
+    @include breakpoint(lg) {
+        padding-top: 40px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 60px;
+    }
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 118%;
+
+    @include breakpoint(lg) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 55px;
+    }
+}
+
+.hero__text {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    @include breakpoint(xl) {
+        margin-top: 30px;
+    }
+}
+
+.hero__btn {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 300px;
+
+    @include breakpoint(lg) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 74px;
+    }
+}
+
+.header__burger {
+
+    @include breakpoint(xl) {
+        display: none;
+    }
+}
+
+.header__marquee {
+    background: #fff;
+}
+
+.header__marquee p {
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    cursor: default;
+    user-select: none;
+}

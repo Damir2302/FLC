@@ -5,6 +5,14 @@
         padding-top: 70px;   
     }
 
+    @include breakpoint(lg) {
+        padding-top: 80px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 80px;
+    }
+
 }
 .container {
 }
@@ -17,6 +25,23 @@
     text-align: center;
     color: #000000;
     margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        font-size: 30px;
+        line-height: 144%;
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 35px;
+        line-height: 144%;
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 60px;
+    }
+
 }
 .wwdo__items {
     width: 100%;
@@ -35,6 +60,36 @@
     background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
     height: 240px;
+
+
+    @include breakpoint(md) {
+        padding: 30px;
+    }
+
+
+    @include breakpoint(lg) {
+        background: none;
+        box-shadow: none;
+        padding: 30px 10px;
+        &:hover {
+            background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+            box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+            transition: .1s ease;
+            .wwdo__item-icon img:last-child { 
+                filter: blur(4px);
+                transition: .1s ease;
+            }
+        }
+
+    }
+
+    @include breakpoint(xl) {
+        height: auto;
+        padding: 20px;
+        flex: 1;
+    }
+
+
 }
 .swiper-slide {
 }
@@ -58,6 +113,11 @@
         width: 80px;
         height: 80px;
         filter: blur(4px);
+        
+        @include breakpoint(lg) {
+            filter: unset;
+        }
+
     }
 
 
@@ -75,7 +135,18 @@
     margin-top: 20px;
     color: #000000;
     text-align: center;
-    max-width: 277px;
+    max-width: 230px;
+
+    @include breakpoint(md) {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 202px;
+    }
+
+
 }
 
 .wwde__pagination {

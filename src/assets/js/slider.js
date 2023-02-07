@@ -30,6 +30,31 @@ $(document).ready(function() {
     }
 
 
+    let outsourcingOptionsSlider = new Swiper('.outsourcing-options__items', {
+        slidesPerView: 1,
+        spaceBetween: 35,
+
+        pagination: {
+            el: '.outsourcing-options__pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"><div>' + (index + 1) + "</div></span>";
+            },
+        },
+
+        breakpoints: {
+            744: {
+              slidesPerView: 'auto',
+              spaceBetween: 20,
+              centeredSlides: true,
+              loop: true,
+            }
+        },
+
+      
+    });
+
+
 
 
 })

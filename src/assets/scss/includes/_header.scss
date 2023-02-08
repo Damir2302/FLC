@@ -370,6 +370,8 @@
 
 .header__marquee {
     background: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .header__marquee p {

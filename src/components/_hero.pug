@@ -1,0 +1,82 @@
+mixin hero(title, text, image)
+
+    .hero-section
+
+        .hero
+
+            .container
+
+                .hero__inner
+
+                    .hero__main
+
+                        h1.hero__title.main-title= title
+                        .hero__text= text
+                        button.hero__btn.button-style Оставить заявку
+
+                    .hero__img
+                        img(src="assets/images/" + image, alt="img")
+
+        .hero__bottom
+
+            .container
+
+                .hero__nav
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Комплекное сопровождение бизнеса
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Юридическое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Бухгалтерское
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Финансовое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Налоговое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Кадровое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") ВЭД
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Судебное
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Бухгалтерия и&nbsp;финансы
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Бухгалтерский аутсорсинг
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Налоговоое планирование
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Юриспруденция
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Юридический аутсорсинг
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Правовой аудит (Due diligence)
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Кадры
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Кадровый аудит
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Суды
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Ведение дел в судах
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Иностранным компаниям
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Запуск и сопровождение бизнеса в России для иностранных компаний

@@ -19,10 +19,16 @@ html(lang="ru")
 
         #page
 
-            // Header::Start
-            block header
-                include _header
-            // Header::End
+            .head-wrapper
+                // Header::Start
+                block header
+                    include _header
+                // Header::End
+
+                // Hero::Start
+                block hero
+                    include ../components/_hero
+                // Hero::End
 
             // Main::Start
             main#main

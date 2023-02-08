@@ -137,3 +137,18 @@ textarea {
     width: 12px;
     height: 8px;
 }
+
+.main-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 118%;
+    color: #000000;
+
+    @include breakpoint(lg) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 55px;
+    }
+}

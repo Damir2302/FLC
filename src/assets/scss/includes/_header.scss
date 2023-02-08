@@ -1,26 +1,65 @@
+.head-wrapper {
+    background: url(../images/bg-320.png) no-repeat;
+    background-size: cover;
+
+    @include breakpoint(md) {
+        background: url(../images/bg-744.png) no-repeat;
+        background-size: cover;
+    }
+
+    @include breakpoint(lg) {
+        background: url(../images/bg-1024.png) no-repeat;
+        background-size: cover;
+    }
+
+    @include breakpoint(xl) {
+        background: url(../images/bg-1400.png) no-repeat;
+        background-size: cover;
+    }
+}
+
 .header__wrap {
     padding: 16px 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include breakpoint(md) {
+        padding: 16px 0 14px;
+        justify-content: unset;
+    }
 }
 
 .header__logo {
     width: 145px;
     height: 33px;
+
+    @include breakpoint(md) {
+        width: 178px;
+        height: 40px;
+    }
 }
 
 .navbar {
-    padding: 20px;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    max-width: 320px;
-    transition: right 0.4s ease;
-    z-index: 9;
+
+    @include breakpointMax(xl) {
+        padding: 20px;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        transition: right 0.4s ease;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+        z-index: 9;
+        overflow-y: scroll;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 133px;
+    }
 }
 
 .navbar.opened {
@@ -29,10 +68,25 @@
 
 .navbar__lang {
     margin-top: 6px;
+    position: relative;
     display: none;
     align-items: center;
+    max-width: 52px;
     cursor: pointer;
     user-select: none;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        display: flex;
+    }
+}
+
+.navbar__lang--mobile {
+    display: flex;
+
+    @include breakpoint(md) {
+        display: none;
+    }
 }
 
 .navbar__lang::after {
@@ -45,55 +99,180 @@
 }
 
 .navbar__lang .select-lang {
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: -10px;
     display: none;
+    box-shadow: 3px 2px 10px rgba(0,0,0,0.25);
+    border-radius: 5px;
+    z-index: 9;
 }
 
-.navbar__lang--mobile {
-    display: flex;
+.navbar__lang:hover .select-lang {
+    display: block;
+}
+
+.navbar__lang .select-lang a {
+    display: block;
+}
+
+.navbar__lang .select-lang a:hover {
+    color: #6667AB;
+}
+
+.navbar__lang:hover::after {
+    background: $chevronUp;
+}
+
+.navbar__lang:hover .current-lang {
+    color: #6667AB;
+    text-decoration: underline;
 }
 
 .nav {
     margin-top: 40px;
+
+    @include breakpoint(md) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .nav__item {
     margin-bottom: 33px;
     position: relative;
     user-select: none;
+
+    @include breakpoint(xl) {
+        margin-right: 20px;
+        margin-bottom: 0;
+        position: relative;
+        cursor: pointer;
+    }
 }
 
 .nav__item.has-child .arrow-down {
     margin-left: 5px;
     transform: translateY(-2px);
+
+    @include breakpoint(xl) {
+        margin-left: 0;
+    }
 }
 
 .nav__item.has-child.opened .arrow-down {
     transform: translateY(-2px) rotate(180deg);
 }
 
+.nav__item:hover .arrow-down::before {
+
+    @include breakpoint(xl) {
+        background: $chevronUp;
+    }
+}
+
 .nav__item-link {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+
+    @include breakpoint(xl) {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.nav__item:hover .nav__item-link {
+
+    @include breakpoint(xl) {
+        color: #6667AB;
+        text-decoration-line: underline;
+    }
 }
 
 .nav__submenu {
     margin-top: 20px;
     display: none;
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+        background: #fff;
+        display: none;
+        padding: 25px 25px 15px;
+        position: absolute;
+        max-width: 1000px;
+        box-shadow: 3px 2px 10px rgba(0,0,0,0.25);
+        border-radius: 5px;
+        z-index: 9;
+    }
+}
+
+.nav__item.has-child:hover .nav__submenu {
+
+    @include breakpoint(xl) {
+        display: block;
+    }
 }
 
 .nav__submenu-item {
     margin-bottom: 15px;
+
+    @include breakpoint(xl) {
+        margin-bottom: 10px;
+    }
 }
 
 .nav__submenu-link {
     font-size: 15px;
     line-height: 18px;
+
+    @include breakpoint(xl) {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1B263D;
+        white-space: nowrap;
+    }
+}
+
+.nav__submenu-link:hover {
+    color: #6667AB;
+}
+
+.sec-nav {
+
+    @include breakpoint(xl) {
+        display: none;
+    }
+}
+
+.sec-nav .nav__item-link {
+    font-size: 18px;
+}
+
+.navbar__right {
+
+    @include breakpoint(md) {
+        display: none;
+    }
 }
 
 .navbar__socials {
     margin-top: 60px;
     display: flex;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        align-items: center;
+    }
 }
 
 .socials-item {
@@ -114,6 +293,11 @@
     color: #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 22px;
+
+    @include breakpoint(md) {
+        margin: 0 20px 0;
+        padding: 12px 14px;
+    }
 }
 
 .navbar__phone a {
@@ -128,21 +312,53 @@
     height: 17px;
 }
 
+.header__right {
+    display: none;
+
+    @include breakpoint(md) {
+        margin-left: auto;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    @include breakpoint(lg) {
+        margin-right: 110px;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 0;
+    }
+}
+
 .header__burger {
     width: 30px;
     height: 25px;
     cursor: pointer;
+
+    @include breakpoint(md) {
+        width: 40px;
+    }
+
+    @include breakpoint(xl) {
+        display: none;
+    }
 }
 
 .header__burger.opened {
     width: 32px;
     height: 32px;
     z-index: 9;
+
+    @include breakpoint(md) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .header__burger::before {
     content: '';
-    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAzMCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjMiIGZpbGw9IiM2NjY3QUIiLz4KPHJlY3QgeT0iMTEiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzIiBmaWxsPSIjNjY2N0FCIi8+CjxyZWN0IHk9IjIyIiB3aWR0aD0iMzAiIGhlaWdodD0iMyIgZmlsbD0iIzY2NjdBQiIvPgo8L3N2Zz4K) no-repeat;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCA0MCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjQwIiBoZWlnaHQ9IjMiIGZpbGw9IiM2NjY3QUIiLz4KPHJlY3QgeT0iMTEiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzIiBmaWxsPSIjNjY2N0FCIi8+CjxyZWN0IHk9IjIyIiB3aWR0aD0iNDAiIGhlaWdodD0iMyIgZmlsbD0iIzY2NjdBQiIvPgo8L3N2Zz4K) no-repeat;
     display: block;
     width: 100%;
     height: 100%;
@@ -150,4 +366,19 @@
 
 .header__burger.opened::before {
     background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMyIgeT0iMSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjMiIHRyYW5zZm9ybT0icm90YXRlKDQ1IDMgMSkiIGZpbGw9IiM2NjY3QUIiLz4KPHJlY3QgeD0iMSIgeT0iMjkiIHdpZHRoPSI0MCIgaGVpZ2h0PSIzIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUgMSAyOSkiIGZpbGw9IiM2NjY3QUIiLz4KPC9zdmc+Cg==) no-repeat;
+}
+
+.header__marquee {
+    background: #fff;
+}
+
+.header__marquee p {
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    white-space: nowrap;
+    cursor: default;
+    user-select: none;
 }

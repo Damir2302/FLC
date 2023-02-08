@@ -1,0 +1,160 @@
+.hero-section {
+    padding-top: 30px;
+
+    @include breakpoint(lg) {
+        padding-top: 40px;
+    }
+
+    @include breakpoint(xl) {
+        padding-top: 0;
+    }
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(xl) {
+        align-items: center;
+    }
+}
+
+.hero__main {
+
+    @include breakpoint(md) {
+        width: calc(((100% / 12) * 6) - 5px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(((100% / 12) * 5) - 10px);
+    }
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 118%;
+
+    @include breakpoint(lg) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 55px;
+    }
+}
+
+.hero__text {
+    margin-top: 20px;
+    max-width: 360px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    @include breakpoint(md) {
+        max-width: 400px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 30px;
+        max-width: unset;
+    }
+}
+
+.hero__btn {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 300px;
+
+    @include breakpoint(md) {
+        max-width: 244px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 74px;
+    }
+}
+
+.hero__img {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        width: calc(((100% / 12) * 6) - 5px);
+    }
+
+    @include breakpoint(lg) {
+        display: block;
+        width: calc(((100% / 12) * 7) - 10px);
+    }
+}
+
+.hero__bottom {
+
+    @include breakpointMax(xl) {
+        display: none;
+    }
+
+    @include breakpoint(xl) {
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.hero__nav {
+
+    @include breakpoint(xl) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.hero__nav-item {
+
+    @include breakpoint(xl) {
+        position: relative;
+    }
+}
+
+.hero__nav-item::after {
+
+    @include breakpoint(xl) {
+        content: "";
+        background: #C4C4C4;
+        position: absolute;
+        top: calc(50% - 16px);
+        right: -20px;
+        display: block;
+        width: 1px;
+        height: 32px;
+    }
+}
+
+
+.hero__nav-item:last-child::after {
+
+    @include breakpoint(xl) {
+        content: none;
+    }
+}
+
+.hero__nav-link {
+
+    @include breakpoint(xl) {
+        padding: 28px 0;
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+.hero__submenu {
+    display: none;
+}

@@ -1,5 +1,5 @@
 ---
-text: FLC | Бухгалтерский аутсорсинг
+title : FLC | Бухгалтерский аутсорсинг
 ---
 
 extends includes/_page
@@ -188,4 +188,57 @@ block main
 
                             .outsourcing-option__price.button-style От 60 000 рублей
 
+                .outsourcing-options__nav 
+
+                    .outsourcing-options__nav-prev
+                        img(src="assets/images/arrow-prev.svg", alt="")
+
+                    .outsourcing-options__nav-next
+                        img(src="assets/images/arrow-next.svg", alt="")
+
                 .outsourcing-options__pagination
+
+    section.payment-variants 
+
+        .container 
+
+            .section-title Чем мы занимаемся
+
+            .section-text Подберем наиболее удобный для Вас
+
+            .payment-variants__items 
+
+                .payment-variant
+
+                    .payment-variant__title Цена от количества операций
+
+                    .payment-variant__content 
+
+                        .payment-variant__text 
+
+                            p Подходит для:
+                            ul 
+                                li растущих компаний,
+                                li компаний с ярко выраженной сезонностью,
+                                li стартапов 
+
+                        .payment-variant__icon 
+                            img(src="assets/images/pay-ic1.svg", alt="")
+
+
+                .payment-variant
+
+                    .payment-variant__title Фиксированная цена
+
+                    .payment-variant__content 
+
+                        .payment-variant__text 
+
+                            p Подходит для:
+                            ul 
+                                li компаний с незначительными колебаниями объемов 
+
+                        .payment-variant__icon 
+                            img(src="assets/images/pay-ic2.svg", alt="")
+
+            

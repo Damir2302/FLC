@@ -34,6 +34,11 @@ $(document).ready(function() {
         slidesPerView: 1,
         spaceBetween: 35,
 
+        navigation: {
+            nextEl: ".outsourcing-options__nav-next",
+            prevEl: ".outsourcing-options__nav-prev",
+        },
+
         pagination: {
             el: '.outsourcing-options__pagination',
             clickable: true,

@@ -1,5 +1,6 @@
 ---
 title: FLC | Главная
+bodyClass: main-page
 ---
 
 extends includes/_page
@@ -7,7 +8,85 @@ extends includes/_page
 block hero
     include components/_hero
     +hero('Full Legal Consulting',
-          'Российская аутсорсинговая компания FLC — все виды услуг для вашего бизнеса в одной компании! Профессиональная команда аутсорсеров с встроенными в ваш бизнес процессами работы и проактивной позицией',
+          'Российская аутсорсинговая компания FLC — все виды услуг для вашего бизнеса в одной компании! Профессиональная команда аутсорсеров с встроенными в ваш бизнес процессами работы и проактивной позицией' + list,
           'hero-1.svg')
 
 block main
+
+    section.section.business-support
+
+        .container
+
+            .section-title Комплексное сопровождение бизнеса
+
+            .bus__support
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/KSB-1.jpg)")
+                    p Бухгалтерия
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/KSB-2.jpg)")
+                    p Налоговое планирование
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/ksb-3.jpg)")
+                    p Финансовое управление
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/KSB-4.jpg)")
+                    p Юрисприденция
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/KSB-5.jpg)")
+                    p Кадровый учет
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/KSB-6.jpg)")
+                    p ВЭД
+
+                .bus__item
+                    .bus__item-bg(style="background-image: url(assets/images/KSB-7.jpg)")
+                    p Судебное представительство
+
+    section.section.specific-offer
+
+        .container
+
+            .section-title Получить персональное предложение
+
+            p.sp-offer__text Чтобы обсудить Ваши задачи и задать любые интересующие Вас вопросы, напишите нам в WhatsApp
+
+            a.sp-offer__btn.button-style(href="#") Написать нам в WhatsApp
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.button-style(href='#') Посмотреть презентацию
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            |  Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита

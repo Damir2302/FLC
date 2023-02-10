@@ -25,6 +25,7 @@ const purgecss = require('gulp-purgecss');
 const svgSprite = require('gulp-svg-sprites');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
+const base64 = require('gulp-base64-inline');
 
 const htmlImport = require('gulp-html-import');
 
@@ -43,7 +44,7 @@ const path = {
         js:     distPath + "assets/js/",
         css:    distPath + "assets/css/",
         img:    distPath + "assets/images/",
-        svg:    distPath + "assets/sprites/",
+        svg:    distPath + "assets/icons/",
         fonts:  distPath + "assets/fonts/"
     },
     src: {
@@ -151,6 +152,7 @@ function scss(cb) {
             suffix: '.min',
             extname: ".css"
         }))
+        .pipe(base64('../icons'))
         .pipe(dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
 
@@ -187,6 +189,7 @@ function scssWatch(cb) {
             extname: ".css"
         }))
         .pipe(sourcemaps.write('.'))
+        .pipe(base64('../icons'))
         .pipe(dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
 
@@ -313,24 +316,25 @@ function img(cb) {
 
 function svg(cb) {
     return src(path.src.svg)
-        .pipe(cheerio({
-            // run: function ($) {
-            //     $('[fill]').removeAttr('fill');
-            //     $('[style]').removeAttr('style');
-            // },
-            parserOptions: { xmlMode: true }
-        }))
-        .pipe(replace('&gt;', '>'))
-        .pipe(svgSprite({
-                mode: "symbols",
-                preview: false,
-                selector: "%f",
-                svg: {
-                    symbols: 'sprites.svg'
-                }
-            }
-        ))
-        .pipe(gulp.dest(path.build.svg));
+        // .pipe(cheerio({
+        //     // run: function ($) {
+        //     //     $('[fill]').removeAttr('fill');
+        //     //     $('[style]').removeAttr('style');
+        //     // },
+        //     parserOptions: { xmlMode: true }
+        // }))
+        // .pipe(replace('&gt;', '>'))
+        // .pipe(svgSprite({
+        //         mode: "symbols",
+        //         preview: false,
+        //         selector: "%f",
+        //         svg: {
+        //             symbols: 'sprites.svg'
+        //         }
+        //     }
+        // ))
+        .pipe(gulp.dest(path.build.svg))
+        .pipe(browserSync.reload({stream: true}));
         cb();
 }
 
@@ -359,7 +363,7 @@ function watchFiles() {
     gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(pughtml, html, scss, css, js, jsPlugins, img, svg, fonts));
+const build = gulp.series(clean, gulp.parallel(pughtml, html, img, svg, scss, css, js, jsPlugins, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 /* Exports Tasks */

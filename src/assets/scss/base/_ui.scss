@@ -40,10 +40,20 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 main {
+    margin-top: 60px;
     min-height: calc(max(calc(100vh - 614px), 650px));
 
     @include breakpoint(md) {
+        margin-top: 70px;
         min-height: calc(max(calc(100vh - 614px), 570px));
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 60px;
     }
 }
 
@@ -124,6 +134,15 @@ textarea {
     background: #7677c0;
 }
 
+.button-style--light {
+    background: #C2C2DD;
+    color: #313155;
+}
+
+.button-style--light:hover {
+    background: #b8b8d8;
+}
+
 .arrow-down {
     display: inline-block;
     cursor: pointer;
@@ -150,5 +169,48 @@ textarea {
 
     @include breakpoint(xl) {
         font-size: 55px;
+    }
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    color: #000000;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+        font-size: 30px;
+        line-height: 144%;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 50px;
+        font-size: 35px;
+        line-height: 144%;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 60px;
+    }
+}
+
+.section {
+    padding-bottom: 60px;
+
+    @include breakpoint(md) {
+      padding-bottom: 70px;
+    }
+
+    @include breakpoint(lg) {
+      padding-bottom: 80px;
+    }
+
+    @include breakpoint(xl) {
+      padding-bottom: 100px;
     }
 }

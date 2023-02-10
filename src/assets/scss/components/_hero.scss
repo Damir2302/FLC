@@ -31,6 +31,27 @@
 }
 
 .hero__title {
+    position: relative;
+}
+
+.hero__title h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 118%;
+    opacity: 0;
+
+    @include breakpoint(lg) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 55px;
+    }
+}
+
+#hero-title {
+    position: absolute;
+    top: 0;
     font-weight: 700;
     font-size: 30px;
     line-height: 118%;
@@ -42,6 +63,12 @@
     @include breakpoint(xl) {
         font-size: 55px;
     }
+}
+
+#hero-title span {
+    display: inline-block;
+    color: #6667AB;
+    font-weight: 400;
 }
 
 .hero__text {

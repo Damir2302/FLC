@@ -32,4 +32,19 @@ $(document).ready(function() {
         $(this).parent().find('.nav__submenu').slideToggle()
     })
 
+
+    // Show the first tab by default
+    $('.tabs__content .tabs__content-item').hide();
+    $('.tabs__content .tabs__content-item:first').show();
+    $('.tabs__nav .tabs__nav-item:first').addClass('tab--active');
+
+    // Change tab class and display content
+    $('.tabs__nav-item a').on('click', function(event){
+        event.preventDefault();
+        $('.tabs__nav .tabs__nav-item').removeClass('tab--active');
+        $(this).parent().addClass('tab--active');
+        $('.tabs__content .tabs__content-item').hide();
+        $($(this).attr('href')).show();
+    });
+
 });

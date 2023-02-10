@@ -59,7 +59,80 @@ $(document).ready(function() {
       
     });
 
+    let tabsNavSlider = new Swiper('.tabs__nav', {
+        slidesPerView: 'auto',  
+    });
 
+    let workMetodsSldier = new Swiper('.work-metods__items', {
+        slidesPerView: 'auto',
+        watchOverflow: true,
+        centeredSlides: true,
+        loop: true,
+        autoHeight: true,
+        spaceBetween: 55,
+        navigation: {
+            nextEl: ".work-metods__nav-next",
+            prevEl: ".work-metods__nav-prev",
+        },
+
+        pagination: {
+            el: '.work-metods__pagination',
+            clickable: true,
+        },
+      
+    });
+
+
+    let reviewsSlider = new Swiper('.reviews__items', {
+        slidesPerView: 1,  
+        spaceBetween: 35,
+
+
+        navigation: {
+            nextEl: ".reviews__items-nav-next",
+            prevEl: ".reviews__items-nav-prev",
+        },
+
+        pagination: {
+            el: '.reviews__pagination',
+            clickable: true,
+        },
+
+        breakpoints: {
+            // 1400: {
+            //     slidesPerView: 6,
+            //     spaceBetween: 35
+            // },
+            // 1024: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 35
+            // },
+            744: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                watchSlidesVisibility: true,
+                watchOverflow: true,
+            },
+        }
+    });
+
+
+    let casesSlider = new Swiper('.cases__items', {
+        slidesPerView: 'auto',
+        watchOverflow: true,
+        centeredSlides: true,
+        loop: true,
+        autoHeight: true,
+        spaceBetween: 55,
+        navigation: {
+            nextEl: ".cases__nav-next",
+            prevEl: ".cases__nav-prev",
+        },
+        pagination: {
+            el: '.cases__pagination',
+            clickable: true,
+        },
+    });
 
 
 })

@@ -134,5 +134,48 @@ $(document).ready(function() {
         },
     });
 
+    
+
+    let trustUsSlider = new Swiper('.trust-us__slider', {
+        slidesPerView: 2,
+        spaceBetween: 25,
+
+        navigation: {
+            nextEl: ".trust-us__nav-next",
+            prevEl: ".trust-us__nav-prev",
+        },
+
+        pagination: {
+            el: '.trust-us__pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                grid: {
+                    rows: 3,
+                    fill: "row"
+                }
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                }
+            },
+            744: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                grid: {
+                    rows: 2,
+                    fill: "row"
+                },
+            },
+        }
+        
+    });
 
 })

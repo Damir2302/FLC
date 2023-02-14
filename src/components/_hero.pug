@@ -10,7 +10,9 @@ mixin hero(title, text, image)
 
                     .hero__main
 
-                        h1.hero__title.main-title= title
+                        .hero__title
+                            h1= title
+                            #hero-title
                         .hero__text= text
                         button.hero__btn.button-style Оставить заявку
 

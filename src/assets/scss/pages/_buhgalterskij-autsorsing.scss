@@ -86,6 +86,7 @@
     margin-bottom: 60px;
   }
 }
+
 .wwdo__items {
   width: 100%;
   // overflow: hidden;
@@ -671,11 +672,13 @@
   background: #c2c2dd;
   padding: 17px 10px 20px 10px;
 
+
   @include breakpoint(md) {
     font-size: 18px;
     line-height: 22px;
   }
 }
+
 .payment-variant__content {
   display: flex;
   flex-direction: row;

@@ -80,7 +80,7 @@ block main
                         li Сопровождение иностранных компаний в России;
                         li Интеллектуальная собственность.
 
-                    a.c-banner__btn.button-style(href='#') Посмотреть презентацию
+                    a.c-banner__btn.button-style(href='#') Выбрать вид сопровождения
 
                 .c-banner__right
                     .c-banner__img
@@ -90,3 +90,53 @@ block main
                             span Светлана Буравцова
                             |  Генеральный директор
                         .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+    section.section.results-section
+
+        .container
+
+            .section-title Результаты наших Клиентов после запуска работы с нами:
+
+            .results
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=0 data-level=0)
+                                    span 0
+                                .results__diagram-value(data-value=33 data-level=3)
+                                    span 0
+                            .results__label Сэкономленные деньги вложили в развитие
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Скорректировали порядок оплаты с Покупателями, чтобы не получать авансовые оплаты в конце квартала
+                                .results__info-btn Скрыть
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=15 data-level=2)
+                                    span 0
+                                .results__diagram-value(data-value=32 data-level=3)
+                                    span 0
+                            .results__label Увеличили выручки
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Уменьшили расходы на юриста на 33%
+                                .results__info-btn Скрыть
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=5 data-level=1)
+                                    span 0
+                                .results__diagram-value(data-value=30 data-level=3)
+                                    span 0
+                            .results__label Увеличили время на развитие бизнеса
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Уменьшили расходы на юриста на 33%
+                                .results__info-btn Скрыть
+
+                .swiper-pagination

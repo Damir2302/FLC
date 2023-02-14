@@ -214,3 +214,23 @@ textarea {
       padding-bottom: 100px;
     }
 }
+
+.section-with-text {
+
+    @include breakpoint(md) {
+        margin-bottom: 15px;
+      }
+}
+
+.section-with-text .section-title {
+        display: flex;
+        justify-content: center;
+}
+
+.section-with-text span {
+
+    @include breakpoint(md) {
+        display: flex;
+        align-self: center;
+      }
+}

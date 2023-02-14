@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    
+
     if ($(window).width() < 1400) {
         let whatWeDoSlider = new Swiper('.wwdo__items', {
             slidesPerView: 1,
@@ -8,7 +8,7 @@ $(document).ready(function() {
             pagination: {
                 el: '.wwde__pagination',
                 clickable: true,
-               
+
             },
             breakpoints: {
                 1400: {
@@ -56,8 +56,45 @@ $(document).ready(function() {
             }
         },
 
-      
+
     });
+
+    // Диаграмма на главной
+    let resultsSlider;
+    let init;
+
+    resultsSliderCheck();
+
+    $(window).on('resize', function() {
+        resultsSliderCheck()
+    })
+
+    function resultsSliderCheck() {
+
+      if ($('.results .swiper').length) {
+
+        if ($(window).width() < 744) {
+          if (!init) {
+            init = true;
+            resultsSlider = new Swiper(".results .swiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+              pagination: {
+                el: '.results .swiper-pagination',
+                clickable: true
+              }
+            })
+          }
+        } else {
+          if (typeof(resultsSlider) !== "undefined" ) {
+            init = false;
+            resultsSlider.destroy();
+          }
+        }
+
+      }
+    }
 
 
 

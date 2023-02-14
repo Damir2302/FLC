@@ -79,11 +79,13 @@ $(document).ready(function() {
         $(this).parent().parent().find('.results__btn').css('opacity', 1)
     })
 
-    $(document).scroll(function(){
-        if ($(this).scrollTop() >= $('.results-section').offset().top - 500) {
-            $('.results-section').addClass('focused').trigger('classChange')
-        }
-    });
+    if ($('.results-section').length) {
+        $(document).scroll(function(){
+            if ($(this).scrollTop() >= $('.results-section').offset().top - 500) {
+                $('.results-section').addClass('focused').trigger('classChange')
+            }
+        });
+    }
 
     $('.results-section').on('classChange', function() {
         diagramStats()

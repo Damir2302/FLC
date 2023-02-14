@@ -60,7 +60,7 @@ $(document).ready(function() {
     });
 
     let tabsNavSlider = new Swiper('.tabs__nav', {
-        slidesPerView: 'auto',  
+        slidesPerView: 'auto',
     });
 
     let workMetodsSldier = new Swiper('.work-metods__items', {
@@ -79,13 +79,42 @@ $(document).ready(function() {
             el: '.work-metods__pagination',
             clickable: true,
         },
-      
+
     });
 
 
     let reviewsSlider = new Swiper('.reviews__items', {
-        slidesPerView: 1,  
+        slidesPerView: 1,
         spaceBetween: 35,
+
+        navigation: {
+            nextEl: ".reviews__items-nav-next",
+            prevEl: ".reviews__items-nav-prev",
+        },
+
+        pagination: {
+            el: '.reviews__pagination',
+            clickable: true,
+        },
+
+        breakpoints: {
+            // 1400: {
+            //     slidesPerView: 6,
+            //     spaceBetween: 35
+            // },
+            // 1024: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 35
+            // },
+            744: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                watchSlidesVisibility: true,
+                watchOverflow: true,
+            },
+        }
+    });
+
 
     // Диаграмма на главной
     let resultsSlider;
@@ -124,36 +153,6 @@ $(document).ready(function() {
       }
     }
 
-
-        navigation: {
-            nextEl: ".reviews__items-nav-next",
-            prevEl: ".reviews__items-nav-prev",
-        },
-
-        pagination: {
-            el: '.reviews__pagination',
-            clickable: true,
-        },
-
-        breakpoints: {
-            // 1400: {
-            //     slidesPerView: 6,
-            //     spaceBetween: 35
-            // },
-            // 1024: {
-            //     slidesPerView: 4,
-            //     spaceBetween: 35
-            // },
-            744: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-                watchSlidesVisibility: true,
-                watchOverflow: true,
-            },
-        }
-    });
-
-
     let casesSlider = new Swiper('.cases__items', {
         slidesPerView: 'auto',
         watchOverflow: true,
@@ -171,7 +170,7 @@ $(document).ready(function() {
         },
     });
 
-    
+
 
     let trustUsSlider = new Swiper('.trust-us__slider', {
         slidesPerView: 2,
@@ -212,7 +211,7 @@ $(document).ready(function() {
                 },
             },
         }
-        
+
     });
 
 })

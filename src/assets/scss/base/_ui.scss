@@ -216,21 +216,33 @@ textarea {
 }
 
 .section-with-text {
-
-    @include breakpoint(md) {
-        margin-bottom: 15px;
-      }
-}
-
-.section-with-text .section-title {
+    .section-title {
         display: flex;
         justify-content: center;
-}
-
-.section-with-text span {
-
-    @include breakpoint(md) {
-        display: flex;
-        align-self: center;
+    
+        span {
+          @include breakpoint(md) {
+            display: flex;
+            align-self: center;
+          }
+        }
+    
+        @include breakpoint(md) {
+          margin-bottom: 15px;
+        }
+    
+        @include breakpoint(lg) {
+          margin-bottom: 30px;
+        }
+      }
+    
+      .section-text {
+        @include breakpoint(md) {
+          margin-bottom: 40px;
+        }
+    
+        @include breakpoint(xl) {
+          margin-bottom: 60px;
+        }
       }
 }

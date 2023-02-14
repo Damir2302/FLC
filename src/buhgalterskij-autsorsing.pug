@@ -1,12 +1,105 @@
 ---
 title : FLC | Бухгалтерский аутсорсинг
+bodyClass: buh-aut
 ---
 
 extends includes/_page
 
+
+block hero
+    .hero-section
+
+        .hero
+
+            .container
+
+                .hero__inner
+
+                    .hero__main
+
+                        h1.hero__title.main-title Аутсорсинг бухгалтерских услуг
+                        .hero__text
+                            p Бухгалтерия, встроенная в бизнес-процессы и полностью отвечающая потребностям Вашей компании
+                            p Обратитесь к нам и Вы получите:
+                            ol
+                                li 
+                                    span Аудит деятельности Вашей бухгалтерии
+                                li
+                                    span Возможности снижения налоговой нагрузки
+                                li 
+                                    span Расчет стоимости бухгалтерского сопровождения
+                        button.hero__btn.button-style Оставить заявку
+
+                    .hero__img
+                        img(src="assets/images/buh-aut-hero.svg")
+
+        .hero__bottom
+
+            .container
+
+                .hero__nav
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Комплекное сопровождение бизнеса
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Юридическое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Бухгалтерское
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Финансовое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Налоговое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Кадровое
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") ВЭД
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Судебное
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Бухгалтерия и&nbsp;финансы
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Бухгалтерский аутсорсинг
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Налоговоое планирование
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Юриспруденция
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Юридический аутсорсинг
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Правовой аудит (Due diligence)
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Кадры
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Кадровый аудит
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Суды
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Ведение дел в судах
+
+                    .hero__nav-item
+                        a.hero__nav-link(href="#") Иностранным компаниям
+
+                        ul.hero__submenu
+                            li.hero__submenu-item
+                                a.hero__submenu-link(href="#") Запуск и сопровождение бизнеса в России для иностранных компаний
+
 block main
 
-    section.what-we-do 
+    section.what-we-do.section 
 
         .container 
 
@@ -65,7 +158,7 @@ block main
 
                 .wwde__pagination
 
-    section.outsourcing-options
+    section.outsourcing-options.section
 
         .container 
 
@@ -198,7 +291,7 @@ block main
 
                 .outsourcing-options__pagination
 
-    section.payment-variants 
+    section.payment-variants.section
 
         .container 
 
@@ -241,4 +334,692 @@ block main
                         .payment-variant__icon 
                             img(src="assets/images/pay-ic2.svg", alt="")
 
-            
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+                
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Что делает аутсорсинг FLC
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2") Методы работы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Цены
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-4") Отзывы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-5") Кейсы
+
+                .tabs__content 
+
+                    #tab-1.tabs__content-item
+
+                        .what-autsorsing-do 
+
+                            .section-title Что делает аутсорсинг FLC
+
+                            .what-autsorsing-do__items 
+
+                                .what-autsorsing-do__item 
+
+                                    .what-autsorsing-do__item-count 
+
+                                        span 1
+
+                                    .what-autsorsing-do__text Организует работу бухгалтерии под Ваши потребности
+
+                                .what-autsorsing-do__item 
+
+                                    .what-autsorsing-do__item-count 
+
+                                        span 2
+
+                                    .what-autsorsing-do__text Контролирует и управляет бухгалтерией и Вашими штатными бухгалтерами
+
+                                .what-autsorsing-do__item 
+
+                                    .what-autsorsing-do__item-count 
+
+                                        span 3
+
+                                    .what-autsorsing-do__text Отвечает за бухгалтерский и налоговый учет по всем участкам:
+
+
+                                .what-autsorsing-do__item 
+
+                                    .what-autsorsing-do__item-count 
+
+                                        span 4
+
+                                    .what-autsorsing-do__text Контролирует – налоговую нагрузку компании
+
+                                .what-autsorsing-do__item 
+
+                                    .what-autsorsing-do__item-count 
+
+                                        span 5
+
+                                    .what-autsorsing-do__text Контролирует движение денежных средств
+
+                                .what-autsorsing-do__item 
+
+                                    .what-autsorsing-do__item-count 
+
+                                        span 6
+
+                                    .what-autsorsing-do__text Контролирует финансовые показатели компании
+
+                            .tab__content-btn.button-style Оставить заявку
+
+                    #tab-2.tabs__content-item
+
+                        .work-metods
+
+                            .section-title Методы работы
+
+                            .work-metods__items 
+
+                                .swiper-wrapper 
+
+                                    .work-metods__item.swiper-slide 
+
+                                        .work-metods__item-img 
+                                            img(src="assets/images/work-method1.svg", alt="")
+
+                                        .work-metods__item-content 
+                                            p 
+                                                b За Вашей компанией закрепляется:
+                                            ol 
+                                                li персональный профильный главный бухгалтер;
+                                                li заместитель главного бухгалтера;
+                                                li аудитор
+                                            p 
+                                                b Результат:
+                                            p Вы получаете команду профессионалов бухгалтерского и налогового учета.
+
+                                    .work-metods__item.swiper-slide 
+
+                                        .work-metods__item-img 
+                                            img(src="assets/images/work-method2.svg", alt="")
+
+                                        .work-metods__item-content 
+                                            p 
+                                                b Готовится регламент работы:  
+                                            ol 
+                                                li правила взаимодействия бухгалтерии FLC с каждым отделом компании Клиента;
+                                                li правила взаимодействия бухгалтерии FLC с каждым отделом компании Клиента;
+                                                li устанавливаются сроки выполнения бухгалтерских задач.
+                                            p 
+                                                b Результат:
+                                            p Вы получаете бухгалтерию, полностью отвечающую бизнес-процессам Вашей компании.
+
+                                    .work-metods__item.swiper-slide 
+
+                                        .work-metods__item-img 
+                                            img(src="assets/images/work-method3.svg", alt="")
+
+                                        .work-metods__item-content 
+                                            p 
+                                                b Бухгалтерия FLC работает ежедневно:
+                                            ol 
+                                                li в рабочие часы, согласованные с Клиентом;
+                                                li в рабочие часы, согласованные с Клиентом;
+                                                li в офисе Клиента по согласованному графику.
+                                            p 
+                                                b Результат:
+                                            p В офисе Клиента по согласованному графику.
+
+                                    .work-metods__item.swiper-slide 
+
+                                        .work-metods__item-img 
+                                            img(src="assets/images/work-method4.svg", alt="")
+
+                                        .work-metods__item-content 
+                                            p 
+                                                b Формируем и ведём электронный документооборот:
+                                            ol 
+                                                li таблица со сроками сдачи отчетности;
+                                                li таблица со сроками сдачи отчетности;
+                                                li сканы первичных документов;
+                                                li таблица отсутствующих первичных документов;
+                                                li иные электронные документы для повышения удобства и скорости работы;
+                                            p 
+                                                b Результат:
+                                            p Повышается скорость работы с документами всех отделов компании Клиента.
+
+                                    .work-metods__item.swiper-slide 
+
+                                        .work-metods__item-img 
+                                            img(src="assets/images/work-method5.svg", alt="")
+
+                                        .work-metods__item-content 
+                                            p 
+                                                b Готовим финансовые показатели компании для директоров и учредителей:
+                                            ol 
+                                                li налоговой нагрузки;
+                                                li чистой прибыли;
+                                                li маржинальности;
+                                                li себестоимости;
+                                                li расходы на каждого сотрудника компании Клиента.
+                                            p 
+                                                b Результат:
+                                            p Вы всегда знаете свои реальные доходы и расходы, что позволяет планировать будущее Вашей компании.
+
+                                .work-metods__items-nav
+                                    .work-metods__nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+                                    .work-metods__nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+                                .work-metods__pagination
+
+                    #tab-3.tabs__content-item
+
+                        .services
+
+                            .section-title Методы работы
+
+                            .section-text Основываясь на 10-летнем опыте работы с коммерческими компаниями, наша команда FLC подготовила готовые пакеты юридического сопровождения, однако мы можем сформировать и индивидуальный пакет под потребности каждого Клиента, для этого <a target="_blank">скачайте Анкету</a>, заполните ее и пришлите нам на почту <a href="mailto:flc@f-jurist.ru">flc@f-jurist.ru</a>:
+
+
+                            .sectives-cost
+
+                                .section__table
+
+                                    .section__table-header 
+
+                                        .section__table-title.section__table-title-left Услуги
+
+                                        .section__table-title.section__table-title-right Стоимость, в руб. от количества операций, включая сдачу отчетности
+
+                                    .section__table-info
+                                    
+                                        .section__table-left
+
+                                            .section__table-content 
+
+                                                .section__table-item Налоговое планирование ежеквартально/ежемесячно, с учетом плана продаж/закупок/проектов
+                                                .section__table-item Оформление бух. документов на реализацию
+                                                .section__table-item Оформление бух. Документов по расчетам с Поставщиками
+                                                .section__table-item Работа в системе Банк-Клиент
+                                                .section__table-item Работа в рамках валютного законодательства (экспорт/импорт)
+                                                .section__table-item Отчетность в ФСС, ПФР, персонифицированный учет, 6-НДФЛ, 2- НДФЛ
+                                                .section__table-item Налоговая декларация по УСН/НДС/Налог на прибыль
+                                                .section__table-item Бухгалтерская (финансовая) отчетность (годовая)
+                                                .section__table-item Расчет заработной платы 
+                                                .section__table-item Кадровый учет
+                                                .section__table-item Устные консультации по бухгалтерскому и налоговому учету (по направлениям деятельности компании)
+                                                .section__table-item Присутствие бухгалтера в офисе по графику или по мере необходимости
+
+                                        .section__table-right
+
+                                            .section__table-content 
+
+                                                .section__table-text 
+
+                                                    p до 20 операций в месяц — <b>10 000 ₽</b>
+                                                    p от 21 до 50 операций в месяц — <b>20 000₽</b>
+                                                    p от 51 до 100 операций в месяц — <b>35 000 ₽</b>
+                                                    p от 101 до 200 операций в месяц — <b>55 000 ₽</b>
+                                                    p от 201 до 300 операций в месяц — <b>70 000 ₽</b>
+                                                    p от 301 до 400 операций в месяц — <b>85 000 ₽</b>
+                                                    p свыше 400 операций в месяц — договорная
+
+                                                    span Стоимость услуг определяется исходя из объемов работ.
+
+                            .section-title.servcies-steps__title
+                                span Узнайте стоимость услуг бухгалтерского сопровождения Вашей компании
+
+                            .servcies-steps 
+
+                                .servcies-steps__items 
+
+                                    .servcies-step
+
+                                        .servcies-step__number 1 
+
+                                        .servcies-step__title Скачайте анкету с нашего сайта
+
+                                    .servcies-step
+
+                                        .servcies-step__number 2
+
+                                        .servcies-step__title Заполните её
+
+                                    .servcies-step
+
+                                        .servcies-step__number 3
+
+                                        .servcies-step__title Отправьте нам на электронную почту <a href="mailto:buh@f-jurist.ru">buh@f-jurist.ru</a>
+
+                                    .servcies-step
+
+                                        .servcies-step__number 4
+
+                                        .servcies-step__title Мы отправим Вам коммерческое предложение
+
+                                .services-steps__btns 
+
+                                    .button-style.button-style--light(download) 
+                                        img(src="assets/images/pdf-ic.svg", alt="")
+                                        span Скачайте анкету
+
+                                    .button-style.services-steps__btn Оставить заявку
+
+
+                    #tab-4.tabs__content-item
+
+                        .reviews
+
+                            .section-title Отзывы
+
+                            .reviews__items 
+
+                                .swiper-wrapper 
+
+                                    .reviews__item.swiper-slide 
+
+                                        .reviews__item-img 
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide 
+
+                                        .reviews__item-img 
+                                            img(src="assets/images/review2.png", alt="")
+
+                                    .reviews__item.swiper-slide 
+
+                                        .reviews__item-img 
+                                            img(src="assets/images/review3.png", alt="")
+
+                                    .reviews__item.swiper-slide 
+
+                                        .reviews__item-img 
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide 
+
+                                        .reviews__item-img 
+                                            img(src="assets/images/review2.png", alt="")
+
+                                .reviews__pagination.slider__pagination
+
+                                .reviews__items-nav
+
+                                    .reviews__items-nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+
+                                    .reviews__items-nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+                    #tab-5.tabs__content-item
+
+                        .cases 
+
+                            .section-title
+                                span Кейсы
+
+                            .cases__items 
+
+                                .swiper-wrapper 
+
+                                    .cases__item.swiper-slide 
+
+                                        a(href="assets/images/review3.png" data-fancybox).cases__item-img
+                                            img(src="assets/images/review3.png", alt="")
+                                            .cases__item-img-icon
+                                                img(src="assets/images/plus-ic.svg", alt="")
+
+                                        .cases__item-content 
+
+                                            .cases__item-title Дело: А40-176415/18
+
+                                            p
+                                                b Цель:
+                                                |  установление отсутствия ответственности Поставщика в связи с поставкой некачественного оборудования
+    
+                                            p 
+                                                b Особенности:
+                                                |  некачественность оборудования признано Поставщиком
+
+                                            p
+                                                b Результат: 
+                                                |  выиграли суд первой, апелляционной и кассационной инстанций, взыскали юридические
+
+                                            p
+                                                b Срок:
+                                                |  13 месяцев расходы
+
+                                .cases__pagination.slider__pagination
+
+                                .cases__nav 
+                                    .cases__nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+                                    .cases__nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+
+
+    section.benefits-of-outsourcing.section 
+
+        .container
+
+            .section-title Преимущества аутсорсинга FLC
+
+            .benefits__table-wrapper 
+
+                .benefits__table
+                    .table__header.table__row
+                        .table__col Бухгалтерский аутсорсинг FLC в сравнении
+                        .table__col Бухгалтерский аутсорсинг FLC
+                        .table__col Штатный бухгалтер
+                        .table__col Бухгалтер на удаленке
+                        .table__col Аутсорс   бухгалтерии
+                    .table__body
+
+                        .table__row
+                            .table__col Команда профессиональных бухгалтеров и аудиторов
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Регламент работы
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Ежедневный режим работы
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Электронный документооборот
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Финансовые показатели компании клиента
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Финансовая ответственность
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Коммуникация
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Управление налоговой нагрузкой и процессами
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                        .table__row
+                            .table__col Оптимальная нагрузка бухгалтеров
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-plus
+                            .table__col
+                                .table-minus
+                            .table__col
+                                .table-minus
+                    
+            .button-style.benefits-btn Оставить заявку
+
+    section.trust-us.section.section-with-text 
+
+        .container 
+
+            .section-title Нам доверяют
+
+            .section-text 8 из 10 руководителей США и Евросоюза передали весь бизнес или его отдельные части на аутсорсинг.
+
+            .trust-us-wrapper 
+
+                .trust-us__content 
+
+                    .trust-us__content-title Выбирая аутсорсинг Вы:
+
+                    ul.trust-us__list 
+                        li Вы не тратите  на поиск сотрудника, на  управление и контроль за его работой.
+                        li Не платите 30,2 % соцналогов.
+                        li Исключайте риски временной нетрудоспособсности сотрдуника и отпуска.
+                        li Расширяете возможности, получая команду специалистов по цене одного.
+                        li Используете самые современные и эффективные методы управления бизнесом.
+                        li Получаете юридический отдел, встроенный в бизнес процессы и работающий как часы.
+
+                .trust-us__slider 
+
+                    .swiper-wrapper 
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide 
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo 
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav 
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+
+    section.page-faq.section
+
+        .container 
+
+            .section-title Бухгалтерский аутсорсинг
+
+            .page-faq-wrapper
+
+                .page-faq__content 
+
+                    .page-faq__content-text Бухгалтерский аутсорсинг — это вынесение функций, связанных с организацией, ведением бухгалтерского учета и составлением отчетности в организации за пределы компании, передачу их для исполнения аутсорсеру. Вместе с передачей определенных финансовых функций, выполнение которых аутсорсером происходит в ежедневном режиме, передается также управление этими функциями и процессами.
+
+                    .button-style.page-faq__btn Оставить заявку
+
+                .page__faq-items 
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+                                span.faq__text Что такое бухгалтерский аутсорсинг
+                            .faq__content.js-faq-content
+                                p Компоновочные решения МАП позволяют в при сохранении одинакового количества машино-мест уменьшить площадь застройки более чем на 40%, что является эффективным решением с точки зрения минимизации затрат на приобретение участка и обустройства его инфраструктуры.
+                                p Применение технологии МАП позволяет увеличить количество машино-мест, располагаемых на выделенном пятне застройки, на 80%.
+                                p Общая стоимость строительства МАП почти в 2 раза дешевле стоимости традиционного многоярусного паркинга.
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Что включает в себя бухгалтерский аутсорсинг
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Кому нужны услуги бухгалтерского аутсорсинга
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Кому не подойдет аутсорсинг бухгалтерии
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Чем удобен бухгалтерский аутсорсинг
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Услуги бухгалтерского аутсорсинга от FLC
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+    section.get-service.section.section-with-text 
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать бухгалтерский аутсорсинг в Москве
+                
+                .section-text Чтобы обсудить Ваши задачи и задать любые интересующие Вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.
+
+                .get-service__form 
+
+                    form(action="")
+
+                        .get-service__form-col 
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

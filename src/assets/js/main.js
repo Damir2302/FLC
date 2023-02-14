@@ -37,6 +37,37 @@ $(document).ready(function() {
         $(this).parent().find('.nav__submenu').slideToggle()
     })
 
+    // Show the first tab by default
+    $('.tabs__content .tabs__content-item').hide();
+    $('.tabs__content .tabs__content-item:first').show();
+    $('.tabs__nav .tabs__nav-item:first').addClass('tab--active');
+
+    // Change tab class and display content
+    $('.tabs__nav-item a').on('click', function(event){
+        event.preventDefault();
+        $('.tabs__nav .tabs__nav-item').removeClass('tab--active');
+        $(this).parent().addClass('tab--active');
+        $('.tabs__content .tabs__content-item').hide();
+        $($(this).attr('href')).show();
+    });
+
+
+    $(".js-faq-title").on("click", function(e) {
+
+		e.preventDefault();
+		var $this = $(this);
+
+		if (!$this.hasClass("faq__active")) {
+			$(".js-faq-content").slideUp(800);
+			$(".js-faq-title").removeClass("faq__active");
+			$('.js-faq-rotate').removeClass('faq__rotate');
+		}
+
+		$this.toggleClass("faq__active");
+		$this.next().slideToggle();
+		$('.js-faq-rotate',this).toggleClass('faq__rotate');
+	});
+
     // Диаграмма на главной
     $('.results__btn').on('click', function() {
         $(this).parent().find('.results__info').slideDown()
@@ -94,7 +125,5 @@ $(document).ready(function() {
             $(this).find('.results__info').css('display', 'none')
         })
     }
-
-
 
 });

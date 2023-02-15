@@ -1,0 +1,825 @@
+---
+title : FLC | Юридическое сопровождение
+bodyClass: yur-sorp
+---
+
+extends includes/_page
+
+block hero
+    include components/_hero
+    +hero('Юридическое сопровождение компаний',
+          'Российская аутсорсинговая компания FLC (Full Legal Consulting) – все виды юридических услуг для бизнеса в одной компании!',
+          'yur-sopr-hero.svg')
+
+block main
+
+    section.what-we-do.section
+
+        .container
+
+            .section-title Чем мы занимаемся
+
+            .wwdo__items
+
+                .swiper-wrapper
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd1.svg", alt="")
+                            img(src="assets/images/wwd1bg.png", alt="")
+
+                        .wwdo__item-title 10 лет на рынке
+
+                        .wwdo__item-text Работаем на рынке аутсорсинговых услуг по сопровождению бизнеса коммерческих компаний в России с 2013 года
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd6.svg", alt="")
+                            img(src="assets/images/wwd6bg.png", alt="")
+
+                        .wwdo__item-title Профи своего дела
+
+                        .wwdo__item-text Являемся профессиональной командой аутсорсеров
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd5.svg", alt="")
+                            img(src="assets/images/wwd5bg.png", alt="")
+
+                        .wwdo__item-title Полное сопровождение
+
+                        .wwdo__item-text Работаем с Клиентами как на полном сопровождении их бизнеса по всем  направлениям одновременно (Full support), так и на сопровождении отдельных направлений
+
+                    .wwdo__item.swiper-slide 
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd3.svg", alt="")
+                            img(src="assets/images/wwd3bg.png", alt="")
+                            
+                        .wwdo__item-title Работаем во всех отраслях
+
+                        .wwdo__item-text За 10 лет работы на рынке отработали схемы сопровождения коммерческих компаний по всем отраслям бизнеса
+
+
+
+                .wwde__pagination
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.button-style(href='#') Выбрать вид сопровождения
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            |  Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Правила работы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2") Цены
+
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Отзывы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-4") Кейсы
+
+                .tabs__content
+
+                    #tab-1.tabs__content-item
+
+                        .what-autsorsing-do.section-with-text
+
+                            .section-title Правила работы FLC
+
+                            .section-text Наши Клиенты покупают не услуги, а правила работы и профессионализм команды FLC. 
+
+                            .what-autsorsing-do__items
+
+                                .what-autsorsing-do__item
+
+                                    .what-autsorsing-do__item-count
+
+                                        span 1
+
+                                    .what-autsorsing-do__text Проводим аудит, который включает анализ договорной базы и проблем, с которыми сталкивался Клиент.
+
+                                .what-autsorsing-do__item
+
+                                    .what-autsorsing-do__item-count
+
+                                        span 2
+
+                                    .what-autsorsing-do__text По итогам аудита понимаем, с каким опытом, навыками и знаниями юрист нужен Клиенту.
+
+                                .what-autsorsing-do__item
+
+                                    .what-autsorsing-do__item-count
+
+                                        span 3
+
+                                    .what-autsorsing-do__text Закрепляем персонального, профильного юриста и устанавливаем плановые дни посещения офиса Клиента.
+
+
+                                .what-autsorsing-do__item
+
+                                    .what-autsorsing-do__item-count
+
+                                        span 4
+
+                                    .what-autsorsing-do__text Определяем процесс работы юриста со всеми службами компании Клиента, чтобы работа юриста или нескольких юристов была грамотно встроена в бизнес-процессы Клиента.
+
+                                .what-autsorsing-do__item
+
+                                    .what-autsorsing-do__item-count
+
+                                        span 5
+
+                                    .what-autsorsing-do__text Ежемесячно предоставляем отчет по всем выполненным задачам и задачам, которые находятся в процессе работы.
+
+
+                            .tab__content-btn.button-style Оставить заявку
+
+                    #tab-2.tabs__content-item
+
+                        .section-with-text
+
+                            .section-title Стоимость услуг
+
+                            .section-text Основываясь на 10-летнем опыте работы с коммерческими компаниями, наша команда FLC подготовила готовые пакеты юридического сопровождения, однако мы можем сформировать и индивидуальный пакет под потребности каждого Клиента, для этого <a target="_blank">скачайте Анкету</a>, заполните ее и пришлите нам на почту <a href="mailto:flc@f-jurist.ru">flc@f-jurist.ru</a>:
+
+                            .benefits__table-wrapper
+
+                                .benefits__table
+                                    .table__header.table__row
+                                        .table__col Услуги*
+                                        .table__col Старт
+                                        .table__col Базовый
+                                        .table__col Основной
+                                        .table__col Полный
+                                        .table__col Премиум
+                                    .table__body
+
+                                        .table__row
+                                            .table__col
+                                                span УЧРЕДИТЕЛЬНЫЕ ДОКУМЕНТЫ
+                                                .table__list
+                                                    .table__list-item подготовка
+                                                    .table__list-item проверка
+                                                    .table__list-item правовая экспертиза
+                                            .table__col до 1
+                                            .table__col до 1
+                                            .table__col до 1
+                                            .table__col до 2
+                                            .table__col до 2
+                                        .table__row
+                                            .table__col
+                                                span ДОГОВОРЫ
+                                                .table__list
+                                                    .table__list-item подготовка
+                                                    .table__list-item проверка
+                                                    .table__list-item правовая экспертиза
+                                            .table__col до 2
+                                            .table__col до 5
+                                            .table__col до 8
+                                            .table__col до 11
+                                            .table__col до 16
+                                        .table__row
+                                            .table__col
+                                                span ВЭД
+                                                .table__list
+                                                    .table__list-item подготовка контрактов ВЭД
+                                                    .table__list-item правовая экспертиза контрактов ВЭД
+                                            .table__col —
+                                            .table__col до 2
+                                            .table__col до 1
+                                            .table__col до 3
+                                            .table__col до 5
+                                        .table__row
+                                            .table__col
+                                                span РЕГИСТРАЦИЯ ЮРЛИЦ И ИЗМЕНЕНИЙ
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col до 1
+                                        .table__row
+                                            .table__col
+                                                span ДОЛЖНИКИ / КРЕДИТОРЫ
+                                                .table__list
+                                                    .table__list-item подготовка писем
+                                                    .table__list-item подготовка претензий и ответов
+                                            .table__col до 1
+                                            .table__col до 1
+                                            .table__col до 2
+                                            .table__col до 3
+                                            .table__col до 5
+                                        .table__row
+                                            .table__col
+                                                span СУДЫ
+                                                .table__list
+                                                    .table__list-item подача исковых заявлений
+                                                    .table__list-item участие в судебных заседаниях
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                        .table__row
+                                            .table__col
+                                                span ИСПОЛНИТЕЛЬНОЕ ПРОИЗВОДСТВО
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col до 1
+                                            .table__col до 1
+                                        .table__row
+                                            .table__col
+                                                span ПРАВОВАЯ ЭКСПЕРТИЗА ДОКУМЕНТОВ
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 5
+                                        .table__row
+                                            .table__col
+                                                span ИНТЕЛЛЕКТУАЛЬНАЯ СОБСТВЕННОСТЬ
+                                                .table__list
+                                                    .table__list-item консультации, регистрация, защита
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col до 1
+
+                                        .table__row
+                                            .table__col
+                                                span УСТНЫЕ КОНСУЛЬТАЦИИ
+                                                p (гражданское право, корпоративное право, налоговое право, трудовое право, интеллектуальная собственность, арбитражно-процессуальное право)
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 3
+                                            .table__col до 5
+
+                                        .table__row
+                                            .table__col
+                                                span ПИСЬМЕННЫЕ КОНСУЛЬТАЦИИ
+                                                p (гражданское право, корпоративное право, налоговое право, трудовое право, интеллектуальная собственность, арбитражно-процессуальное право)
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 2
+                                            .table__col до 3
+                                            .table__col до 5
+
+                                        .table__row
+                                            .table__col
+                                                span ГОСУДАРСТВЕННЫЕ ОРГАНЫ
+                                                .table__list
+                                                    .table__list-item представление интересов Клиента в государственных органах
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col до 1
+                                            .table__col до 1
+
+                                        .table__row
+                                            .table__col
+                                                span ПЕРЕГОВОРЫ
+                                                .table__list
+                                                    .table__list-item участие и представление интересов Клиента
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col до 1
+                                            .table__col до 1
+
+                                        .table__row
+                                            .table__col
+                                                span ИЗМЕНЕНИЕ ЗАКОНОДАТЕЛЬСТВА
+                                                .table__list
+                                                    .table__list-item ежедневный контроль
+                                            .table__col на постоянной основе
+                                            .table__col на постоянной основе
+                                            .table__col на постоянной основе
+                                            .table__col на постоянной основе
+                                            .table__col на постоянной основе
+
+                                        .table__row
+                                            .table__col
+                                                span Присутствие юриста в офисе
+                                                
+                                            .table__col —
+                                            .table__col —
+                                            .table__col 1 раз, до 4 часов в месяц
+                                            .table__col 1 раз, до 4 часов в месяц
+                                            .table__col 1 раз, до 4 часов в месяц
+
+                                        .table__row
+                                            .table__col
+                                                span Общее количество задач по всем направлениям
+                                            .table__col
+                                                b 10
+                                            .table__col
+                                                b 15
+                                            .table__col
+                                                b 19
+                                            .table__col
+                                                b 33
+                                            .table__col
+                                                b 52
+
+                                        .table__row
+                                            .table__col
+                                                span Стоимость в рублях за один месяц.<br>Услуги оказываются как удаленно, так и в офисе Клиента в согласованное время.
+                                            .table__col
+                                                b 40 000 ₽
+                                            .table__col
+                                                b 52 000 ₽
+                                            .table__col
+                                                b 65 000 ₽
+                                            .table__col
+                                                b 95 000 ₽
+                                            .table__col
+                                                b 125 000 ₽
+
+                    #tab-3.tabs__content-item
+
+                        .reviews
+
+                            .section-title Отзывы
+
+                            .reviews__items
+
+                                .swiper-wrapper
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review3.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                .reviews__pagination.slider__pagination
+
+                                .reviews__items-nav
+
+                                    .reviews__items-nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+
+                                    .reviews__items-nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+                    #tab-4.tabs__content-item
+
+                        .cases
+
+                            .section-title
+                                span Кейсы
+
+                            .cases__items
+
+                                .swiper-wrapper
+
+                                    .cases__item.swiper-slide
+
+                                        a(href="assets/images/review3.png" data-fancybox).cases__item-img
+                                            img(src="assets/images/review3.png", alt="")
+                                            .cases__item-img-icon
+                                                img(src="assets/images/plus-ic.svg", alt="")
+
+                                        .cases__item-content
+
+                                            .cases__item-title Дело: А40-176415/18
+
+                                            p
+                                                b Цель:
+                                                |  установление отсутствия ответственности Поставщика в связи с поставкой некачественного оборудования
+
+                                            p
+                                                b Особенности:
+                                                |  некачественность оборудования признано Поставщиком
+
+                                            p
+                                                b Результат:
+                                                |  выиграли суд первой, апелляционной и кассационной инстанций, взыскали юридические
+
+                                            p
+                                                b Срок:
+                                                |  13 месяцев расходы
+
+                                .cases__pagination.slider__pagination
+
+                                .cases__nav
+                                    .cases__nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+                                    .cases__nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+    section.page-faq.section
+
+        .container
+
+            .section-title Юридическое сопровождение компаний
+
+            .page-faq-wrapper
+
+                .page-faq__content
+
+                    .page-faq__content-text Юридическое сопровождение бизнеса позволяет вынести решение правовых вопросов за пределы компании. Это удобный и безопасный инструмент, который широко применяется в современной предпринимательской практике. Стоимость юридического сопровождения в среднем ниже, чем наличие в штате собственного юриста.<br><br>Услуга предполагает индивидуальный подход. Набор задач определяется с учетом потребностей каждого клиента. Юридическое сопровождение компании сводит к минимуму финансовые и правовые риски за счет того, что на вас работает целая команда опытных профессионалов своего дела.
+
+                    .button-style.page-faq__btn Оставить заявку
+
+                .page__faq-items
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+                                span.faq__text Когда необходимо юридическое сопровождение
+                            .faq__content.js-faq-content
+                                p Компоновочные решения МАП позволяют в при сохранении одинакового количества машино-мест уменьшить площадь застройки более чем на 40%, что является эффективным решением с точки зрения минимизации затрат на приобретение участка и обустройства его инфраструктуры.
+                                p Применение технологии МАП позволяет увеличить количество машино-мест, располагаемых на выделенном пятне застройки, на 80%.
+                                p Общая стоимость строительства МАП почти в 2 раза дешевле стоимости традиционного многоярусного паркинга.
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Что включает в себя аутсорсинг юридических услуг
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Кому юридическое сопровождение не подойдет
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Преимущества юридического сопровождения
+                            .faq__content.js-faq-content
+                                | Здесь контент
+
+    section.section.results-section
+
+        .container
+
+            .section-title Результаты наших Клиентов после запуска работы с нами:
+
+            .results
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=5 data-level=1)
+                                    span 0
+                                .results__diagram-value(data-value=30 data-level=3)
+                                    span 0
+                            .results__label Увеличили время на развитие бизнеса
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Скорректировали порядок оплаты с Покупателями, чтобы не получать авансовые оплаты в конце квартала
+                                .results__info-btn Скрыть
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=0 data-level=0)
+                                    span 0
+                                .results__diagram-value(data-value=33 data-level=3)
+                                    span 0
+                            .results__label Сэкономленные деньги вложили в развитие
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Уменьшили расходы на юриста на 33%
+                                .results__info-btn Скрыть
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=15 data-level=2)
+                                    span 0
+                                .results__diagram-value(data-value=32 data-level=3)
+                                    span 0
+                            .results__label Увеличили выручки 
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Уменьшили расходы на юриста на 33%
+                                .results__info-btn Скрыть
+
+                .swiper-pagination
+
+    section.our-team.section 
+
+        .container
+
+            .section-title 
+                span FLC — команда с 10-летним опытом
+
+            .our-team-wrapper 
+
+                .our-team__members 
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member1.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member2.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member3.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member4.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member5.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member6.png", alt="")
+
+                .out-team__content 
+
+                    p FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:
+
+                    ul.c-banner__list 
+                        li Юридический аутсорсинг;
+                        li Внешнеэкономическая деятельность;
+                        li Договорное право;
+                        li Представительство  в суде;
+                        li Услуги иностранным компаниям;
+                        li Интеллектуальная собственность;
+                        li Налоговое право;
+                        li Правовой аудит;
+                        li Трудовые отношения и защита персональных данных;
+                        li Корпоративное право;
+                        li Релокация бизнеса и ведение бизнеса за рубежом;
+                        li Международное право;
+                        li Сопровождение инвестиционных проектов;
+                        li Запуск стартапов;
+                        li E-commerce.
+
+                    p Наши Клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професионализм, бизнес коммуникацию и конфиденциальность!
+
+
+    section.compare.section 
+
+        .container
+
+            .section-title 
+                span Сравните, что выгоднее:
+
+            .compare__items
+
+                .swiper-wrapper
+
+                    .compare__item.swiper-slide
+
+                        .compare__title
+                            span Штатный юрист
+                            div С опытом 2-3 года и зарплатой в 60 тыс. рублей
+                        
+                        .compare__props
+
+                            .compare__prop З/П не зависит от объема работы
+
+                            .compare__prop Налоги, 30,3% + Больничные + Отпускные + Обучение
+
+                            .compare__prop Опыт Юриста ограничен его практикой
+
+                            .compare__prop Человеческий фактор / Отсутствие гарантий
+
+                            .compare__prop Риск раскрытия информации в любой момент
+
+                        .compare__title
+                            span 110 000 рублей в месяц
+
+
+                    .compare__item.compare__item--dark.swiper-slide
+
+                        .compare__title
+                            span Юридический аутсорсинг с компанией FLC
+
+
+                        .compare__props
+                        
+                            .compare__prop Регулируемая оплата
+
+                            .compare__prop Команда специалистов по цене одного
+
+                            .compare__prop Персональный Юрист + опыт работы компании FLC
+
+                            .compare__prop Работа по регламентам / Прозрачная отчетность 24 часа
+
+                            .compare__prop Полная конфиденциальность / Гарантии компании FLC
+
+                        .compare__title
+                            span 65 000 рублей в месяц
+                
+                .compare__pagination.slider__pagination
+
+    section.trust-us.section.section-with-text
+
+        .container
+
+            .section-title Нам доверяют
+
+            .section-text 8 из 10 руководителей США и Евросоюза передали весь бизнес или его отдельные части на аутсорсинг.
+
+            .trust-us-wrapper
+
+                .trust-us__content
+
+                    .trust-us__content-title Выбирая аутсорсинг Вы:
+
+                    ul.trust-us__list
+                        li Вы не тратите  на поиск сотрудника, на  управление и контроль за его работой.
+                        li Не платите 30,2 % соцналогов.
+                        li Исключайте риски временной нетрудоспособсности сотрдуника и отпуска.
+                        li Расширяете возможности, получая команду специалистов по цене одного.
+                        li Используете самые современные и эффективные методы управления бизнесом.
+                        li Получаете юридический отдел, встроенный в бизнес процессы и работающий как часы.
+
+                .trust-us__slider
+
+                    .swiper-wrapper
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+    section.get-service.section.section-with-text
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать бухгалтерский аутсорсинг в Москве
+
+                .section-text Чтобы обсудить Ваши задачи и задать любые интересующие Вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.
+
+                .get-service__form
+
+                    form(action="")
+
+                        .get-service__form-col
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

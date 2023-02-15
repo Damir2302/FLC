@@ -115,10 +115,9 @@ $(document).ready(function() {
         }
     });
 
-
     // Диаграмма на главной
     let resultsSlider;
-    let init;
+    let initResultsSlider;
 
     resultsSliderCheck();
 
@@ -131,8 +130,8 @@ $(document).ready(function() {
       if ($('.results .swiper').length) {
 
         if ($(window).width() < 744) {
-          if (!init) {
-            init = true;
+          if (!initResultsSlider) {
+            initResultsSlider = true;
             resultsSlider = new Swiper(".results .swiper", {
               slidesPerView: 1,
               spaceBetween: 30,
@@ -145,11 +144,82 @@ $(document).ready(function() {
           }
         } else {
           if (typeof(resultsSlider) !== "undefined" ) {
-            init = false;
+            initResultsSlider = false;
             resultsSlider.destroy();
           }
         }
+      }
+    }
 
+    // Команда FLC
+    let teamSlider;
+    let initTeamSlider;
+
+    teamSliderCheck();
+
+    $(window).on('resize', function() {
+        teamSliderCheck()
+    })
+
+    function teamSliderCheck() {
+
+      if ($('.team .swiper').length) {
+
+        if ($(window).width() < 744) {
+          if (!initTeamSlider) {
+            initTeamSlider = true;
+            resultsSlider = new Swiper(".team .swiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+              pagination: {
+                el: '.team .swiper-pagination',
+                clickable: true
+              }
+            })
+          }
+        } else {
+          if (typeof(resultsSlider) !== "undefined" ) {
+            initTeamSlider = false;
+            resultsSlider.destroy();
+          }
+        }
+      }
+    }
+
+    // Сферы бизнеса
+    let expSlider;
+    let initExpSlider;
+
+    expSliderCheck();
+
+    $(window).on('resize', function() {
+        expSliderCheck()
+    })
+
+    function expSliderCheck() {
+
+      if ($('.experience .swiper').length) {
+
+        if ($(window).width() < 744) {
+          if (!initExpSlider) {
+            initExpSlider = true;
+            expSlider = new Swiper(".experience .swiper", {
+              slidesPerView: 2,
+              spaceBetween: 10,
+
+              pagination: {
+                el: '.experience .swiper-pagination',
+                clickable: true
+              }
+            })
+          }
+        } else {
+          if (typeof(expSlider) !== "undefined" ) {
+            initExpSlider = false;
+            expSlider.destroy();
+          }
+        }
       }
     }
 
@@ -169,8 +239,6 @@ $(document).ready(function() {
             clickable: true,
         },
     });
-
-
 
     let trustUsSlider = new Swiper('.trust-us__slider', {
         slidesPerView: 2,

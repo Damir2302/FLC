@@ -8,7 +8,7 @@ extends includes/_page
 block hero
     include components/_hero
     +hero('Full Legal Consulting',
-          'Российская аутсорсинговая компания FLC — все виды услуг для вашего бизнеса в одной компании! Профессиональная команда аутсорсеров с встроенными в ваш бизнес процессами работы и проактивной позицией' + list,
+          'Российская аутсорсинговая компания FLC — все виды услуг для вашего бизнеса в одной компании! Профессиональная команда аутсорсеров с встроенными в ваш бизнес процессами работы и проактивной позицией',
           'hero-1.svg')
 
 block main
@@ -91,6 +91,139 @@ block main
                             |  Генеральный директор
                         .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
 
+    section.section.team-section
+
+        .container
+
+            .section-title Команда FLC
+
+            .team
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .team__block.swiper-slide
+                            .team__image
+                                img(src="assets/images/2625203_IMV_77482.jpg", alt="img")
+
+                            .team__info
+                                .team__info-name Светлана Буравцова
+
+                                .team__desc
+                                    .team__desc-label Генеральный директор
+                                    .team__desc-text Практика налогового планирования, внешнеэкономической деятельности и правового аудита
+
+                        .team__block.swiper-slide
+                            .team__image
+                                img(src="assets/images/2625200_IMV_76041.jpg", alt="img")
+
+                            .team__info
+                                .team__info-name Галина Ким
+
+                                .team__desc
+                                    .team__desc-label Руководитель
+                                    .team__desc-text Департамент по налоговому планированию и бухгалтерскому учету
+
+                        .team__block.swiper-slide
+                            .team__image
+                                img(src="assets/images/2625202_IMV_78031.jpg", alt="img")
+
+                            .team__info
+                                .team__info-name Раиль Сабитов
+
+                                .team__desc
+                                    .team__desc-label Руководитель
+                                    .team__desc-text Департамент по внешнеэкономической деятельности и таможенному оформлению
+
+                        .team__block.swiper-slide
+                            .team__image
+                                img(src="assets/images/2625199_IMV_73951.jpg", alt="img")
+
+                            .team__info
+                                .team__info-name Алексей Рубан
+
+                                .team__desc
+                                    .team__desc-label Руководитель
+                                    .team__desc-text Департамент корпоративного и договорного права
+
+                .mobile-slider.swiper-pagination
+
+    section.section.experience-section.section-with-text
+
+        .container
+
+            .section-title Работаем с широким спектром сфер бизнеса
+            .section-text За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:
+
+            .experience
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-1.svg", alt="icon")
+                            .experience__label Производство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-2.svg", alt="icon")
+                            .experience__label Торговля
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-3.svg", alt="icon")
+                            .experience__label Перевозки, логистика
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-4.svg", alt="icon")
+                            .experience__label Финансовый сектор
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-5.svg", alt="icon")
+                            .experience__label IT-технологии
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-6.svg", alt="icon")
+                            .experience__label Сфера услуг
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-7.svg", alt="icon")
+                            .experience__label Строительство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-8.svg", alt="icon")
+                            .experience__label Медицина
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-9.svg", alt="icon")
+                            .experience__label Сельское хозяйство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-10.svg", alt="icon")
+                            .experience__label Переработка отходов
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                .mobile-slider.swiper-pagination
+
     section.section.results-section
 
         .container
@@ -139,4 +272,4 @@ block main
                                 p Уменьшили расходы на юриста на 33%
                                 .results__info-btn Скрыть
 
-                .swiper-pagination
+                .mobile-slider.swiper-pagination

@@ -214,4 +214,35 @@ $(document).ready(function() {
 
     });
 
+
+    
+    let compareSlider = new Swiper('.compare__items', {
+        slidesPerView: 1,
+        // watchOverflow: true,
+        // centeredSlides: true,
+        loop: false,
+        // autoHeight: true,
+        spaceBetween: 55,
+
+        pagination: {
+            el: '.compare__pagination',
+            clickable: true,
+        },
+
+        breakpoints: {
+            1400: {
+                slidesPerView: 2,
+                spaceBetween: 60,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            744: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+        }
+    });
+
 })

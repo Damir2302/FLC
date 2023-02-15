@@ -1,0 +1,137 @@
+.section-tab-text--max-width {
+    max-width: 995px;
+}
+
+.section-tab-text {
+
+    margin: auto;
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    ol {
+
+
+        li {
+            list-style: number;
+            margin-left: 20px;
+            margin-bottom: 5px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            color: #000000;
+        }
+
+
+    }
+
+    ul {
+
+
+        li {
+            list-style: inside;
+            margin-left: 25px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+
+    ol.roman {
+        li {
+            list-style: upper-roman;
+        }
+
+        ul {
+
+
+            li {
+                list-style: inside;
+                margin-left: 25px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.section-tab-text__btn {
+    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 40px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 60px;
+    }
+
+}
+
+
+.kadr-aud {
+
+    .table__row.table__row--white {
+        background-color: #fff;
+        border-bottom: 2px solid #313155;
+        .table__col {
+            text-transform: uppercase;
+            font-weight: 600!important;
+        }
+
+    }
+
+    .tabs__nav-item a {
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .table__header .table__col:first-child {
+        justify-content: flex-start;
+    }
+
+    .table__body .table__col:first-child {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+    }
+
+
+    .benefits__table {
+        min-width: 744px;
+    }
+
+    .out-team__content ul.c-banner__list {
+        @include breakpoint(md) {
+            max-height: 30rem;
+        }
+
+        @include breakpoint(lg) {
+            max-height: 25rem;
+        }
+    }
+
+}

@@ -227,7 +227,7 @@ $(document).ready(function() {
         slidesPerView: 'auto',
         watchOverflow: true,
         centeredSlides: true,
-        loop: true,
+        loop: false,
         autoHeight: true,
         spaceBetween: 55,
         navigation: {

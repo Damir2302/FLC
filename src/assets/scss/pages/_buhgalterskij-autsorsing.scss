@@ -1486,6 +1486,11 @@
 .reviews__item-img {
 }
 .reviews__pagination {
+
+  @include breakpoint(md) {
+    display: none;
+  }
+
 }
 
 
@@ -1645,6 +1650,12 @@
     height: 100%;
   }
 
+}
+
+.cases__pagination {
+  @include breakpoint(md) {
+    display: none;
+  }
 }
 
 .benefits-of-outsourcing {
@@ -1839,7 +1850,7 @@
   }
 
   @include breakpoint(xl) {
-    width: 35%;
+    width: 40%;
   }
 
 }

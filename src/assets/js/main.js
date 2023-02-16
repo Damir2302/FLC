@@ -128,4 +128,35 @@ $(document).ready(function() {
         })
     }
 
+    // ACCORDION MOBILE
+    $(function() {
+        // (Optional) Active an item if it has the class "is-active"	
+        $(".acc > .acc__card.is-active").children(".acc__panel").slideDown();
+        
+        $(".acc > .acc__card").click(function() {
+            // Cancel the siblings
+            $(this).siblings(".acc__card").removeClass("is-active").children(".acc__panel").slideUp();
+            // Toggle the item
+            $(this).toggleClass("is-active").children(".acc__panel").slideToggle("ease-out");
+        });
+    });
+
+    // ACCORDION DESC
+
+    $(function() {
+        $('.acc__desc-nav a').click(function() {
+      
+          // Check for active
+          $('.acc__desc-nav-item').removeClass('active');
+          $(this).addClass('active');
+      
+          // Display active tab
+          let currentTab = $(this).attr('href');
+          $('.acc__desc-content .acc__desc-tab').hide();
+          $(currentTab).show();
+      
+          return false;
+        });
+      });
+
 });

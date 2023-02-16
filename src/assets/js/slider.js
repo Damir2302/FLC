@@ -282,8 +282,34 @@ $(document).ready(function() {
 
     });
 
+    let trustUsOnMainSlider = new Swiper('.trust-us-slider', {
+      slidesPerView: 2,
+      spaceBetween: 10,
 
-    
+      navigation: {
+          nextEl: ".trust-us__nav-next",
+          prevEl: ".trust-us__nav-prev",
+      },
+
+      pagination: {
+          el: '.trust-us__pagination',
+          clickable: true,
+      },
+
+      breakpoints: {
+          744: {
+              slidesPerView: 4,
+              spaceBetween: 10
+          },
+
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 20
+          }
+      }
+
+  });
+
     let compareSlider = new Swiper('.compare__items', {
         slidesPerView: 1,
         // watchOverflow: true,

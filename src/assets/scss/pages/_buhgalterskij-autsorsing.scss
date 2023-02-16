@@ -938,7 +938,7 @@
 .section-title {
 }
 .work-metods__items {
-  
+
   position: relative;
 
   @include breakpoint(lg) {
@@ -1499,7 +1499,7 @@
     position: absolute;
     justify-content: space-between;
 
-    
+
   }
 }
 
@@ -1536,15 +1536,27 @@
 .cases__item {
   padding: 20px;
   background: linear-gradient(130.69deg, rgba(102, 103, 171, 0.1) 14.87%, rgba(255, 255, 255, 0.05) 66.68%);
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 26px;
   display: flex;
   flex-direction: column;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 26px;
   box-sizing: border-box;
 
+  h4 {
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    @include breakpoint(md) {
+      margin: 30px 0;
+    }
+  }
+
   @include breakpoint(md) {
-    flex-direction: row;
     padding: 40px;
+    flex-direction: row;
   }
 
   @include breakpoint(lg) {
@@ -1562,6 +1574,17 @@
     width: 1140px!important;
   }
 }
+
+.cases__item-wrap {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
+}
+
 .cases__item-img {
   position: relative;
   height: 130px;
@@ -1623,10 +1646,18 @@
   color: #000000;
   margin-bottom: 12px;
 }
+.cases__item-text {
+  text-align: center;
+
+  @include breakpoint(md) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .cases__nav {
   display: none;
 
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     display: flex;
     position: absolute;
     width: 100%;
@@ -1764,7 +1795,7 @@
   position: relative;
   width: 30px;
   height: 30px;
-  
+
   &::after {
     content: url('../images/table-plus.svg');
     position: absolute;
@@ -1777,7 +1808,7 @@
   position: relative;
   width: 30px;
   height: 30px;
-  
+
   &::after {
     content: url('../images/table-minus.svg');
     position: absolute;
@@ -1896,7 +1927,7 @@
     padding: 6px 6px 40px 6px;
   }
 
-  
+
   @include breakpoint(lg) {
     width: 58%;
     padding: 0 30px;
@@ -1943,7 +1974,7 @@
       transition: all .3s ease;
     }
   }
-  
+
 
 }
 .swiper-slide {
@@ -2234,7 +2265,7 @@
     color: #000000;
     margin-bottom: 8px;
   }
-  
+
 
 }
 
@@ -2283,7 +2314,7 @@
     }
   }
 
- 
+
 
 }
 .section {
@@ -2333,7 +2364,7 @@
 
   form {
      display: flex;
-     flex-wrap: wrap; 
+     flex-wrap: wrap;
   }
 
   input {
@@ -2409,7 +2440,7 @@
 
 
   @include breakpoint(lg) {
-    
+
     &:last-child {
       .get-service__form-label:first-child {
         width: 305px;
@@ -2419,7 +2450,7 @@
         width: calc( 100% - 400px );
         margin-left: auto;
       }
-    } 
+    }
 
   }
 
@@ -2450,7 +2481,7 @@
     width: calc(100% / 2 - 40px);
     margin-left: 40px;
   }
-  
+
 }
 
 
@@ -2491,7 +2522,7 @@
     max-width: 435px;
     margin-left: auto;
     margin-top: 0;
-    
+
   }
 
   @include breakpoint(xl) {

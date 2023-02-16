@@ -219,30 +219,43 @@ textarea {
     .section-title {
         display: flex;
         justify-content: center;
-    
+
         span {
           @include breakpoint(md) {
             display: flex;
             align-self: center;
           }
         }
-    
+
         @include breakpoint(md) {
           margin-bottom: 15px;
         }
-    
+
         @include breakpoint(lg) {
           margin-bottom: 30px;
         }
       }
-    
+
       .section-text {
         @include breakpoint(md) {
           margin-bottom: 40px;
         }
-    
+
         @include breakpoint(xl) {
           margin-bottom: 60px;
         }
       }
+}
+
+.rating-stars {
+    display: flex;
+    justify-content: center;
+}
+
+.rating-stars span {
+    background: inline('../icons/star.svg');
+    background-repeat: no-repeat;
+    display: block;
+    width: 26px;
+    height: 26px;
 }

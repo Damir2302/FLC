@@ -1,0 +1,137 @@
+---
+title : FLC | Услуги иностранным компаниям
+bodyClass: int-services
+---
+
+extends includes/_page
+
+block hero
+    include components/_hero
+    +hero('Юридические и бухгалтерские услуги иностранным компаниям в России',
+          'Российская аутсорсинговая компания  FLC (Full Legal Consulting) - команда профессиональных аутсорсеров. Работаем  по комплексному сопровождению иностранных компаний в России!',
+          'uslugi-inostr-hero.svg')
+
+block main
+
+    section.what-we-do.section
+
+        .container
+
+            .section-title Чем мы занимаемся
+
+            .wwdo__items
+
+                .swiper-wrapper
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd1.svg", alt="")
+                            img(src="assets/images/wwd1bg.png", alt="")
+
+                        .wwdo__item-title 10 лет на рынке
+
+                        .wwdo__item-text Работаем на рынке аутсорсинговых услуг по сопровождению бизнеса коммерческих компаний в России с 2013 года
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd6.svg", alt="")
+                            img(src="assets/images/wwd6bg.png", alt="")
+
+                        .wwdo__item-title Профи своего дела
+
+                        .wwdo__item-text Являемся профессиональной командой аутсорсеров
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd5.svg", alt="")
+                            img(src="assets/images/wwd5bg.png", alt="")
+
+                        .wwdo__item-title Полное сопровождение
+
+                        .wwdo__item-text Работаем с Клиентами как на полном сопровождении их бизнеса по всем  направлениям одновременно (Full support), так и на сопровождении отдельных направлений
+
+                    .wwdo__item.swiper-slide 
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd3.svg", alt="")
+                            img(src="assets/images/wwd3bg.png", alt="")
+                            
+                        .wwdo__item-title Работаем во всех отраслях
+
+                        .wwdo__item-text За 10 лет работы на рынке отработали схемы сопровождения коммерческих компаний по всем отраслям бизнеса
+
+
+
+                .wwde__pagination
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.button-style(href='#') Выбрать вид сопровождения
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            |  Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Регистрация компаний/филиалов/Открытие счетов 
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2") Цены
+
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Отзывы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-4") Кейсы
+
+                .tabs__content
+
+                    #tab-1.tabs__content-item
+
+                        .what-autsorsing-do.section-with-text
+
+                            .section-title Правила работы FLC
+
+                            .section-text Наши Клиенты покупают не услуги, а правила работы и профессионализм команды FLC. 

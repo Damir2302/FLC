@@ -1899,6 +1899,8 @@
 .trust-us__slider {
   margin-top: 30px;
   position: relative;
+
+
   @include breakpoint(md) {
     overflow: hidden;
     width: 30%;
@@ -1907,7 +1909,6 @@
     padding: 6px 6px 40px 6px;
   }
 
-  
   @include breakpoint(lg) {
     width: 58%;
     padding: 0 30px;
@@ -1920,6 +1921,10 @@
 }
 .trust-us__slider .swiper-wrapper {
   max-height: 260px;
+
+  @include breakpoint(lg) {
+    padding: 20px 6px;
+  }
 
 
   @include breakpoint(xl) {
@@ -1943,6 +1948,7 @@
   box-sizing: border-box;
   @include breakpoint(md) {
     height: calc((100% - 10px) / 2) !important;
+    padding: 8px 11px;
     // height: 126px;
   }
 

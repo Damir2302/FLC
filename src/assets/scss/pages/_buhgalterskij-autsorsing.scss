@@ -491,6 +491,12 @@
   line-height: 18px;
   color: #000000;
   margin-bottom: 10px;
+
+
+  &.outsourcing-option__list-title--single {
+    margin-top: 0;
+  }
+
 }
 
 .outsourcing-option__list {

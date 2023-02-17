@@ -313,4 +313,31 @@ $(document).ready(function() {
         }
     });
 
+
+    let variantsSldier = new Swiper('.tab__variants', {
+      slidesPerView: 1,
+      // watchOverflow: true,
+      // centeredSlides: true,
+      loop: false,
+      // autoHeight: true,
+      spaceBetween: 55,
+
+      pagination: {
+          el: '.tab__variants-pagination',
+          clickable: true,
+      },
+
+      breakpoints: {
+
+          1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+          },
+          744: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+          },
+      }
+  });
+
 })

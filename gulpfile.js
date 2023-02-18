@@ -125,6 +125,7 @@ function scss(cb) {
             includePaths: './node_modules/',
             outputStyle: 'compressed'
         }))
+        .pipe(base64('../icons'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions', '> 1%', 'ie 9'],
             cascade: true
@@ -152,7 +153,6 @@ function scss(cb) {
             suffix: '.min',
             extname: ".css"
         }))
-        .pipe(base64('../icons'))
         .pipe(dest(path.build.css))
         .pipe(browserSync.reload({stream: true}));
 

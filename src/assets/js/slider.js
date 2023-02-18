@@ -59,9 +59,35 @@ $(document).ready(function() {
 
     });
 
-    let tabsNavSlider = new Swiper('.tabs__nav', {
-        slidesPerView: 'auto',
-    });
+    // ТАБЫ
+    let tabsNavSlider;
+    let inittabsNavSlider;
+
+    tabsNavSliderCheck();
+
+    $(window).on('resize', function() {
+      tabsNavSliderCheck()
+    })
+
+    function tabsNavSliderCheck() {
+
+      if ($('.tabs__nav').length) {
+
+        if ($(window).width() < 1400) {
+          if (!inittabsNavSlider) {
+            inittabsNavSlider = true;
+            tabsNavSlider = new Swiper(".tabs__nav", {
+              slidesPerView: 'auto'
+            })
+          }
+        } else {
+          if (typeof(tabsNavSlider) !== "undefined" ) {
+            inittabsNavSlider = false;
+            tabsNavSlider.destroy();
+          }
+        }
+      }
+    }
 
     let workMetodsSldier = new Swiper('.work-metods__items', {
         slidesPerView: 'auto',
@@ -308,7 +334,50 @@ $(document).ready(function() {
           }
       }
 
-  });
+    });
+
+    // Виды судебных споров
+    let litigationSlider;
+    let initLitigationSlider;
+
+    litigationSliderCheck();
+
+    $(window).on('resize', function() {
+      litigationSliderCheck()
+    })
+
+    function litigationSliderCheck() {
+
+      if ($('.litigation .swiper').length) {
+
+        if ($(window).width() < 1024) {
+          if (!initLitigationSlider) {
+            initLitigationSlider = true;
+            litigationSlider = new Swiper(".litigation .swiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+              pagination: {
+                el: '.litigation .swiper-pagination',
+                clickable: true
+              },
+
+              breakpoints: {
+                744: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                }
+              }
+            })
+          }
+        } else {
+          if (typeof(litigationSlider) !== "undefined" ) {
+            initLitigationSlider = false;
+            litigationSlider.destroy();
+          }
+        }
+      }
+    }
 
     let compareSlider = new Swiper('.compare__items', {
         slidesPerView: 1,

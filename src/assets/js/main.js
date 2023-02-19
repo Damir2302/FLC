@@ -131,13 +131,13 @@ $(document).ready(function() {
     // ACCORDION MOBILE
     $(function() {
         // (Optional) Active an item if it has the class "is-active"	
-        $(".acc > .acc__card.is-active").children(".acc__panel").slideDown();
+        $(".acc__card.is-active").children(".acc__panel").slideDown();
         
-        $(".acc > .acc__card").click(function() {
+        $(".acc__title ").click(function() {
             // Cancel the siblings
-            $(this).siblings(".acc__card").removeClass("is-active").children(".acc__panel").slideUp();
+            $(this).parent().siblings(".acc__card").removeClass("is-active").children(".acc__panel").slideUp();
             // Toggle the item
-            $(this).toggleClass("is-active").children(".acc__panel").slideToggle("ease-out");
+            $(this).parent().toggleClass("is-active").find(".acc__panel").slideToggle("ease-out");
         });
     });
 
@@ -158,5 +158,15 @@ $(document).ready(function() {
           return false;
         });
       });
+
+
+      $(function() {
+        $('.acc__get-cost-action').click(function() {
+      
+            $(this).next().slideToggle( );
+      
+        });
+      });
+      
 
 });

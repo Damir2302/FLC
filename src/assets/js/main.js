@@ -135,6 +135,7 @@ $(document).ready(function () {
             $('.payments__var-text').slideUp()
             $(this).find('.payments__var-text').slideDown()
         } else {
+            $(this).removeClass('opened')
             $(this).find('.payments__var-text').slideUp()
         }
     })

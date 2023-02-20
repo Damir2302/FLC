@@ -77,7 +77,8 @@ $(document).ready(function() {
           if (!inittabsNavSlider) {
             inittabsNavSlider = true;
             tabsNavSlider = new Swiper(".tabs__nav", {
-              slidesPerView: 'auto'
+              slidesPerView: 'auto',
+              freeMode: true
             })
           }
         } else {

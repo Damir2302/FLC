@@ -436,4 +436,32 @@ $(document).ready(function() {
       }
   });
 
+  
+
+  let auditResultSldier = new Swiper('.prav-audit-result__items', {
+    slidesPerView: 1,
+    // watchOverflow: true,
+    // centeredSlides: true,
+    loop: false,
+    // autoHeight: true,
+    spaceBetween: 55,
+
+    pagination: {
+        el: ' .prav-audit-result__pagination',
+        clickable: true,
+    },
+
+    breakpoints: {
+
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        744: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+    }
+});
+
 })

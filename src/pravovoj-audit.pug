@@ -1,0 +1,1038 @@
+---
+title : FLC | Правовой аудит
+bodyClass: prav-audit
+---
+
+extends includes/_page
+
+block hero
+    include components/_hero
+    +hero('Правовой аудит (Due diligence)',
+          'Российская аутсорсинговая компания  FLC (Full Legal Consulting) - комплексное сопровождение Российских и иностранных коммерческих компаний в России!',
+          'prav-audit-hero.svg')
+
+block main
+
+    section.what-we-do.section
+
+        .container
+
+            .section-title Чем мы занимаемся
+
+            .wwdo__items
+
+                .swiper-wrapper
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd1.svg", alt="")
+                            img(src="assets/images/wwd1bg.png", alt="")
+
+                        .wwdo__item-title 10 лет на рынке
+
+                        .wwdo__item-text Работаем на рынке аутсорсинговых услуг по сопровождению бизнеса коммерческих компаний в России с 2013 года
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd6.svg", alt="")
+                            img(src="assets/images/wwd6bg.png", alt="")
+
+                        .wwdo__item-title Профи своего дела
+
+                        .wwdo__item-text Являемся профессиональной командой аутсорсеров
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd5.svg", alt="")
+                            img(src="assets/images/wwd5bg.png", alt="")
+
+                        .wwdo__item-title Полное сопровождение
+
+                        .wwdo__item-text Работаем с Клиентами как на полном сопровождении их бизнеса по всем  направлениям одновременно (Full support), так и на сопровождении отдельных направлений
+
+                    .wwdo__item.swiper-slide 
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd3.svg", alt="")
+                            img(src="assets/images/wwd3bg.png", alt="")
+                            
+                        .wwdo__item-title Работаем во всех отраслях
+
+                        .wwdo__item-text За 10 лет работы на рынке отработали схемы сопровождения коммерческих компаний по всем отраслям бизнеса
+
+                .wwde__pagination
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.button-style(href='#') Выбрать вид сопровождения
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            |  Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Правовой аудит и его виды
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2") Due Diligence
+
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Отзывы
+
+                        
+
+                .tabs__content
+
+                    #tab-1.tabs__content-item
+
+                        .section-with-text 
+
+                            .section-title Что входит в правовой аудит и его виды
+
+                            .section-text Правовой аудит – это комплексный анализ деятельности коммерческой компании, отдельных бизнес-процессов и документов на предмет соответствия действующему законодательству РФ и сложившейся практике.
+                        
+                            .legal-audit__items 
+
+                            .acc.acc__mob 
+                                .acc__card.acc__card--icon-img.active.is-active
+                                    .acc__title
+                                        .acc__title-icon
+                                            img(src="assets/images/tab1-ic.svg", alt="")
+                                        .acc__title-inner Бухгалтерия
+                                        .arrow-down 
+                                    .acc__panel
+                                        .acc__panel-title Перечень проверяемых бизнес-процессов и документов:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Корпоративный блок – учредительные документы, аффилированность.
+                                            .acc__panel-list-inner-item
+                                                span Договорная база – договоры с Покупателями, Поставщиками, контракты ВЭД, договоры по 223,44,275 ФЗ, инвестиционные договоры и тд.
+                                            .acc__panel-list-inner-item
+                                                span Кадровый учет, расчет и начисление заработной платы, выплата премий, отпуска.
+                                            .acc__panel-list-inner-item
+                                                span Защита персональных данных.
+                                            .acc__panel-list-inner-item
+                                                span Финансовое управление, налоговое планирование, налоговая оптимизация.
+                                            .acc__panel-list-inner-item
+                                                span Бухгалтерский учет, сдача отчетности и тд.
+                                            .acc__panel-list-inner-item
+                                                span Дебиторская задолженность, судебные дела.
+                                            .acc__panel-list-inner-item
+                                                span Нематериальные активы.
+
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+                                        
+                                .acc__card.acc__card--icon-img
+                                    .acc__title
+                                        .acc__title-icon
+                                            img(src="assets/images/tab2-ic.svg", alt="")
+                                        .acc__title-inner Юриспруденция                                
+                                        .arrow-down
+                                    .acc__panel
+                                        .acc__panel-title Целью правового аудита является:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Выявление рисков невыполнения или ненадлежащего выполнения обязательств со стороны контрагентов компании.
+                                            .acc__panel-list-inner-item
+                                                span Выявление налоговых рисков.
+                                            .acc__panel-list-inner-item
+                                                span Выявление рисков наложения административной ответственности со стороны контролирующих органов (Таможня, Росприроднадзор, Прокуратура, Трудовая инспекция, Роскомнадзор).
+                                            .acc__panel-list-inner-item
+                                                span Увеличение стоимости компании.
+                                            .acc__panel-list-inner-item
+                                                span Оптимизация бизнес-процессов.
+
+                                        .acc__get-cost 
+
+                                            .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                            .acc__get-cost-card
+
+                                                .acc__get-cost-list-top 
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                .acc__get-cost-list-bottom
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Скачайте анкету с нашего сайта
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Заполните ее
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Мы отправим вам коммерческое предложение
+
+                                                .acc__get-cost-btns 
+
+                                                    .button-style.button-style--download
+                                                        img(src="assets/images/download-ic.svg", alt="")
+                                                        span Скачать анкету
+
+                                                    .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                .acc__card.acc__card--icon-img
+                                    .acc__title
+                                        .acc__title-icon
+                                            img(src="assets/images/clients-result3.svg", alt="")
+                                        .acc__title-inner Кадры                                
+                                        .arrow-down
+                                    .acc__panel
+                                        .acc__panel-title Виды правового аудита:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Комплексный аудит всей деятельности компании.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит договорной базы.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит налогового планирования и налоговой оптимизации.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит кадрового учета и персональных данных.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит Внешнеэкономической деятельности.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит нематериальных активов.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит недвижимости.
+                                            .acc__panel-list-inner-item
+                                                span Due Diligence (должная осмотрительность).
+
+                                        .acc__get-cost 
+
+                                            .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                            .acc__get-cost-card
+
+                                                .acc__get-cost-list-top 
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                .acc__get-cost-list-bottom
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Скачайте анкету с нашего сайта
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Заполните ее
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Мы отправим вам коммерческое предложение
+
+                                                .acc__get-cost-btns 
+
+                                                    .button-style.button-style--download
+                                                        img(src="assets/images/download-ic.svg", alt="")
+                                                        span Скачать анкету
+
+                                                    .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                .acc__card.acc__card--icon-img
+                                    .acc__title
+                                        .acc__title-icon
+                                            img(src="assets/images/clients-result3.svg", alt="")
+                                        .acc__title-inner Кадры                                
+                                        .arrow-down
+                                    .acc__panel
+                                        .acc__panel-title Виды правового аудита:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Формирование технического задания для точного определения цели правового аудита, объема работ и команды необходимых экспертов.
+                                            .acc__panel-list-inner-item
+                                                span Определяются этапы и сроки аудита.
+                                            .acc__panel-list-inner-item
+                                                span Проверка осуществляется через dataroom и/или в офисе клиента.
+                                            .acc__panel-list-inner-item
+                                                span По итогам аудита готовится заключение cо ссылками на законодательство РФ, международное право и расчетом потенциальных штрафов.
+
+                                        .acc__get-cost 
+
+                                            .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                            .acc__get-cost-card
+
+                                                .acc__get-cost-list-top 
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                .acc__get-cost-list-bottom
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Скачайте анкету с нашего сайта
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Заполните ее
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Мы отправим вам коммерческое предложение
+
+                                                .acc__get-cost-btns 
+
+                                                    .button-style.button-style--download
+                                                        img(src="assets/images/download-ic.svg", alt="")
+                                                        span Скачать анкету
+                            .acc__desc 
+                                .acc__desc-nav 
+                                    a(href="#tab-inner-1").acc__desc-nav-item.acc__desc-nav-item--icon.active
+                                        .acc__desc-nav-item-icon
+                                            img(src="assets/images/tab1-ic.svg", alt="")
+                                        .acc__desc-nav-item-inner Перечень проверяемых бизнес-процессов и документов
+                                        .arrow-down
+
+                                    a(href="#tab-inner-2").acc__desc-nav-item.acc__desc-nav-item--icon
+                                        .acc__desc-nav-item-icon
+                                            img(src="assets/images/tab2-ic.svg", alt="")
+                                        .acc__desc-nav-item-inner Цели правового аудита
+                                        .arrow-down
+
+                                    a(href="#tab-inner-3").acc__desc-nav-item.acc__desc-nav-item--icon
+                                        .acc__desc-nav-item-icon
+                                            img(src="assets/images/prav-tab.svg", alt="")
+                                        .acc__desc-nav-item-inner Виды правового аудита
+                                        .arrow-down
+
+                                    a(href="#tab-inner-4").acc__desc-nav-item.acc__desc-nav-item--icon
+                                        .acc__desc-nav-item-icon
+                                            img(src="assets/images/prav-tab.svg", alt="")
+                                        .acc__desc-nav-item-inner Схема работы
+                                        .arrow-down
+
+                                .acc__desc-content
+
+                                    #tab-inner-1.acc__desc-tab
+                                        .acc__panel-title Перечень проверяемых бизнес-процессов и документов:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Корпоративный блок – учредительные документы, аффилированность.
+                                            .acc__panel-list-inner-item
+                                                span Договорная база – договоры с Покупателями, Поставщиками, контракты ВЭД, договоры по 223,44,275 ФЗ, инвестиционные договоры и тд.
+                                            .acc__panel-list-inner-item
+                                                span Кадровый учет, расчет и начисление заработной платы, выплата премий, отпуска.
+                                            .acc__panel-list-inner-item
+                                                span Защита персональных данных.
+                                            .acc__panel-list-inner-item
+                                                span Финансовое управление, налоговое планирование, налоговая оптимизация.
+                                            .acc__panel-list-inner-item
+                                                span Бухгалтерский учет, сдача отчетности и тд.
+                                            .acc__panel-list-inner-item
+                                                span Дебиторская задолженность, судебные дела.
+                                            .acc__panel-list-inner-item
+                                                span Нематериальные активы.
+
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+                                    #tab-inner-2.acc__desc-tab
+                                        .acc__panel-title Целью правового аудита является:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Выявление рисков невыполнения или ненадлежащего выполнения обязательств со стороны контрагентов компании.
+                                            .acc__panel-list-inner-item
+                                                span Выявление налоговых рисков.
+                                            .acc__panel-list-inner-item
+                                                span Выявление рисков наложения административной ответственности со стороны контролирующих органов (Таможня, Росприроднадзор, Прокуратура, Трудовая инспекция, Роскомнадзор).
+                                            .acc__panel-list-inner-item
+                                                span Увеличение стоимости компании.
+                                            .acc__panel-list-inner-item
+                                                span Оптимизация бизнес-процессов.
+
+                                        .acc__get-cost 
+
+                                            .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                            .acc__get-cost-card
+
+                                                .acc__get-cost-list-top 
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                .acc__get-cost-list-bottom
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Скачайте анкету с нашего сайта
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Заполните ее
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Мы отправим вам коммерческое предложение
+
+                                                .acc__get-cost-btns 
+
+                                                    .button-style.button-style--download
+                                                        img(src="assets/images/download-ic.svg", alt="")
+                                                        span Скачать анкету
+
+                                                    .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                    #tab-inner-3.acc__desc-tab
+                                        .acc__panel-title Виды правового аудита:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Комплексный аудит всей деятельности компании.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит договорной базы.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит налогового планирования и налоговой оптимизации.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит кадрового учета и персональных данных.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит Внешнеэкономической деятельности.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит нематериальных активов.
+                                            .acc__panel-list-inner-item
+                                                span Правовой аудит недвижимости.
+                                            .acc__panel-list-inner-item
+                                                span Due Diligence (должная осмотрительность).
+
+                                        .acc__get-cost 
+
+                                            .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                            .acc__get-cost-card
+
+                                                .acc__get-cost-list-top 
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                .acc__get-cost-list-bottom
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Скачайте анкету с нашего сайта
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Заполните ее
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Мы отправим вам коммерческое предложение
+
+                                                .acc__get-cost-btns 
+
+                                                    .button-style.button-style--download
+                                                        img(src="assets/images/download-ic.svg", alt="")
+                                                        span Скачать анкету
+
+                                                    .button-style.acc__get-cost-btn-request Оставить заявку
+                                    #tab-inner-4.acc__desc-tab
+                                        .acc__panel-title Виды правового аудита:
+
+                                        .acc__panel-list-iiner
+                                            .acc__panel-list-inner-item
+                                                span Формирование технического задания для точного определения цели правового аудита, объема работ и команды необходимых экспертов.
+                                            .acc__panel-list-inner-item
+                                                span Определяются этапы и сроки аудита.
+                                            .acc__panel-list-inner-item
+                                                span Проверка осуществляется через dataroom и/или в офисе клиента.
+                                            .acc__panel-list-inner-item
+                                                span По итогам аудита готовится заключение cо ссылками на законодательство РФ, международное право и расчетом потенциальных штрафов.
+
+                                        .acc__get-cost 
+
+                                            .acc__get-cost-action.button-style Выберите нужный аудит и узнайте стоимость
+
+                                            .acc__get-cost-card
+
+                                                .acc__get-cost-list-top 
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                    .acc__get-cost-list-top-item
+                                                        span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                .acc__get-cost-list-bottom
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Скачайте анкету с нашего сайта
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Заполните ее
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                    .acc__get-cost-list-bottom-item
+                                                        span Мы отправим вам коммерческое предложение
+
+                                                .acc__get-cost-btns 
+
+                                                    .button-style.button-style--download
+                                                        img(src="assets/images/download-ic.svg", alt="")
+                                                        span Скачать анкету
+                    #tab-2.tabs__content-item
+
+                        .section-with-text
+
+                            .section-title Due diligence
+
+                            .section-text Due Diligence (должная осмотрительность), которую должен проявить например, Покупатель при покупке актива, другими словами провести комплексную проверку актива для выявления и оценки существующих и возможных в будущем рисков, которые могут возникнуть при сделках/операциях с данным активом.
+
+                            .due-diligence__important 
+
+                                .due-diligence__important-content 
+
+                                    .due-diligence__important-title Когда нужен Due Diligence?
+
+                                    .acc__panel-list-iiner
+                                        .acc__panel-list-inner-item
+                                            span при купли-продаже существующего бизнеса.
+                                        .acc__panel-list-inner-item
+                                            span в сделках слияний-поглощений;
+                                        .acc__panel-list-inner-item
+                                            span при приобретении пакета акций или доли в компании-объекте сделки;
+                                        .acc__panel-list-inner-item
+                                            span при выдаче кредитных или заемных средств;
+                                        .acc__panel-list-inner-item
+                                            span при создании совместных предприятий;
+                                        .acc__panel-list-inner-item
+                                            span в сделках по приобретению недвижимости;
+                                        .acc__panel-list-inner-item
+                                            span при привлечении крупных инвестиций (в частности, при выходе на IPO);
+
+                                .due-diligence__important-img
+                                    img(src="assets/images/due-diligence-important3.svg", alt="")
+
+                            .section__blockquotes.due-diligence__blockquotes
+
+                                .section__blockquote От целей проведения DD зависит объем проверяемых документов и процессов.
+
+                                .section__blockquote Самый большой объем Due Diligence в сделках покупки бизнеса, всю проверку можно разделить на 2 подраздела – это юридический и налоговый.
+
+                            .due-diligence__great 
+
+                                .due-diligence__great-content 
+
+                                    .acc__panel-list
+                                        .acc__panel-list-item В рамках юридического Due Diligence проводят:
+                                        .acc__panel-list-inner 
+                                            .acc__panel-list-inner-item
+                                                span Детальный анализ учредительных, первичных и других документов;
+                                            .acc__panel-list-inner-item
+                                                span Проверку уставного капитала, прав соучредителей, законности формирования активов компании;
+                                            .acc__panel-list-inner-item
+                                                span Проверку движимого и недвижимого имущества предполагаемого объекта для инвестиций;
+                                            .acc__panel-list-inner-item
+                                                span Выяснение, нет ли судебных споров, арестов имущества и других рисков;
+                                            .acc__panel-list-inner-item
+                                                span Анализ на предмет возможных претензий от кредиторов компании или контрагентов;
+                                            .acc__panel-list-inner-item
+                                                span Проверку наличия лицензий и разрешений;
+                                            .acc__panel-list-inner-item
+                                                span Подтверждение добросовестного соблюдения норм трудового, миграционного и другого законодательства, а также законодательства о персональных данных;
+                                            .acc__panel-list-inner-item
+                                                span Анализ документооборота и работы органов управления.
+                                
+                                .due-diligence__great-img 
+                                    img(src="assets/images/due-diligence-great1.svg", alt="")
+
+                            .due-diligence__great.due-diligence__great--reverce 
+
+                                .due-diligence__great-content 
+
+                                    .acc__panel-list
+                                        .acc__panel-list-item В рамках налогового Due Diligence проводят:
+                                        .acc__panel-list-inner 
+                                            .acc__panel-list-inner-item
+                                                span Детальный анализ учредительных, первичных и других документов;
+                                            .acc__panel-list-inner-item
+                                                span Проверку систем налогового и бухгалтерского учета компании;
+                                            .acc__panel-list-inner-item
+                                                span Оценку соответствия финансовых документов и систем требованиям закона;
+                                            .acc__panel-list-inner-item
+                                                span Разностороннюю оценку налоговой нагрузке;
+                                            .acc__panel-list-inner-item
+                                                span Прогноз налоговых и финансовых рисков и готовят рекомендации по их снижению или устранению;
+                                            .acc__panel-list-inner-item
+                                                span Анализ общая налоговой ситуации, прогнозируютперспективы с учетом возможных изменений в законодательстве.
+                                
+                                .due-diligence__great-img 
+                                    img(src="assets/images/due-diligence-great2.svg", alt="")
+
+                            .one-time-services
+
+                                .one-time-services__text
+                                    .one-time-services__title Что дает Due Diligence например, Покупателю?
+                                    p На основании рисков, выявленных в ходе Due Diligence, и рекомендаций по устранению/минимизации последствий таких рисков Покупатель получает более широкие переговорные возможности:
+
+                                .one-time-services__list 
+
+                                    .one-time-services__list-item
+                                        span Влиять на цену актива и на условия оплаты (например, предусмотреть условие об удержание части цены до истечения определенного периода времени после закрытия сделки и выплату ее при условии наступления определенных обстоятельств);
+
+                                    .one-time-services__list-item
+                                        span Подготовить заверения продавца в связи его корпоративным статусом и правами на актив;
+
+                                    .one-time-services__list-item
+                                        span Указать на обязательства Продавца по возмещению потерь Покупателя, которые могут возникнуть после закрытия сделки в связи с предъявлением требований третьими лицами или органами государственной власти к покупателю и/или компании-активу.
+                    #tab-3.tabs__content-item
+                     
+                        .reviews
+
+                            .section-title Отзывы
+
+                            .reviews__items
+
+                                .swiper-wrapper
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review3.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                .reviews__pagination.slider__pagination
+
+                                .reviews__items-nav
+
+                                    .reviews__items-nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+
+                                    .reviews__items-nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+                    
+    section.prav-audit-result.section 
+
+        .container
+
+            .section-title Результаты наших клиентов после запуска работы с нами
+
+            .prav-audit-result__items
+
+                .swiper-wrapper
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/prav-audit-result1.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Провели комплексный аудит группы компаний (торговля)
+
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Исключили риски косвенной аффилированности ГК и риск доначисления НДС и Налога на прибыль
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/prav-audit-result2.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Провели комплексный аудит группы компаний (производство)
+
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Исключили риски косвенной аффилированности ГК и риск доначисления НДС и Налога на прибыль
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/prav-audit-result3.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Провели комплексный аудит группы компаний (медицина)
+
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Исключили риски косвенной аффилированности ГК и риск доначисления НДС и Налога на прибыль
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/prav-audit-result4.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Провели комплексный аудит группы компаний (медицина)
+
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Исключили риски косвенной аффилированности ГК и риск доначисления НДС и Налога на прибыль
+
+                .prav-audit-result__pagination.slider__pagination
+
+    section.our-team.section 
+
+        .container
+
+            .section-title 
+                span FLC — команда с 10-летним опытом
+
+            .our-team-wrapper 
+
+                .our-team__members 
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member1.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member2.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member3.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member4.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member5.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member6.png", alt="")
+
+                .out-team__content 
+
+                    p FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:
+
+                    ul.c-banner__list 
+                        li Юридический аутсорсинг;
+                        li Внешнеэкономическая деятельность;
+                        li Договорное право;
+                        li Представительство  в суде;
+                        li Услуги иностранным компаниям;
+                        li Интеллектуальная собственность;
+                        li Налоговое право;
+                        li Правовой аудит;
+                        li Трудовые отношения и защита персональных данных;
+                        li Корпоративное право;
+                        li Релокация бизнеса и ведение бизнеса за рубежом;
+                        li Международное право;
+                        li Сопровождение инвестиционных проектов;
+                        li Запуск стартапов;
+                        li E-commerce.
+
+                    p Наши Клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професионализм, бизнес коммуникацию и конфиденциальность!
+
+    section.section.experience-section.section-with-text
+
+        .container
+
+            .section-title Работаем с широким спектром сфер бизнеса
+            .section-text За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:
+
+            .experience
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-1.svg", alt="icon")
+                            .experience__label Производство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-2.svg", alt="icon")
+                            .experience__label Торговля
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-3.svg", alt="icon")
+                            .experience__label Перевозки, логистика
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-4.svg", alt="icon")
+                            .experience__label Финансовый сектор
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-5.svg", alt="icon")
+                            .experience__label IT-технологии
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-6.svg", alt="icon")
+                            .experience__label Сфера услуг
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-7.svg", alt="icon")
+                            .experience__label Строительство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-8.svg", alt="icon")
+                            .experience__label Медицина
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-9.svg", alt="icon")
+                            .experience__label Сельское хозяйство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-10.svg", alt="icon")
+                            .experience__label Переработка отходов
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                .mobile-slider.swiper-pagination
+
+    section.trust-us.section
+
+        .container
+
+            .section-title Нам доверяют
+
+
+            .trust-us-wrapper
+
+                .trust-us__content
+
+                    .trust-us__content-title Выбирая аутсорсинг Вы:
+
+                    ul.trust-us__list
+                        li Получаете заключение профессиональных практикующих экспертов 
+                        li Оценку рисков с расчетов потенциальных штрафов
+                        li А главное - рекомендации с пошаговым планом действий по оптимизации и улучшению процессов работы в вашей компании! 
+                        
+                .trust-us__slider
+
+                    .swiper-wrapper
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+    section.get-service.section.section-with-text
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать правовой аудит в Москве
+
+                .section-text Чтобы обсудить ваши задачи, сформировать КП, ответить на ваши вопросы оставьте заявку на сайте и в течение 15 минут с вами свяжется ведущий специалист.
+                .get-service__form
+
+                    form(action="")
+
+                        .get-service__form-col
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

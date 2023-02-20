@@ -244,7 +244,6 @@ textarea {
         @include breakpoint(xl) {
           margin-bottom: 60px;
         }
-<<<<<<< HEAD
     }
 
     .section-text--strong {
@@ -257,7 +256,7 @@ textarea {
         margin-bottom: 30px;
 
         @include breakpoint(md) {
-            
+
         }
 
         @include breakpoint(lg) {
@@ -270,21 +269,4 @@ textarea {
 
     }
 
-=======
-      }
-}
-
-.rating-stars {
-    display: flex;
-    justify-content: center;
-}
-
-.rating-stars span {
-    background: inline('../icons/star.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: block;
-    width: 26px;
-    height: 26px;
->>>>>>> main
 }

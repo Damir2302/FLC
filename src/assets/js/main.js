@@ -126,6 +126,19 @@ $(document).ready(function () {
     });
   }
 
+    // 3 Варианта оплаты на странице Судебное представительство
+    $('.payments__var-block').on('click', function() {
+
+        if (!$(this).hasClass('opened')) {
+            $('.payments__var-block').removeClass('opened')
+            $(this).addClass('opened')
+            $('.payments__var-text').slideUp()
+            $(this).find('.payments__var-text').slideDown()
+        } else {
+            $(this).find('.payments__var-text').slideUp()
+        }
+    })
+
   // ACCORDION MOBILE
   $(function () {
     // (Optional) Active an item if it has the class "is-active"

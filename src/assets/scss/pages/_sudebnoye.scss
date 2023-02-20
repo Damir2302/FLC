@@ -1,0 +1,347 @@
+.sud-pred .hero-section {
+
+    @include breakpoint(lg) {
+        padding-bottom: 130px;
+    }
+
+    @include breakpoint(xl) {
+        padding-bottom: 0;
+    }
+}
+
+.sud-pred .hero__inner {
+
+    @include breakpointMax(md) {
+        display: block;
+    }
+
+    @include breakpoint(md) {
+        align-items: center;
+    }
+}
+
+.sud-pred .hero__main {
+
+    @include breakpoint(md) {
+        width: calc(((100% / 12) * 6) + 20px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(((100% / 12) * 5));
+    }
+}
+
+.sud-pred #hero-title,
+.sud-pred .hero__title h1 {
+
+    @include breakpoint(lg) {
+        font-size: 40px;
+    }
+}
+
+.sud-pred .hero__btn {
+    padding: 3px 50px;
+    max-width: 330px;
+
+    @include breakpoint(md) {
+        padding: 14px;
+    }
+}
+
+.sud-pred .hero__img {
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(((100% / 12) * 6) + 20px);
+        overflow: hidden;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: calc(((100% / 12) * 7));
+    }
+}
+
+.sud-pred .hero__img img {
+
+    @include breakpoint(lg) {
+        position: relative;
+        right: -40px;
+    }
+
+    @include breakpoint(xl) {
+        left: 0;
+    }
+}
+
+.hero__list {
+    margin: 40px 0;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    @include breakpoint(md) {
+        margin: 0;
+        max-width: 305px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 10px;
+        position: absolute;
+        top: -18px;
+        right: 30px;
+        height: auto;
+        max-height: 441px;
+    }
+
+    @include breakpoint(xl) {
+        top: 22px;
+    }
+}
+
+.hero__list-item {
+    padding: 15px 10px 20px;
+
+    @include breakpoint(md) {
+        padding: 15px 1.5px 20px;
+    }
+}
+
+.hero__list-icon {
+    margin: 0 auto 8px;
+    width: 30px;
+    height: 30px;
+}
+
+.hero__list-title {
+    margin: 0 auto 8px;
+    max-width: 170px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        max-width: unset;
+    }
+}
+
+.hero__list-text {
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        max-width: 258px;
+    }
+}
+
+.sud-pred .wwdo__item {
+    padding: 20px 20px 84px;
+}
+
+.sud-pred .wwde__pagination {
+
+    @include breakpoint(xl) {
+        margin: 0;
+    }
+}
+
+.sud-pred .tabs__nav-item {
+    max-width: 205px;
+}
+
+.sud-pred .tabs__nav-item a {
+    text-align: center;
+}
+
+.litigation-type .section-title {
+
+    @include breakpoint(lg) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 794px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: unset;
+    }
+}
+
+.litigation .swiper {
+    overflow: visible;
+}
+
+.litigation .swiper-wrapper {
+
+    @include breakpoint(lg) {
+        margin-bottom: -20px;
+        margin-left: -10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: -20px;
+    }
+}
+
+.litigation__item {
+    padding: 15px;
+    background: linear-gradient(153.68deg, rgba(102, 103, 171, 0.1) 5.14%, rgba(255, 255, 255, 0.05) 74.73%);
+    height: auto;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    @include breakpoint(lg) {
+        margin-bottom: 20px;
+        margin-left: 20px;
+        display: flex;
+        width: calc((100% / 3) - 20px);
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 40px;
+        margin-left: 40px;
+        padding: 25px;
+        width: calc((100% / 3) - 40px);
+        height: 144px;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.litigation__icon {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+
+    @include breakpoint(lg) {
+        margin: 0;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 20px;
+    }
+}
+
+.litigation__label {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
+.litigation__text {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        text-align: left;
+    }
+}
+
+.litigation .swiper-pagination {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.payments-type__wrap {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.payments__var {
+    margin-bottom: 18px;
+    padding: 10px;
+    background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+    display: flex;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.payments__var-num {
+    margin-right: 8px;
+    background: #313155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.payments__var-block {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.payments__var-label {
+    display: flex;
+}
+
+.payments__var-label p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.payments__var-label .arrow-down {
+    margin-left: 6px;
+    width: 20px;
+    height: 20px;
+}
+
+.payments__var-block.opened .arrow-down {
+    transform: rotate(180deg);
+}
+
+.payments__var-label .arrow-down::before {
+    background-position: center center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.payments__var-text {
+    margin-top: 5px;
+    display: none;
+}
+
+.payments-type__img {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+    }
+}

@@ -487,20 +487,6 @@
     }
 }
 
-.results__item:hover .results__diagram {
-
-    @include breakpoint(md) {
-        background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 6px, transparent 6px) 0% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 6px, transparent 6px) 100% 0%/8px 8px no-repeat,
-            radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 6px, transparent 6px) 0% 100%/8px 8px no-repeat,
-            radial-gradient(circle at 0 0, #ffffff 0, #ffffff 6px, transparent 6px) 100% 100%/8px 8px no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 4px) calc(100% - 16px) no-repeat,
-            linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 16px) calc(100% - 4px) no-repeat,
-            linear-gradient(#6667ab 0%, #FFFFFF 100%);
-            border: none;
-    }
-}
-
 .results__diagram::before {
     content: "";
     background: #6667AB;
@@ -533,7 +519,7 @@
     height: 0;
     border: 2px solid #6667AB;
     border-radius: 5px 5px 0px 0px;
-    transition: all 1.5s ease;
+    transition: all 0.5s ease;
 }
 
 .results__item:hover .results__diagram-value {
@@ -943,6 +929,7 @@
         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(7.5px);
         border-radius: 5px;
+        z-index: 1;
     }
 
     @include breakpoint(xl) {
@@ -956,4 +943,133 @@
     @include breakpoint(md) {
         display: block;
     }
+}
+
+.cases-section .cases__item {
+
+    @include breakpoint(md) {
+        display: block;
+    }
+}
+
+.cases-section .cases__item h4 {
+
+    @include breakpoint(md) {
+        margin: 30px auto;
+        max-width: 518px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: unset;
+    }
+}
+
+.cases-section .cases__nav {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.trust-us-slider {
+
+    @include breakpoint(lg) {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.trust-us-section .trust-us__slide {
+
+    @include breakpoint(md) {
+        height: auto!important;
+    }
+}
+
+.trust-us-section .trust-us__nav-prev,
+.trust-us-section .trust-us__nav-next {
+
+    @include breakpoint(lg) {
+        position: static;
+    }
+}
+
+.blog {
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.blog__image {
+    margin-bottom: 30px;
+    background: #D9D9D9;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    overflow: hidden;
+
+    @include breakpoint(xs) {
+        margin: 0 auto 30px;
+        max-width: 400px;
+    }
+
+    @include breakpoint(md) {
+        margin: 0;
+        width: calc(((100% / 12) * 5) - 5px);
+        max-width: unset;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(((100% / 12) * 4) - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(((100% / 12) * 4) - 25px);
+    }
+}
+
+.blog__desc {
+
+    @include breakpoint(md) {
+        width: calc(((100% / 12) * 7) - 5px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(((100% / 12) * 8) - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(((100% / 12) * 8) - 25px);
+    }
+}
+
+.blog__subtitle {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.blog__item {
+    margin-top: 10px;
+    padding: 16px 20px;
+    background: #FFFFFF;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    @include breakpoint(lg) {
+        margin-top: 20px;
+    }
+}
+
+.blog__item-date {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    color: #6667AB;
+}
+
+.blog__item-title {
+    font-weight: 600;
+    font-size: 15px;
 }

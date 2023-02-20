@@ -1,0 +1,319 @@
+.prav-audit {
+
+
+    .acc__panel-list-inner-item {
+        margin-left: 0;
+    }
+
+    .acc__get-cost-action {
+        width: fit-content;
+        padding: 15px 30px;
+    }
+
+
+    .one-time-services {
+        background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        padding: 30px;
+    }
+
+    .one-time-services__text {
+    
+        @include breakpoint(md) {
+            width: calc( 100% / 12 * 6 );
+            margin-bottom: 0;
+        }
+    
+        @include breakpoint(lg) {
+            padding: 44px 30px;
+            width: calc( 100% / 12 * 5.5 );
+            height: auto;
+        }
+    
+    }
+    
+    .one-time-services__list {
+
+        @include breakpoint(md) {
+            width: calc( 100% / 12 * 6.2 );
+        }
+    
+    }
+
+    .one-time-services__list-item {
+        font-size: 15px;
+    }
+
+    .tabs__nav-item a {
+        max-width: 200px;
+        text-align: center;
+    }
+    
+
+}
+
+.due-diligence__important {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @include breakpoint(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 80px;
+    }
+
+}
+
+.due-diligence__important-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 22px;
+    }
+
+}
+
+
+.due-diligence__important-content {
+    @include breakpoint(md) {
+        width: calc( 100% / 12 * 6);
+    }
+  
+}
+
+.due-diligence__important-img {
+    display: none;
+
+    @include breakpoint(md) {
+        display: flex;
+        width: calc( 100% / 12 * 5);
+    }
+
+    img {
+        @include breakpoint(lg) {
+            width: 508px;
+            height: 417px;
+        }
+    }
+
+}
+
+.due-diligence__blockquotes {
+    .section__blockquote {
+
+        &:first-child {
+            @include breakpoint(md) {
+                width: calc( 100% / 12 * 4 );
+            }
+        }
+
+        &:last-child {
+            // order: -1;
+            @include breakpoint(md) {
+                width: calc( 100% / 12 * 7 );
+            }
+        }
+
+    }
+}
+
+.due-diligence__great {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .acc__panel-list-inner {
+        margin-left: 60px;
+    }
+
+    .acc__panel-list-item {
+        font-weight: 600;
+        font-size: 16px;
+
+        @include breakpoint(lg) {
+            font-size: 18px;
+        }
+
+    }
+
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 60px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 80px;
+    }
+
+}
+
+.due-diligence__great-content {
+    @include breakpoint(md) {
+        width: calc( 100% / 12 * 6 );
+    }
+}
+
+.due-diligence__great-img  {
+    display: none;
+    @include breakpoint(md) {
+        display: flex;
+        width: calc( 100% / 12 * 5 );
+    }
+
+    img {
+        @include breakpoint(lg) {
+            width: 425px;
+            height: 425px;
+        }
+    }
+
+}
+
+.due-diligence__great--reverce {
+    .due-diligence__great-img {
+        order: -1;
+    }
+
+    .acc__panel-list-item {
+
+        &::before {
+            counter-increment: unset;
+            content: '2';
+        }
+
+    }
+
+}
+
+.one-time-services__title  {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.prav-audit-result {
+}
+.section {
+}
+.container {
+}
+.prav-audit-result__items {
+
+    @include breakpoint(md) {
+        overflow: hidden;
+        padding: 8px;
+    }
+
+    @include breakpoint(xl) {
+        overflow: unset;
+    }
+
+}
+.swiper-wrapper {
+}
+.prav-audit-result__item {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(153.64deg, rgba(102, 103, 171, 0.1) 4.55%, rgba(255, 255, 255, 0.05) 74.23%);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    position: relative;
+}
+.swiper-slide {
+}
+.prav-audit-result__item-img {
+}
+
+.prav-audit-result__item-content {
+    padding: 30px 12px 20px 12px;
+}
+
+.prav-audit-result__item-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.prav-audit-result__item-action {
+    padding: 12px 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background: linear-gradient(136.47deg, rgba(102, 103, 171, 0.5) 16.66%, rgba(69, 70, 138, 0.5) 95.94%);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    @include breakpoint(md) {
+        display: none;
+    }
+
+}
+.prav-audit-result__item-badge {
+    display: none;
+
+    @include breakpoint(md) {
+        padding: 2rem;
+        background: linear-gradient(136.47deg, rgba(102,103,171,0.5) 16.66%, rgba(69,70,138,0.5) 95.94%);
+        width: 27.3rem;
+        position: absolute;
+        /* bottom: 100%; */
+        font-weight: 600;
+        font-size: 15px;
+        color: #fff;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0,.25);
+        backdrop-filter: blur(7.5px);
+        border-radius: 5px;
+        z-index: 1;
+        top: 18px;
+        /* right: -272px; */
+        left: 252px;
+    }
+
+}
+.prav-audit-result__pagination {
+}
+.slider__pagination {
+}
+
+.prav-audit-result__item:hover .prav-audit-result__item-badge {
+    display: block;
+}

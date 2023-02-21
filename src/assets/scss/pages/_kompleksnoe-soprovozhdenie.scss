@@ -27,6 +27,7 @@
   .table__col:first-child {
     text-align: left;
     font-size: 16px !important;
+
     @include breakpoint(lg) {
       min-width: 302px;
     }
@@ -53,11 +54,11 @@
     margin-bottom: 40px;
 
     @include breakpoint(lg) {
-        margin-bottom: 80px;
+      margin-bottom: 80px;
     }
 
     @include breakpoint(xl) {
-        margin-bottom: 100px;
+      margin-bottom: 100px;
     }
 
   }
@@ -209,8 +210,7 @@
   }
 }
 
-.autsorsing-include__content {
-}
+.autsorsing-include__content {}
 
 .autsorsing-include__list {
   @include breakpoint(md) {
@@ -283,13 +283,15 @@
   }
 
 }
+
 .busines-direction__left {
 
-    @include breakpoint(md) {
-        width: calc( 100% / 12 * 5);
-    }
+  @include breakpoint(md) {
+    width: calc(100% / 12 * 5);
+  }
 
 }
+
 .busines-direction__text {
   font-family: "Montserrat";
   font-style: normal;
@@ -301,16 +303,18 @@
   margin-bottom: 15px;
 
 
-    @include breakpoint(lg) {
-        margin-bottom: 30px;
-    }
+  @include breakpoint(lg) {
+    margin-bottom: 30px;
+  }
 
 }
+
 .busines-direction__list {
   counter-reset: count;
   list-style-type: none;
   margin-bottom: 20px;
 }
+
 .busines-direction__list-item {
   font-family: "Montserrat";
   font-style: normal;
@@ -346,167 +350,244 @@
     align-self: flex-start;
   }
 }
+
 .busines-direction__right {
-    @include breakpoint(md) {
-        width: calc( 100% / 12 * 6.5);
-    }
+  @include breakpoint(md) {
+    width: calc(100% / 12 * 6.5);
+  }
 }
 
 .section-text--bold {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 50px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #000000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
 }
 
 
 .business-way {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    @include breakpoint(md) {
-        justify-content: space-between;
-    }
+  @include breakpoint(md) {
+    justify-content: space-between;
+  }
 
 }
+
 .business-way__left {
-    @include breakpoint(md) {
-        width: calc( 100% / 12 * 5);
-    }
+  @include breakpoint(md) {
+    width: calc(100% / 12 * 5);
+  }
 
 }
-.busines-direction__text {
-}
-.busines-direction__list {
-}
-.busines-direction__list-item {
-}
+
+.busines-direction__text {}
+
+.busines-direction__list {}
+
+.busines-direction__list-item {}
+
 .business-way__right {
-    @include breakpoint(md) {
-        width: calc( 100% / 12 * 6.5);
-    }
+  @include breakpoint(md) {
+    width: calc(100% / 12 * 6.5);
+  }
 }
+
 .business-way__items {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    box-sizing: border-box;
-    background: linear-gradient(153.84deg, #F2F1F7 5.12%, #FFFFFF 74.38%);
-    border: 1px solid #F0F0FD;
-    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+  background: linear-gradient(153.84deg, #F2F1F7 5.12%, #FFFFFF 74.38%);
+  border: 1px solid #F0F0FD;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 
-    @include breakpoint(lg) {
-        padding: 30px;
-    }
+  @include breakpoint(lg) {
+    padding: 30px;
+  }
 
 }
+
 .business-way__item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-
-    
-    @include breakpoint(lg) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  @include breakpoint(lg) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
 }
+
 .business-way__item-title {
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 18px;
-margin-bottom: 12px;
-color: #000000;
-display: flex;
-flex-direction: row;
-align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 12px;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
 
 }
+
 .business-way__item-icon {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
 
-    @include breakpoint(lg) {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        min-height: 40px;
-        margin-right: 12px;
-    }
+  @include breakpoint(lg) {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 12px;
+  }
 
 }
+
 .business-way__item-text {
 
-    @include breakpoint(lg) {
-        max-width: 144px;
-    }
+  @include breakpoint(lg) {
+    max-width: 144px;
+  }
 
 }
+
 .business-way__item-action {
-    @include breakpoint(lg) {
-        min-width: 244px;
-    }
+  @include breakpoint(lg) {
+    min-width: 244px;
+  }
 
 }
-.button-style {
-}
-.button-style--download {
-}
+
+.button-style {}
+
+.button-style--download {}
+
 .business-way__items-title {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 18px;
-    margin-bottom: 10px;
-    color: #000000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  color: #000000;
 
-    @include breakpoint(md) {
-        margin-bottom: 20px;
-    }
+  @include breakpoint(md) {
+    margin-bottom: 20px;
+  }
 
-    @include breakpoint(xl) {
-        margin-bottom: 30px;
-    }
+  @include breakpoint(xl) {
+    margin-bottom: 30px;
+  }
 
 }
 
 .business-way__delimeter {
-    display: none;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 30px;
+  
+  img {
+    // width: 50px;
+    // height: 50px;
+    width: 80px;
+    height: 80px;
+  }
+
+  @include breakpoint(md) {
     position: relative;
     left: -90px;
-    margin-bottom: 30px;
-    img {
-        // width: 50px;
-        // height: 50px;
+ 
+  }
+
+  @include breakpoint(xl) {
+    width: 80px;
+    height: 80px;
+  }
+
+
+
+}
+
+.komp-sopr-section {
+
+    
+    .benefits__table-wrapper {
+        margin-bottom: 30px;
+
+        @include breakpoint(md) {
+            margin-bottom: 40px;
+        }
+
+
+        @include breakpoint(lg) {
+            margin-bottom: 60px;
+        }
 
         @include breakpoint(xl) {
-            width: 80px;
-            height: 80px;
+            margin-bottom: 80px;
         }
 
     }
 
-    @include breakpoint(md) {
-        display: flex;
+
+
+
+  .benefits__table-wrapper:last-child {
+    margin-bottom: 0;
+    .table__body .table__col:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .table__col {
+      font-size: 15px!important;
+      min-width: 100px;
+      &:first-child {
+        min-width: 240px;
+        font-weight: 600;
+        @include breakpoint(xl) {
+          min-width: 510px;
+          justify-content: flex-start;
+        }
+      }
+  
+  }
+
+  .table__header {
+ 
+      .table__col {
+          padding: 25px;
+      }
+    
     }
+
+
+
+  }
+
+
 
 }

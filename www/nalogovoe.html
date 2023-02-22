@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLC | Налоговое планирование</title>
+    <!-- Styles::Start-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Styles::End-->
+    <!-- Yandex Map-->
+</head>
+
+<body class="nalog-page">
+    <div id="page">
+        <div class="head-wrapper">
+            <!-- Header::Start-->
+            <header class="header" id="header">
+                <div class="container">
+                    <div class="header__wrap">
+                        <div class="header__logo"><a href="/"><img src="assets/images/logo.svg" alt="logo"></a></div>
+                        <nav class="navbar">
+                            <div class="navbar__lang navbar__lang--mobile">
+                                <div class="current-lang">Rus</div>
+                                <div class="select-lang"><a>Rus</a><a>Eng</a><a>Tur</a></div>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav__item has-child"><a class="nav__item-link" href="about.html"> О нас</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">История развития</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Наша команда</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Наша команда</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Наша команда</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item"><a class="nav__item-link" href="prices.html"> Цены</a></li>
+                                <li class="nav__item has-child"><a class="nav__item-link" href="cases.html"> Кейсы</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Кейс 01</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Кейс 02</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Кейс 03</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Кейс 04</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item"><a class="nav__item-link" href="reviews.html"> Отзывы</a></li>
+                                <li class="nav__item"><a class="nav__item-link" href="contacts.html"> Контакты</a></li>
+                            </ul>
+                            <ul class="sec-nav">
+                                <li class="nav__item has-child"><a class="nav__item-link" href="#">Комплекное сопровождение бизнеса</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Юридическое</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Бухгалтерское</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Финансовое</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Налоговое</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Кадровое</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">ВЭД</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Судебное</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item has-child"><a class="nav__item-link" href="#">Бухгалтерия и&nbsp;финансы</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Бухгалтерский аутсорсинг</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Налоговоое планирование</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item has-child"><a class="nav__item-link" href="#">Юриспруденция</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Юридический аутсорсинг</a></li>
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Правовой аудит (Due diligence)</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item has-child"><a class="nav__item-link" href="#">Кадры</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Кадровый аудит</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item has-child"><a class="nav__item-link" href="#">Суды</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Ведение дел в судах</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item has-child"><a class="nav__item-link" href="#">Иностранным компаниям</a>
+                                    <div class="arrow-down"></div>
+                                    <ul class="nav__submenu">
+                                        <li class="nav__submenu-item"><a class="nav__submenu-link" href="#">Запуск и сопровождение бизнеса в России для иностранных компаний</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="navbar__right">
+                                <div class="navbar__socials">
+                                    <div class="socials-item"><a href=""><img src="assets/images/viber.svg" alt="icon"></a></div>
+                                    <div class="socials-item"><a href=""><img src="assets/images/telegram.svg" alt="icon"></a></div>
+                                    <div class="socials-item"><a href=""><img src="assets/images/whatsapp.svg" alt="icon"></a></div>
+                                </div>
+                                <div class="navbar__phone"><a href="tel:+7 (495) 797-16-77"><img src="assets/images/phone.svg" alt="icon">
+                                        <p>+7 (495) 797-16-77</p>
+                                    </a></div>
+                            </div>
+                        </nav>
+                        <div class="header__right">
+                            <div class="navbar__lang">
+                                <div class="current-lang">Ru</div>
+                                <div class="select-lang"><a>Ru</a><a>En</a><a>Tur</a></div>
+                            </div>
+                            <div class="navbar__phone"><a href="tel:+7 (495) 797-16-77"><img src="assets/images/phone.svg" alt="icon">
+                                    <p>+7 (495) 797-16-77</p>
+                                </a></div>
+                            <div class="navbar__socials">
+                                <div class="socials-item"><a href=""><img src="assets/images/viber.svg" alt="icon"></a></div>
+                                <div class="socials-item"><a href=""><img src="assets/images/telegram.svg" alt="icon"></a></div>
+                                <div class="socials-item"><a href=""><img src="assets/images/whatsapp.svg" alt="icon"></a></div>
+                            </div>
+                        </div>
+                        <div class="header__burger"></div>
+                    </div>
+                </div>
+                <div class="header__marquee">
+                    <marquee loop onmouseover="this.stop();" onmouseout="this.start();">
+                        <p>Вести бизнес легко – если с вами надежные партнеры!&nbsp;&nbsp;&nbsp;&nbsp;Вести бизнес легко – если с вами надежные партнеры! Вести бизнес легко – если с вами надежные партнеры! Вести бизнес легко – если с вами надежные партнеры!</p>
+                    </marquee>
+                </div>
+            </header>
+            <!-- Header::End-->
+            <!-- Hero::Start-->
+            <div class="hero-section">
+                <div class="hero">
+                    <div class="container">
+                        <div class="hero__inner">
+                            <div class="hero__main">
+                                <div class="hero__title">
+                                    <h1>Налоговое планирование</h1>
+                                    <div id="hero-title"></div>
+                                </div>
+                                <div class="hero__text">Российская аутсорсинговая компания FLC (Full Legal Consulting) - комплексное сопровождение Российских и иностранных компаний !</div>
+                                <button class="hero__btn button-style" data-popup>Оставить заявку</button>
+                            </div>
+                            <div class="hero__img"><img src="assets/images/hero-nalog.svg" alt="img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__bottom">
+                    <div class="container">
+                        <div class="hero__nav">
+                            <div class="hero__nav-item"><a class="hero__nav-link" href="#">Комплекное сопровождение бизнеса</a>
+                                <ul class="hero__submenu">
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Юридическое</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Бухгалтерское</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Финансовое</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Налоговое</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Кадровое</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">ВЭД</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Судебное</a></li>
+                                </ul>
+                            </div>
+                            <div class="hero__nav-item"><a class="hero__nav-link" href="#">Бухгалтерия и&nbsp;финансы</a>
+                                <ul class="hero__submenu">
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Бухгалтерский аутсорсинг</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Налоговоое планирование</a></li>
+                                </ul>
+                            </div>
+                            <div class="hero__nav-item"><a class="hero__nav-link" href="#">Юриспруденция</a>
+                                <ul class="hero__submenu">
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Юридический аутсорсинг</a></li>
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Правовой аудит (Due diligence)</a></li>
+                                </ul>
+                            </div>
+                            <div class="hero__nav-item"><a class="hero__nav-link" href="#">Кадры</a>
+                                <ul class="hero__submenu">
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Кадровый аудит</a></li>
+                                </ul>
+                            </div>
+                            <div class="hero__nav-item"><a class="hero__nav-link" href="#">Суды</a>
+                                <ul class="hero__submenu">
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Ведение дел в судах</a></li>
+                                </ul>
+                            </div>
+                            <div class="hero__nav-item"><a class="hero__nav-link" href="#">Иностранным компаниям</a>
+                                <ul class="hero__submenu">
+                                    <li class="hero__submenu-item"><a class="hero__submenu-link" href="#">Запуск и сопровождение бизнеса в России для иностранных компаний</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero::End-->
+        </div>
+        <!-- Main::Start-->
+        <main id="main">
+            <section class="section business-support">
+                <div class="container">
+                    <div class="section-title">Чем мы занимаемся</div>
+                    <div class="wwdo__items">
+                        <div class="swiper-wrapper">
+                            <div class="wwdo__item swiper-slide">
+                                <div class="wwdo__item-icon"><img src="assets/images/wwd1.svg" alt=""><img src="assets/images/wwd1bg.png" alt=""></div>
+                                <div class="wwdo__item-label">10 лет на рынке</div>
+                                <div class="wwdo__item-text">10 лет работы на рынке бухгалтерского аутсорсинга</div>
+                            </div>
+                            <div class="wwdo__item swiper-slide">
+                                <div class="wwdo__item-icon"><img src="assets/images/wwd6.svg" alt=""><img src="assets/images/wwd6bg.png" alt=""></div>
+                                <div class="wwdo__item-label">Профи своего дела</div>
+                                <div class="wwdo__item-text">У нас работают только ведущие и главные бухгалтера, постоянно проходящие обучение</div>
+                            </div>
+                            <div class="wwdo__item swiper-slide">
+                                <div class="wwdo__item-icon"><img src="assets/images/wwd5.svg" alt=""><img src="assets/images/wwd5bg.png" alt=""></div>
+                                <div class="wwdo__item-label">Полное сопровождение</div>
+                                <div class="wwdo__item-text">Качество услуг — проверяется аудиторами FLC</div>
+                            </div>
+                            <div class="wwdo__item swiper-slide">
+                                <div class="wwdo__item-icon"><img src="assets/images/wwd3.svg" alt=""><img src="assets/images/wwd3bg.png" alt=""></div>
+                                <div class="wwdo__item-label">Работаем во всех отраслях</div>
+                                <div class="wwdo__item-text">Отстроенные бизнес-процессы работы с Клиентами</div>
+                            </div>
+                        </div>
+                        <div class="wwde__pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section ceo-banner">
+                <div class="container">
+                    <div class="c-banner">
+                        <div class="c-banner__left">
+                            <div class="c-banner__title">Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:</div>
+                            <ul class="c-banner__list">
+                                <li>Юридическое сопровождение;</li>
+                                <li>Бухгалтерский аутсорсинг;</li>
+                                <li>Финансовое и налоговое планирование;</li>
+                                <li>Аудит (бухгалтерский и правовой/Due Diligence);</li>
+                                <li>Кадровое сопровождение;</li>
+                                <li>ВЭД (импорт/экспорт);</li>
+                                <li>Корпоративный аутсорсинг;</li>
+                                <li>Судебное сопровождение;</li>
+                                <li>Сопровождение иностранных компаний в России;</li>
+                                <li>Интеллектуальная собственность.</li>
+                            </ul><a class="c-banner__btn button-style" href="#">Выбрать вид сопровождения</a>
+                        </div>
+                        <div class="c-banner__right">
+                            <div class="c-banner__img"><img src="assets/images/svetlana.png" alt="img"></div>
+                            <div class="c-banner__info-wrap">
+                                <div class="c-banner__name"><span>Светлана Буравцова</span> Генеральный директор</div>
+                                <div class="c-banner__info">Практика налогового планирования, внешнеэкономической деятельности и правового аудита</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="site-tabs section">
+                <div class="container">
+                    <div class="section__tabs">
+                        <div class="tabs__nav">
+                            <div class="swiper-wrapper">
+                                <div class="tabs__nav-item swiper-slide"><a href="#tab-1">Налоговое планирование</a></div>
+                                <div class="tabs__nav-item swiper-slide"><a href="#tab-2">Налоговая оптимизация</a></div>
+                                <div class="tabs__nav-item swiper-slide"><a href="#tab-3">Стоимость</a></div>
+                                <div class="tabs__nav-item swiper-slide"><a href="#tab-4">Готовые кейсы</a></div>
+                            </div>
+                        </div>
+                        <div class="tabs__content custom-tab">
+                            <div class="tabs__content-item" id="tab-1">
+                                <div class="t-planning__container">
+                                    <div class="section-title">Налоговое планирование</div>
+                                    <div class="section-text">Целями налогового планирования являются оптимизация налоговых платежей и сокращение налоговых потерь по конкретному налогу или группе налогов.</div>
+                                    <div class="t-planning__subtext">Но, <span>прежде чем перейти к налоговому планированию нужно</span>:</div>
+                                    <div class="t-planning">
+                                        <div class="t-planning__item">
+                                            <div class="t-planning__wrap">
+                                                <div class="t-planning__numb">1</div>
+                                                <div class="t-planning__desc">
+                                                    <div class="t-planning__label">Выявить налоговые риски, например</div>
+                                                    <ul>
+                                                        <li>риски контроля со стороны налоговых органов;</li>
+                                                        <li>риски увеличения сумм налогов;</li>
+                                                        <li>риски привлечения к уголовной ответственности за применение незаконных схем оптимизации.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="t-planning__img"><img src="assets/images/plan-1.svg" alt="img"></div>
+                                        </div>
+                                        <div class="t-planning__item">
+                                            <div class="t-planning__wrap">
+                                                <div class="t-planning__numb">2</div>
+                                                <div class="t-planning__desc">
+                                                    <div class="t-planning__label">Провести анализ налоговых проблем, а именно:</div>
+                                                    <ul>
+                                                        <li>выявить особенности финансово-хозяйственной деятельности компании;</li>
+                                                        <li>определить перечень налогов, ставки налогов и суммы налогов, которые необходимо перечислять в бюджет;</li>
+                                                        <li>проанализировать условия заключенных договоров с контрагентами</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="t-planning__img"><img src="assets/images/plan-2.svg" alt="img"></div>
+                                        </div>
+                                        <div class="t-planning__item">
+                                            <div class="t-planning__wrap">
+                                                <div class="t-planning__numb">3</div>
+                                                <div class="t-planning__desc">
+                                                    <div class="t-planning__label">Приступить непосредственно к разработке налоговой схемы и начать надо с выбора инструментов для осуществления налогового планирования:</div>
+                                                    <ul>
+                                                        <li>Применение налоговых льгот</li>
+                                                        <li>Оптимизация налоговых последствий при использовании различных форм договоров с контрагентами</li>
+                                                        <li>Применение отдельных элементов налогообложения</li>
+                                                        <li>Использование специальных налоговых режимов, предусмотренных НК РФ, и особых систем налогообложения</li>
+                                                        <li>Применение льгот согласно соглашениям об избежание двойного налогообложения.</li>
+                                                        <li>Использование определенных элементов бухгалтерского учета в целях налогообложения, формирование учетной политики в целях налогообложения.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="t-planning__img"><img src="assets/images/plan-3.svg" alt="img"></div>
+                                        </div>
+                                    </div>
+                                    <div class="t-planning__types">
+                                        <div class="t-planning__types-title">Соответственно, в зависимости от применяемых инструментов <span>налоговое планирование может базироваться на:</span></div>
+                                        <div class="t-planning__slider">
+                                            <div class="swiper">
+                                                <div class="swiper-wrapper">
+                                                    <div class="t-planning__slider-item swiper-slide">
+                                                        <div class="t-planning__slider-icon"><img src="assets/images/piggy-bank.svg" alt="icon"></div>
+                                                        <div class="t-planning__slider-label">Налоговых льготах</div>
+                                                        <div class="t-planning__slider-text">выявить особенности финансово-хозяйственной деятельности компании;</div>
+                                                    </div>
+                                                    <div class="t-planning__slider-item swiper-slide">
+                                                        <div class="t-planning__slider-icon"><img src="assets/images/map.svg" alt="icon"></div>
+                                                        <div class="t-planning__slider-label">"Налоговых лазеек"</div>
+                                                        <div class="t-planning__slider-text">определить перечень налогов, ставки налогов и суммы налогов, которые необходимо перечислять в бюджет;</div>
+                                                    </div>
+                                                    <div class="t-planning__slider-item swiper-slide">
+                                                        <div class="t-planning__slider-icon"><img src="assets/images/strategy.svg" alt="icon"></div>
+                                                        <div class="t-planning__slider-label">Схемах оптимизации</div>
+                                                        <div class="t-planning__slider-text">специально разработанных схем оптимизации налоговых платежей, которые обычно и являются главным инструментом налогового планирования.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mobile-slider swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" id="tab-2">
+                                <div class="taxes__container">
+                                    <div class="section-title">Налоговая оптимизация</div>
+                                    <div class="section-text">Приступая к налоговой оптимизации главное придерживаться следующих принципов:</div>
+                                    <div class="taxes">
+                                        <div class="taxes__item">
+                                            <div class="taxes__wrap">
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">1</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип разумности и экономической обоснованности</div>
+                                                        <div class="taxes__text">т.е. выгода, получаемая от налоговой оптимизации, должна значительно превосходить затраты, которые необходимо осуществить для реализации данного решения;</div>
+                                                    </div>
+                                                </div>
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">2</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип комплексного расчета экономии и потерь</div>
+                                                        <div class="taxes__text">Перед тем, как внедрить схему оптимизации налогов, необходимо сравнить потенциальную экономию и возможные расходы</div>
+                                                    </div>
+                                                </div>
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">3</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип документального оформления операций</div>
+                                                        <div class="taxes__text">Все хозяйственные операции налогоплательщика должны быть задокументированы, так как это будет аргументом при проведении налоговой проверки и в качестве доказательств в суде;</div>
+                                                    </div>
+                                                </div>
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">4</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип конфиденциальности</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="taxes__img"><img src="assets/images/taxes-1.svg" alt="img"></div>
+                                        </div>
+                                        <div class="taxes__item">
+                                            <div class="taxes__wrap">
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">5</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип индивидуального подхода</div>
+                                                        <div class="taxes__text">только если вы знаете все тонкости своего предприятия, можно рекомендовать тот или иной инструмент снижения налогов. Механически переносить одну и ту же схему с одного предприятия в другое нельзя;</div>
+                                                    </div>
+                                                </div>
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">6</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип комплексного расчета экономии и потерь</div>
+                                                        <div class="taxes__text">Перед тем, как внедрить схему оптимизации налогов, необходимо сравнить потенциальную экономию и возможные расходы</div>
+                                                    </div>
+                                                </div>
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">7</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип комплексной налоговой экономии (принцип многообразия применяемых способов минимизации налогов);</div>
+                                                    </div>
+                                                </div>
+                                                <div class="taxes__block">
+                                                    <div class="taxes__numb">8</div>
+                                                    <div class="taxes__desc">
+                                                        <div class="taxes__label">Принцип заблаговременности.</div>
+                                                        <div class="taxes__text">Налоговое планирование необходимо осуществлять заблаговременно, а не после проведения какой-либо хозяйственной операции или завершения налогового периода.</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="taxes__img"><img src="assets/images/taxes-2.svg" alt="img"></div>
+                                        </div>
+                                    </div>
+                                    <div class="w-taxes">
+                                        <div class="w-taxes__important">
+                                            <div class="w-taxes__important-label">Важный момент!</div>
+                                            <div class="w-taxes__important-text">Для оптимизации налогового бремени имеет значение выбор следующих показателей:</div>
+                                            <div class="w-taxes__important-img"><img src="assets/images/attention-img.svg" alt="img"></div>
+                                        </div>
+                                        <div class="w-taxes__list">
+                                            <div class="w-taxes__list-block">
+                                                <div class="w-taxes__list-label"><span></span>
+                                                    <p>Начисление амортизации основных средств:</p>
+                                                </div>
+                                                <div class="w-taxes__list-text">Линейный способ, способ списания стоимости по сумме чисел лет срока полезного использования, способ уменьшаемого остатка, способ списания стоимости пропорционально объему продукции (работ);</div>
+                                            </div>
+                                            <div class="w-taxes__list-block">
+                                                <div class="w-taxes__list-label"><span></span>
+                                                    <p>Списание товарно-материальных ценностей:</p>
+                                                </div>
+                                                <div class="w-taxes__list-text">По себестоимости каждой единицы, но средней себестоимости, по методу FIFO (по себестоимости первых по времени приобретения товарно-материальных ценностей);</div>
+                                            </div>
+                                            <div class="w-taxes__list-block">
+                                                <div class="w-taxes__list-label"><span></span>
+                                                    <p>Начисление амортизации нематериальных активов:</p>
+                                                </div>
+                                                <div class="w-taxes__list-text">Линейный способ, способ уменьшаемого остатка, способ списания стоимости пропорционально объему продукции (работ);</div>
+                                            </div>
+                                            <div class="w-taxes__list-block">
+                                                <div class="w-taxes__list-label"><span></span>
+                                                    <p>Порядок списания расходов;</p>
+                                                </div>
+                                            </div>
+                                            <div class="w-taxes__list-block">
+                                                <div class="w-taxes__list-label"><span></span>
+                                                    <p>Определение выручки от реализации продукции (работ, услуг) для целей налогообложения.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="z-taxes">
+                                        <div class="z-taxes__text-label">В заключение отметим, что</div>
+                                        <div class="z-taxes__wrap">
+                                            <div class="z-taxes__text">
+                                                <div class="z-taxes__text-info">Способы законного уменьшения налогов всегда были и будут, прежде всего из-за законодательно установленных различных видов налоговых режимов и льгот. Нестандартное применение различных налоговых режимов и льгот бывает полезным с точки зрения минимизации налогообложения.</div>
+                                                <div class="z-taxes__text-info">В современной динамичной и сложной экономике заранее просчитать все налоговые последствия самых разнообразных экономических действий налогоплательщика не представляется возможным, а значит, всегда будут существовать возможности таких действий, которые более выгодны налогоплательщику.</div>
+                                            </div>
+                                            <div class="z-taxes__info"><span>Таким образом,</span> возможности применения различных налоговых схем позволяют вносить свои коррективы в процесс налогового планирования, минимизировать налоговые риски и, следовательно, повышать уровень экономической безопасности хозяйствующего субъекта.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content-item" id="tab-3">
+                                <div class="optimization__container">
+                                    <div class="section-title">Стоимость налогового планирования/оптимизации</div>
+                                    <div class="optimization">
+                                        <div class="optimization__first">
+                                            <div class="optimization__first-title">Стоимость налогового планирования/оптимизации – складывается из нескольких показателей:</div>
+                                            <div class="optimization__first__item"><span>1</span>
+                                                <p>Анализа финансово-хозяйственной деятельности компании и ее специфики.</p>
+                                            </div>
+                                            <div class="optimization__first__item"><span>2</span>
+                                                <p>Определения потенциально возможных налоговых рисков.</p>
+                                            </div>
+                                            <div class="optimization__first__item"><span>3</span>
+                                                <p></p>
+                                            </div>
+                                            <div class="optimization__first__item"><span>4</span>
+                                                <p></p>
+                                            </div>
+                                            <div class="optimization__first__item"><span>5</span>
+                                                <p></p>
+                                            </div>
+                                            <div class="optimization__first__item"><span>6</span>
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                        <div class="optimization__second"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="our-team section">
+                <div class="container">
+                    <div class="section-title"><span>FLC — команда с 10-летним опытом</span></div>
+                    <div class="our-team-wrapper">
+                        <div class="our-team__members">
+                            <div class="our-team__member">
+                                <div class="our-team__member-img"><img src="assets/images/member1.png" alt=""></div>
+                            </div>
+                            <div class="our-team__member">
+                                <div class="our-team__member-img"><img src="assets/images/member2.png" alt=""></div>
+                            </div>
+                            <div class="our-team__member">
+                                <div class="our-team__member-img"><img src="assets/images/member3.png" alt=""></div>
+                            </div>
+                            <div class="our-team__member">
+                                <div class="our-team__member-img"><img src="assets/images/member4.png" alt=""></div>
+                            </div>
+                            <div class="our-team__member">
+                                <div class="our-team__member-img"><img src="assets/images/member5.png" alt=""></div>
+                            </div>
+                            <div class="our-team__member">
+                                <div class="our-team__member-img"><img src="assets/images/member6.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="out-team__content">
+                            <p>FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:</p>
+                            <ul class="c-banner__list">
+                                <li>Юридический аутсорсинг;</li>
+                                <li>Внешнеэкономическая деятельность;</li>
+                                <li>Договорное право;</li>
+                                <li>Представительство в суде;</li>
+                                <li>Услуги иностранным компаниям;</li>
+                                <li>Интеллектуальная собственность;</li>
+                                <li>Налоговое право;</li>
+                                <li>Правовой аудит;</li>
+                                <li>Трудовые отношения и защита персональных данных;</li>
+                                <li>Корпоративное право;</li>
+                                <li>Релокация бизнеса и ведение бизнеса за рубежом;</li>
+                                <li>Международное право;</li>
+                                <li>Сопровождение инвестиционных проектов;</li>
+                                <li>Запуск стартапов;</li>
+                                <li>E-commerce.</li>
+                            </ul>
+                            <p>Наши Клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професионализм, бизнес коммуникацию и конфиденциальность!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section experience-section section-with-text">
+                <div class="container">
+                    <div class="section-title">Работаем с широким спектром сфер бизнеса</div>
+                    <div class="section-text">За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:</div>
+                    <div class="experience">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-1.svg" alt="icon"></div>
+                                    <div class="experience__label">Производство</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-2.svg" alt="icon"></div>
+                                    <div class="experience__label">Торговля</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-3.svg" alt="icon"></div>
+                                    <div class="experience__label">Перевозки, логистика</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-4.svg" alt="icon"></div>
+                                    <div class="experience__label">Финансовый сектор</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-5.svg" alt="icon"></div>
+                                    <div class="experience__label">IT-технологии</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-6.svg" alt="icon"></div>
+                                    <div class="experience__label">Сфера услуг</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-7.svg" alt="icon"></div>
+                                    <div class="experience__label">Строительство</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-8.svg" alt="icon"></div>
+                                    <div class="experience__label">Медицина</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-9.svg" alt="icon"></div>
+                                    <div class="experience__label">Сельское хозяйство</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                                <div class="experience__item swiper-slide">
+                                    <div class="experience__image"><img src="assets/images/exp-10.svg" alt="icon"></div>
+                                    <div class="experience__label">Переработка отходов</div>
+                                    <div class="experience__info">Международные перевозки Внутренние перевозки Экспедиторы</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mobile-slider swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="section trust-us-section section-with-text">
+                <div class="container">
+                    <div class="trust-us">
+                        <div class="section-title">Нам доверяют</div>
+                        <div class="section-text">8 из 10 руководителей США и Евросоюза передали весь бизнес или его отдельные части на аутсорсинг.</div>
+                        <div class="trust-us-slider">
+                            <div class="swiper-wrapper">
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust1.png" alt=""></div>
+                                    <div class="trust-us__title"> Япония</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust2.png" alt=""></div>
+                                    <div class="trust-us__title">Россия</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust3.png" alt=""></div>
+                                    <div class="trust-us__title">АОЭ, Дубай</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust4.png" alt=""></div>
+                                    <div class="trust-us__title">Чехия</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust5.png" alt=""></div>
+                                    <div class="trust-us__title">Чехия</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust6.png" alt=""></div>
+                                    <div class="trust-us__title">Япония</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust1.png" alt=""></div>
+                                    <div class="trust-us__title">Посольство Республики Индонезия в Москве</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust2.png" alt=""></div>
+                                    <div class="trust-us__title">Япония</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust6.png" alt=""></div>
+                                    <div class="trust-us__title">Япония</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust1.png" alt=""></div>
+                                    <div class="trust-us__title">Посольство Республики Индонезия в Москве</div>
+                                </div>
+                                <div class="trust-us__slide swiper-slide">
+                                    <div class="trust-us__slide-logo"><img src="assets/images/trust2.png" alt=""></div>
+                                    <div class="trust-us__title">Япония</div>
+                                </div>
+                            </div>
+                            <div class="trust-us__pagination slider__pagination"></div>
+                            <div class="trust-us__nav">
+                                <div class="trust-us__nav-prev"><img src="assets/images/arrow-prev.svg" alt=""></div>
+                                <div class="trust-us__nav-next"><img src="assets/images/arrow-next.svg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="get-service section section-with-text">
+                <div class="container">
+                    <div class="get-service-wrapper">
+                        <div class="section-title"><span>Заказать бухгалтерский аутсорсинг в Москве</span></div>
+                        <div class="section-text">Чтобы обсудить Ваши задачи и задать любые интересующие Вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.</div>
+                        <div class="get-service__form">
+                            <form action="">
+                                <div class="get-service__form-col">
+                                    <label class="get-service__form-label" for="">
+                                        <input type="text" placeholder="Ваше имя">
+                                    </label>
+                                    <label class="get-service__form-label" for="">
+                                        <input type="text" placeholder="Ваш телефон">
+                                    </label>
+                                </div>
+                                <div class="get-service__form-col">
+                                    <div class="get-service__form-label">
+                                        <button class="button-style get-service__form-btn" type="submit">Оставить заявку</button>
+                                    </div>
+                                    <div class="get-service__form-label">
+                                        <div class="get-service__form-text">Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href>политики конфиденциальности</a> и соглашаетесь на обработку персональных данных</div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Main::End-->
+        <!-- Footer::Start-->
+        <footer class="footer" id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <nav class="footer-top__nav">
+                        <div class="footer-top__nav-item"><a class="footer-top__link">Комплексное сопровождение </a>
+                            <ul class="footer-top__list">
+                                <div class="footer-top__list-item"><a>Юридическое</a></div>
+                                <div class="footer-top__list-item"><a>Бухгалтерское</a></div>
+                                <div class="footer-top__list-item"><a>Финансовое</a></div>
+                                <div class="footer-top__list-item"><a>Налоговое</a></div>
+                                <div class="footer-top__list-item"><a>Кадровое</a></div>
+                                <div class="footer-top__list-item"><a>ВЭД</a></div>
+                                <div class="footer-top__list-item"><a>Судебное</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-top__nav-item"><a class="footer-top__link">Бухгалтерия и финансы</a>
+                            <ul class="footer-top__list">
+                                <div class="footer-top__list-item"><a>Бухгалтерский аутсорсинг</a></div>
+                                <div class="footer-top__list-item"><a>Налоговоое планирование</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-top__nav-item"><a class="footer-top__link">Юридические услуги</a>
+                            <ul class="footer-top__list">
+                                <div class="footer-top__list-item"><a>Юридический аутсорсинг</a></div>
+                                <div class="footer-top__list-item"><a>Правовой аудит (Due diligence)</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-top__nav-item"><a class="footer-top__link">Кадры</a>
+                            <ul class="footer-top__list">
+                                <div class="footer-top__list-item"><a>Кадровый аудит</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-top__nav-item"><a class="footer-top__link">Суды</a>
+                            <ul class="footer-top__list">
+                                <div class="footer-top__list-item"><a>Ведение дел в судах</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-top__nav-item"><a class="footer-top__link">Иностранным компаниям</a>
+                            <ul class="footer-top__list">
+                                <div class="footer-top__list-item"><a>Запуск и сопровождение бизнеса в России для иностранных компаний</a></div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <nav class="footer-bottom__nav">
+                        <div class="footer-bottom__nav-item"> <a class="footer-bottom__link">Кейсы</a>
+                            <ul class="footer-bottom__list">
+                                <div class="footer-bottom__list-item"> <a>Производство</a></div>
+                                <div class="footer-bottom__list-item"> <a>Торговля</a></div>
+                                <div class="footer-bottom__list-item"> <a>IT</a></div>
+                                <div class="footer-bottom__list-item"> <a>E-commerce</a></div>
+                                <div class="footer-bottom__list-item"> <a>Услуги</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom__nav-item"> <a class="footer-bottom__link">Цены</a>
+                            <ul class="footer-bottom__list">
+                                <div class="footer-bottom__list-item"> <a>Прайс по всем услугам</a></div>
+                                <div class="footer-bottom__list-item"> <a>Прайс по юридическим услугам</a></div>
+                                <div class="footer-bottom__list-item"> <a>Прайс по судебным делам</a></div>
+                                <div class="footer-bottom__list-item"> <a>Прайс по бухгалтерским услугам </a></div>
+                                <div class="footer-bottom__list-item"> <a>Прайс по кадровым услугам </a></div>
+                                <div class="footer-bottom__list-item"> <a>Прайс по услугам иностранным компаниям</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom__nav-item"> <a class="footer-bottom__link">Отзывы</a>
+                            <ul class="footer-bottom__list">
+                                <div class="footer-bottom__list-item"> <a>Юридическое сопровождение</a></div>
+                                <div class="footer-bottom__list-item"> <a>Бухгалтерcкое сопровождение</a></div>
+                                <div class="footer-bottom__list-item"> <a>Судебное представительство</a></div>
+                                <div class="footer-bottom__list-item"> <a>Комплексное сопровождение </a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom__nav-item"> <a class="footer-bottom__link">О компании</a>
+                            <ul class="footer-bottom__list">
+                                <div class="footer-bottom__list-item"> <a>История развития</a></div>
+                                <div class="footer-bottom__list-item"> <a>Наша команда </a></div>
+                                <div class="footer-bottom__list-item"> <a>Карьера </a></div>
+                                <div class="footer-bottom__list-item"> <a>Наш опыт</a></div>
+                                <div class="footer-bottom__list-item"> <a>Обращение руководителя FLC</a></div>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom__nav-item"> <a class="footer-bottom__link">Блог</a></div>
+                        <div class="footer-bottom__nav-item"> <a class="footer-bottom__link">Контакты </a>
+                            <ul class="footer-bottom__list">
+                                <div class="footer-bottom__list-item"> <a>Офис на Бауманской</a></div>
+                                <div class="footer-bottom__list-item"> <a>Офис на Дубининской</a></div>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer-socials">
+                <div class="container">
+                    <div class="footer-socials-wrapper">
+                        <div class="footer-socials__left">
+                            <div class="footer-socials__top">
+                                <div class="footer-socials__top-title">Подпишитесь на нас в соц. сетях:</div>
+                                <div class="footer-socials__items">
+                                    <div class="footer-socials__item"><img src="assets/images/vk-ic.svg" alt=""></div>
+                                    <div class="footer-socials__item"><img src="assets/images/fb-ic.svg" alt=""></div>
+                                    <div class="footer-socials__item"><img src="assets/images/vc-ic.svg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="footer-socials__contacts">
+                                <div class="footer-socials__contacts-title">Наши контакты:</div><a class="footer-socials__contact" href="">
+                                    <div class="footer-socials__contact-img"> <img src="assets/images/pt-ic.svg" alt=""></div>
+                                    <div class="footer-socials__contact-title">Москва, Дубининская дом 80, офис 524</div>
+                                </a><a class="footer-socials__contact" href="mailto:flc@f-jurist.ru">
+                                    <div class="footer-socials__contact-img"> <img src="assets/images/mail-ic.svg" alt=""></div>
+                                    <div class="footer-socials__contact-title">flc@f-jurist.ru</div>
+                                </a><a class="footer-socials__contact" href="tel:+7 (495) 797 16 77">
+                                    <div class="footer-socials__contact-img"> <img src="assets/images/phone-ic.svg" alt=""></div>
+                                    <div class="footer-socials__contact-title">+7 (495) 797 16 77</div>
+                                </a>
+                                <div class="button-style">Заказать звонок</div>
+                            </div>
+                        </div>
+                        <div class="footer-socials__right">
+                            <div class="footer-socials__right-title">Остались вопросы? Напишите нам:</div>
+                            <div class="footer-form">
+                                <form action="">
+                                    <label for="">
+                                        <input type="text" placeholder="Ваше имя">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" placeholder="Ваш телефон">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" placeholder="Сообщение">
+                                    </label>
+                                    <button class="button-style" type="submit">Оставить заявку</button>
+                                    <div class="footer-form__agr">Нажимая на кнопку “Отправить”, вы принимаете условия <a>политики конфиденциальности</a> и соглашаетесь на <a>обработку персональных данных</a></div>
+                                    <div class="footer-form__policy">Политика конфиденциальности<br>ООО «Полный Юридический Консалтинг»</div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="container">
+                    <div class="footer__copyright-wrapper">
+                        <div class="footer__logo"><img src="assets/images/footer-logo.svg" alt=""></div>
+                        <div class="footer__copyright-text">© 2022 ООО "Полный юридический консалтинг"</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer::End-->
+    </div>
+    <!-- Popup::Start-->
+    <div class="popup" id="popup">
+        <div class="popup-close"></div>
+        <div class="popup-wrapper">
+            <div class="popup-title">Заказать FLC | Налоговое планирование</div>
+            <div class="popup-subtitle">Чтобы обсудить Ваши задачи и задать любые интересующие вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.</div>
+            <form action="/">
+                <div class="form-wrapper">
+                    <div class="form-row">
+                        <div class="input-style">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-style">
+                            <input type="tel" placeholder="Ваш телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="button-style">
+                            <input type="submit" value="Оставить заявку">
+                        </div>
+                    </div>
+                    <div class="form-policy-text">Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href="#">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Popup::End-->
+    <!-- Popup::Start-->
+    <div class="popup" id="popup-callback">
+        <div class="popup-close"></div>
+        <div class="popup-wrapper">
+            <div class="popup-title">Узнайте прогноз результата и стоимость услуг юриста по вашему делу</div>
+            <div class="popup-subtitle">оставьте свой актуальный номер телефона, специалист позвонит вам с номера +7 (495) 797-16-77 для уточнения деталей вашего дела</div>
+            <form action="/">
+                <div class="form-wrapper">
+                    <div class="form-row">
+                        <div class="input-style">
+                            <input type="tel" placeholder="Ваш телефон" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="button-style">
+                            <input type="submit" value="Узнать прогноз результата">
+                        </div>
+                    </div>
+                    <div class="form-policy-text">Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных</div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Popup::End-->
+    <!-- Scripts::Start-->
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/popup.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Scripts::End-->
+</body>
+
+</html>

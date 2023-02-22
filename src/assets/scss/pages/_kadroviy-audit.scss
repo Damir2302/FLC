@@ -1,3 +1,11 @@
+.kadr-aud {
+    .hero__text {
+        @include breakpoint(xl) {
+            max-width: 388px;
+        }
+      }
+}
+
 .section-tab-text--max-width {
     max-width: 995px;
 }

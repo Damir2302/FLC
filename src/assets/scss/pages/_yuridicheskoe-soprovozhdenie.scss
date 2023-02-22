@@ -29,6 +29,13 @@
       
       }
 
+
+      .hero__text {
+        @include breakpoint(xl) {
+            max-width: 368px;
+        }
+      }
+
 }
 
 .table__list {

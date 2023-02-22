@@ -556,4 +556,22 @@ $(document).ready(function() {
     }
 });
 
+if ($(window).width() < 744) {
+  let workRulesSlider = new Swiper('.work-rules', {
+    slidesPerView: 1,
+    // watchOverflow: true,
+    // centeredSlides: true,
+    loop: false,
+    // autoHeight: true,
+    spaceBetween: 55,
+
+    pagination: {
+        el: ' .work-rules__pagination',
+        clickable: true,
+    },
+
+  });
+}
+
+
 })

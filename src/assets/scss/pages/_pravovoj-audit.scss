@@ -51,6 +51,12 @@
     }
     
 
+    .hero__text {
+        @include breakpoint(xl) {
+            max-width: 407px;
+        }
+    }
+
 }
 
 .due-diligence__important {
@@ -249,10 +255,18 @@
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     position: relative;
+    height: auto;
 }
 .swiper-slide {
 }
 .prav-audit-result__item-img {
+    height: 168px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    img {
+        height: 100%;
+    }
 }
 
 .prav-audit-result__item-content {
@@ -306,6 +320,7 @@
         top: 18px;
         /* right: -272px; */
         left: 252px;
+        box-sizing: border-box;
     }
 
 }
@@ -316,4 +331,10 @@
 
 .prav-audit-result__item:hover .prav-audit-result__item-badge {
     display: block;
+}
+
+.prav-audit-result__item:last-child:hover {
+    .prav-audit-result__item-badge {
+        left: 10px;
+    }
 }

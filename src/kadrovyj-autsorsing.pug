@@ -1,0 +1,1204 @@
+---
+title : FLC | Кадровый аутсорсинг
+bodyClass: kadr-auts
+---
+
+extends includes/_page
+
+block hero
+    include components/_hero
+    +hero('Кадровый аутсорсинг',
+          'Российская аутсорсинговая комипания  FLC (Full Legal Consulting) - все виды услуг по кадровому аутсориснгу для бизнеса в одной компании!',
+          'kadr-auts-hero.svg')
+
+block main
+
+    section.what-we-do.section
+
+        .container
+
+            .section-title Чем мы занимаемся
+
+            .wwdo__items
+
+                .swiper-wrapper
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd1.svg", alt="")
+                            img(src="assets/images/wwd1bg.png", alt="")
+
+                        .wwdo__item-title Более 9 лет на рынке
+
+                        .wwdo__item-text Работаем на рынке аутсорсинговых услуг по сопровождению бизнеса коммерческих компаний в России с 2013 года
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd6.svg", alt="")
+                            img(src="assets/images/wwd6bg.png", alt="")
+
+                        .wwdo__item-title Профи своего дела
+
+                        .wwdo__item-text Являемся профессиональной командой аутсорсеров
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd5.svg", alt="")
+                            img(src="assets/images/wwd5bg.png", alt="")
+
+                        .wwdo__item-title Полное сопровождение
+
+                        .wwdo__item-text Работаем с Клиентами как на полном сопровождении их бизнеса по всем  направлениям одновременно (Full support), так и на сопровождении отдельных направлений
+
+                    .wwdo__item.swiper-slide 
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd3.svg", alt="")
+                            img(src="assets/images/wwd3bg.png", alt="")
+                            
+                        .wwdo__item-title Работаем во всех отраслях
+
+                        .wwdo__item-text За 10 лет работы на рынке отработали схемы сопровождения коммерческих компаний по всем отраслям бизнеса
+
+
+
+                .wwde__pagination
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.button-style(href='#') Выбрать вид сопровождения
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            |  Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Что входит в кадровый аутсорсинг 
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2")  Схема работы 
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Стоимость
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-4") Отзывы
+
+                .tabs__content
+
+                    #tab-1.tabs__content-item
+
+                        .section-with-text.section
+
+                            .section-title Что входит в кадровый аутсорсинг
+
+                            .section-text Выберите подходящий пакет кадрового аутсорсинга для Вашего бизнеса:
+
+                            .section__acc 
+
+                                .acc.acc__mob 
+                                    .acc__card.acc__card--icon-img.active
+                                        .acc__title
+                                            .acc__title-icon
+                                                img(src="assets/images/tab1-ic.svg", alt="")
+                                            .acc__title-inner Пакет бизнес
+                                            .arrow-down 
+                                        .acc__panel
+                                            .acc__panel-list.acc__panel-list--bold
+                                                .acc__panel-list-item Подготовка кадровых документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span приказы
+                                                    .acc__panel-list-inner-item
+                                                        span трудовые договоры
+                                                    .acc__panel-list-inner-item
+                                                        span согласие на обработку персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span обязательство о неразглашении конфиденциальной информации
+                                                    .acc__panel-list-inner-item
+                                                        span должностная инструкция
+                                                    .acc__panel-list-inner-item
+                                                        span договор об индивидуальной материальной ответственности
+                                                    .acc__panel-list-inner-item
+                                                        span личная карточка Т-2
+                                                    .acc__panel-list-inner-item
+                                                        span лист ознакомление с локальными актами
+                                                    .acc__panel-list-inner-item 
+                                                        span внесение записей в трудовые книжки
+                                                    .acc__panel-list-inner-item
+                                                        span перевод на электронные трудовые книжки
+                                                .acc__panel-list-item  Подготовка локальных документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span ПВТР
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о зарплате и премировании
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о защите персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о коммерческой тайне
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о командировках
+                                                    .acc__panel-list-inner-item
+                                                        span Положение об обучении
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о расчете с подотчетными лицами
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о системе видеонаблюдения
+                                                .acc__panel-list-item Подготовка документов по персональным данным
+                                                .acc__panel-list-item Хранение в офисе Клиента/в офисе FLC
+
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Узнать стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+                                            
+                                            
+                                    .acc__card.acc__card--icon-img
+                                        .acc__title
+                                            .acc__title-icon
+                                                img(src="assets/images/tab2-ic.svg", alt="")
+                                            .acc__title-inner Пакет бизнес + ЗП                                 
+                                            .arrow-down
+                                        .acc__panel
+                                            .acc__panel-list.acc__panel-list--bold
+                                                .acc__panel-list-item Подготовка кадровых документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span приказы
+                                                    .acc__panel-list-inner-item
+                                                        span трудовые договоры
+                                                    .acc__panel-list-inner-item
+                                                        span согласие на обработку персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span обязательство о неразглашении конфиденциальной информации
+                                                    .acc__panel-list-inner-item
+                                                        span должностная инструкция
+                                                    .acc__panel-list-inner-item
+                                                        span договор об индивидуальной материальной ответственности
+                                                    .acc__panel-list-inner-item
+                                                        span личная карточка Т-2
+                                                    .acc__panel-list-inner-item
+                                                        span лист ознакомление с локальными актами
+                                                    .acc__panel-list-inner-item
+                                                        span внесение записей в трудовые книжки
+                                                    .acc__panel-list-inner-item
+                                                        span перевод на электронные трудовые книжки
+
+                                                .acc__panel-list-item Подготовка локальных документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span ПВТР
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о зарплате и премировании
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о защите персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о коммерческой тайне
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о командировках
+                                                    .acc__panel-list-inner-item
+                                                        span Положение об обучении
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о расчете с подотчетными лицами
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о системе видеонаблюдения
+
+                                                .acc__panel-list-item Подготовка документов по персональным данным
+
+                                                .acc__panel-list-item Расчет заработной платы
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span Расчет авансов/зарплаты
+                                                    .acc__panel-list-inner-item
+                                                        span Выплата авансов/зарплаты
+                                                    .acc__panel-list-inner-item
+                                                        span Расчет и выплата отпускных, больничных
+                                                    .acc__panel-list-inner-item
+                                                        span Отправка отчетов по кадрам СЗВМ, СЗВ-ТД
+                                                    .acc__panel-list-inner-item
+                                                        span Отправка зарплатных отчетов 4ФСС, ПФР, 6 НДФЛ, РСВ
+                                                    .acc__panel-list-inner-item
+                                                        span Подготовка справок для работников.
+
+                                                .acc__panel-list-item Хранение в офисе Клиента/в офисе FLC
+                                                
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Узнать стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email info@f-jurist.ru
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                    .acc__card.acc__card--icon-img
+                                        .acc__title
+                                            .acc__title-icon
+                                                img(src="assets/images/kadr-aut-ic.svg", alt="")
+                                            .acc__title-inner Восстановление кадровых документов                               
+                                            .arrow-down
+                                        .acc__panel
+                                            .acc__panel-list.acc__panel-list--bold
+                                                .acc__panel-list-item Восстановлениеличных дел за 3 года
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span приказы
+                                                    .acc__panel-list-inner-item
+                                                        span трудовые договоры
+                                                    .acc__panel-list-inner-item
+                                                        span приказы по всем перемещениям (оклады, адреса, должности)
+                                                    .acc__panel-list-inner-item
+                                                        span дополнительные соглашения к трудовым договорам
+                                                    .acc__panel-list-inner-item
+                                                        span согласие на обработку персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span обязательство о неразглашении конфиденциальной информации
+                                                    .acc__panel-list-inner-item
+                                                        span должностная инструкция
+                                                    .acc__panel-list-inner-item
+                                                        span договор об индивидуальной материальной ответственности
+                                                    .acc__panel-list-inner-item
+                                                        span личная карточка Т-2
+                                                    .acc__panel-list-inner-item
+                                                        span лист ознакомление с локальными актами
+
+                                                .acc__panel-list-item Восстановлениеличных дел за 3 года
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span ПВТР со всеми изменениями
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о зарплате и премировании
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о защите персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о коммерческой тайне
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о командировках
+                                                    .acc__panel-list-inner-item
+                                                        span Положение об обучении
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о расчете с подотчетными лицами
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о системе видеонаблюдения
+                                                .acc__panel-list-item Хранение в офисе Клиента/в офисе FLC
+
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Узнать стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email info@f-jurist.ru
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                .acc__desc 
+                                    .acc__desc-nav 
+                                        a(href="#tab-inner-8").acc__desc-nav-item.acc__desc-nav-item--icon.active
+                                            .acc__desc-nav-item-icon
+                                                img(src="assets/images/tab1-ic.svg", alt="")
+                                            .acc__desc-nav-item-inner Пакет бизнес
+                                            .arrow-down
+
+                                        a(href="#tab-inner-9").acc__desc-nav-item.acc__desc-nav-item--icon
+                                            .acc__desc-nav-item-icon
+                                                img(src="assets/images/tab2-ic.svg", alt="")
+                                            .acc__desc-nav-item-inner Пакет бизнес + ЗП
+                                            .arrow-down
+
+                                        a(href="#tab-inner-10").acc__desc-nav-item.acc__desc-nav-item--icon
+                                            .acc__desc-nav-item-icon
+                                                img(src="assets/images/kadr-aut-ic.svg", alt="")
+                                            .acc__desc-nav-item-inner Восстановление кадровых документов
+                                            .arrow-down
+
+
+                                    .acc__desc-content
+
+                                        #tab-inner-8.acc__desc-tab
+
+                                            .acc__panel-list.acc__panel-list--bold
+                                                .acc__panel-list-item Подготовка кадровых документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span приказы
+                                                    .acc__panel-list-inner-item
+                                                        span трудовые договоры
+                                                    .acc__panel-list-inner-item
+                                                        span согласие на обработку персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span обязательство о неразглашении конфиденциальной информации
+                                                    .acc__panel-list-inner-item
+                                                        span должностная инструкция
+                                                    .acc__panel-list-inner-item
+                                                        span договор об индивидуальной материальной ответственности
+                                                    .acc__panel-list-inner-item
+                                                        span личная карточка Т-2
+                                                    .acc__panel-list-inner-item
+                                                        span лист ознакомление с локальными актами
+                                                    .acc__panel-list-inner-item 
+                                                        span внесение записей в трудовые книжки
+                                                    .acc__panel-list-inner-item
+                                                        span перевод на электронные трудовые книжки
+                                                .acc__panel-list-item  Подготовка локальных документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span ПВТР
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о зарплате и премировании
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о защите персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о коммерческой тайне
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о командировках
+                                                    .acc__panel-list-inner-item
+                                                        span Положение об обучении
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о расчете с подотчетными лицами
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о системе видеонаблюдения
+                                                .acc__panel-list-item Подготовка документов по персональным данным
+                                                .acc__panel-list-item Хранение в офисе Клиента/в офисе FLC
+
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Узнать стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email <a href="mailto:info@f-jurist.ru">info@f-jurist.ru</a>
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                        #tab-inner-9.acc__desc-tab
+                                            
+                                            .acc__panel-list.acc__panel-list--bold
+                                                .acc__panel-list-item Подготовка кадровых документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span приказы
+                                                    .acc__panel-list-inner-item
+                                                        span трудовые договоры
+                                                    .acc__panel-list-inner-item
+                                                        span согласие на обработку персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span обязательство о неразглашении конфиденциальной информации
+                                                    .acc__panel-list-inner-item
+                                                        span должностная инструкция
+                                                    .acc__panel-list-inner-item
+                                                        span договор об индивидуальной материальной ответственности
+                                                    .acc__panel-list-inner-item
+                                                        span личная карточка Т-2
+                                                    .acc__panel-list-inner-item
+                                                        span лист ознакомление с локальными актами
+                                                    .acc__panel-list-inner-item
+                                                        span внесение записей в трудовые книжки
+                                                    .acc__panel-list-inner-item
+                                                        span перевод на электронные трудовые книжки
+
+                                                .acc__panel-list-item Подготовка локальных документов
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span ПВТР
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о зарплате и премировании
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о защите персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о коммерческой тайне
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о командировках
+                                                    .acc__panel-list-inner-item
+                                                        span Положение об обучении
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о расчете с подотчетными лицами
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о системе видеонаблюдения
+
+                                                .acc__panel-list-item Подготовка документов по персональным данным
+
+                                                .acc__panel-list-item Расчет заработной платы
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span Расчет авансов/зарплаты
+                                                    .acc__panel-list-inner-item
+                                                        span Выплата авансов/зарплаты
+                                                    .acc__panel-list-inner-item
+                                                        span Расчет и выплата отпускных, больничных
+                                                    .acc__panel-list-inner-item
+                                                        span Отправка отчетов по кадрам СЗВМ, СЗВ-ТД
+                                                    .acc__panel-list-inner-item
+                                                        span Отправка зарплатных отчетов 4ФСС, ПФР, 6 НДФЛ, РСВ
+                                                    .acc__panel-list-inner-item
+                                                        span Подготовка справок для работников.
+
+                                                .acc__panel-list-item Хранение в офисе Клиента/в офисе FLC
+                                                
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Узнать стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email info@f-jurist.ru
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+
+                                        #tab-inner-10.acc__desc-tab 
+                                            .acc__panel-list.acc__panel-list--bold
+                                                .acc__panel-list-item Восстановлениеличных дел за 3 года
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span приказы
+                                                    .acc__panel-list-inner-item
+                                                        span трудовые договоры
+                                                    .acc__panel-list-inner-item
+                                                        span приказы по всем перемещениям (оклады, адреса, должности)
+                                                    .acc__panel-list-inner-item
+                                                        span дополнительные соглашения к трудовым договорам
+                                                    .acc__panel-list-inner-item
+                                                        span согласие на обработку персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span обязательство о неразглашении конфиденциальной информации
+                                                    .acc__panel-list-inner-item
+                                                        span должностная инструкция
+                                                    .acc__panel-list-inner-item
+                                                        span договор об индивидуальной материальной ответственности
+                                                    .acc__panel-list-inner-item
+                                                        span личная карточка Т-2
+                                                    .acc__panel-list-inner-item
+                                                        span лист ознакомление с локальными актами
+
+                                                .acc__panel-list-item Восстановлениеличных дел за 3 года
+                                                .acc__panel-list-inner 
+                                                    .acc__panel-list-inner-item
+                                                        span ПВТР со всеми изменениями
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о зарплате и премировании
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о защите персональных данных
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о коммерческой тайне
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о командировках
+                                                    .acc__panel-list-inner-item
+                                                        span Положение об обучении
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о расчете с подотчетными лицами
+                                                    .acc__panel-list-inner-item
+                                                        span Положение о системе видеонаблюдения
+                                                .acc__panel-list-item Хранение в офисе Клиента/в офисе FLC
+
+                                            .acc__get-cost 
+
+                                                .acc__get-cost-action.button-style Узнать стоимость
+
+                                                .acc__get-cost-card
+
+                                                    .acc__get-cost-list-top 
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Конечная цена</b> зависит от объема документооборота и специфики финансово-хозяйственной деятельности компании
+
+                                                        .acc__get-cost-list-top-item
+                                                            span <b>Для определения конечной цены </b> <a>оставьте заявку</a>, с вами свяжется специалист FLC для определения финального коммерческого предложения или <a>скачайте анкету</a>/заполните ее и пришлите на наш адрес. 
+
+                                                    .acc__get-cost-list-bottom
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Скачайте анкету с нашего сайта
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Заполните ее
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Отправьте нам на email info@f-jurist.ru
+                                                        .acc__get-cost-list-bottom-item
+                                                            span Мы отправим вам коммерческое предложение
+
+                                                    .acc__get-cost-btns 
+
+                                                        .button-style.button-style--download
+                                                            img(src="assets/images/download-ic.svg", alt="")
+                                                            span Скачать анкету
+
+                                                        .button-style.acc__get-cost-btn-request Оставить заявку
+
+                    #tab-2.tabs__content-item 
+
+                        .scheme-container
+
+                            .section-title Схема работы по кадровому аутсорсингу:
+
+                            .scheme
+
+                                .scheme__items
+
+                                    .scheme__item
+                                        .scheme__number 1
+                                        .scheme__block
+                                            
+                                            .scheme__block-text Закрепляется специалист в зависимости от выбранного пакета.
+                                                
+
+                                    .scheme__item
+                                        .scheme__number 2
+                                        .scheme__block
+                                            
+                                            .scheme__block-text Все задачи ставятся по почте.
+
+                                    .scheme__item
+                                        .scheme__number 3
+                                        .scheme__block
+                                            
+                                            .scheme__block-text Задача обрабатывается в течение 1-2 часов.
+                                    .scheme__item
+                                        .scheme__number 4
+                                        .scheme__block
+                                            
+                                            .scheme__block-text Формируем папку электронного документооборота.
+
+                                    .scheme__item
+                                        .scheme__number 5
+                                        .scheme__block
+                                            
+                                            .scheme__block-text В случае хранения в офисе FLC курьер забирает документы.
+
+                                .scheme__steps
+
+                                    .scheme__step
+                                        .scheme__step-label 1 шаг
+                                        .scheme__step-icon
+                                            img(src="assets/images/uslugi-scheme1.svg", alt="icon")
+
+                                    .scheme__step
+                                        .scheme__step-label 2 шаг
+                                        .scheme__step-icon
+                                            img(src="assets/images/uslugi-scheme2.svg", alt="icon")
+
+                                    .scheme__step
+                                        .scheme__step-label 3 шаг
+                                        .scheme__step-icon
+                                            img(src="assets/images/uslugi-scheme3.svg", alt="icon")
+
+                                    .scheme__step
+                                        .scheme__step-label 4 шаг
+                                        .scheme__step-icon
+                                            img(src="assets/images/uslugi-scheme4.svg", alt="icon")
+
+                                    .scheme__step
+                                        .scheme__step-label 5 шаг
+                                        .scheme__step-icon
+                                            img(src="assets/images/uslugi-scheme5.svg", alt="icon")
+
+                    #tab-3.tabs__content-item
+
+                        .section 
+
+                            .section-title Стоимость кадрового аутсорсинга
+
+                            .benefits__table-wrapper
+
+                                .benefits__table
+                                    .table__header.table__row
+                                        .table__col Услуги*
+                                        .table__col Старт
+                                        .table__col Базовый
+                                        .table__col Основной
+                                        .table__col Полный
+                                        .table__col Премиум
+                                        .table__col Премиум+
+                                        .table__col Индиви-дуальный
+                                    .table__body
+
+                                        .table__row
+                                            .table__col Подготовка кадровых документов
+                                            .table__col от 30 до 50 cотрудников
+                                            .table__col от 50 до 80  сотрудников
+                                            .table__col от 80 сотрудников
+                                            .table__col от 30 до 50 cотрудников
+                                            .table__col от 50 до 80  сотрудников
+                                            .table__col от 30 до 50 cотрудников
+                                            .table__col
+                                        
+                                        .table__row
+                                            .table__col Подготовка локально-нормативных актов
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col 
+
+                                        .table__row
+                                            .table__col Подготовка документов по защите персональных данных
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col +
+                                            .table__col 
+
+                                        .table__row
+                                            .table__col Расчет заработной платы
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col +
+                                            .table__col +
+                                            .table__col
+                                        
+                                        .table__row
+                                            .table__col Восстановление ляных дел
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col +
+                                            .table__col
+
+                                        .table__row
+                                            .table__col Восстановление локально-нормативных актов
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col +
+                                            .table__col
+
+                                        .table__row
+                                            .table__col Хранение в офисе FLC
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col —
+                                            .table__col +
+                                            .table__col
+
+                                        .table__row
+                                            .table__col Стоимость в рублях за один месяц. Услуги оказываются как удаленно, так и в офисе Клиента в согласованное время.
+                                            .table__col 15 000-25 000
+                                            .table__col 30 000-60 000
+                                            .table__col Договорная
+                                            .table__col 35 000 -  55 000
+                                            .table__col 55 000 - 75000
+                                            .table__col Договорная
+                                            .table__col Договорная
+
+                    #tab-4.tabs__content-item
+
+                        .reviews
+
+                            .section-title Отзывы
+
+                            .reviews__items
+
+                                .swiper-wrapper
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review3.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                .reviews__pagination.slider__pagination
+
+                                .reviews__items-nav
+
+                                    .reviews__items-nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+
+                                    .reviews__items-nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+    section.prav-audit-result.section 
+
+        .container
+
+            .section-title Результаты наших клиентов после запуска работы с нами
+
+            .prav-audit-result__items
+
+                .swiper-wrapper
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/kadr-auts-result1.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Востановили кадровые документы за 3 года
+
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Прошли проверку трудовой инспекции
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/kadr-auts-result2.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Встроили кадровый учёт в бизнес-процессы компании
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Документы готовятся в течении 1-2 часов
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/kadr-auts-result3.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Отстроили регламент по выплате ЗП
+
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge ЗП выплачивается до 11:00 в день выплаты
+
+                    .prav-audit-result__item.swiper-slide
+                        .prav-audit-result__item-img 
+                            img(src="assets/images/kadr-auts-result4.svg", alt="")
+
+                        .prav-audit-result__item-content
+
+                            .prav-audit-result__item-title Разработали регламент по дистанционной работе
+                            .prav-audit-result__item-action Узнать больше
+
+                            .prav-audit-result__item-badge Повысили качество  и дисциплину работы
+
+                .prav-audit-result__pagination.slider__pagination
+    
+    section.our-team.section 
+
+        .container
+
+            .section-title 
+                span FLC — команда с 10-летним опытом
+
+            .our-team-wrapper 
+
+                .our-team__members 
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member1.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member2.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member3.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member4.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member5.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img 
+                            img(src="assets/images/member6.png", alt="")
+
+                .out-team__content 
+
+                    p FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:
+
+                    ul.c-banner__list 
+                        li Юридический аутсорсинг;
+                        li Внешнеэкономическая деятельность;
+                        li Договорное право;
+                        li Представительство  в суде;
+                        li Услуги иностранным компаниям;
+                        li Интеллектуальная собственность;
+                        li Налоговое право;
+                        li Правовой аудит;
+                        li Трудовые отношения и защита персональных данных;
+                        li Корпоративное право;
+                        li Релокация бизнеса и ведение бизнеса за рубежом;
+                        li Международное право;
+                        li Сопровождение инвестиционных проектов;
+                        li Запуск стартапов;
+                        li E-commerce.
+
+                    p Наши Клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професионализм, бизнес коммуникацию и конфиденциальность!
+
+    section.section.experience-section.section-with-text
+
+        .container
+
+            .section-title Работаем с широким спектром сфер бизнеса
+            .section-text
+                span За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:
+
+            .experience
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-1.svg", alt="icon")
+                            .experience__label Производство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-2.svg", alt="icon")
+                            .experience__label Торговля
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-3.svg", alt="icon")
+                            .experience__label Перевозки, логистика
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-4.svg", alt="icon")
+                            .experience__label Финансовый сектор
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-5.svg", alt="icon")
+                            .experience__label IT-технологии
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-6.svg", alt="icon")
+                            .experience__label Сфера услуг
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-7.svg", alt="icon")
+                            .experience__label Строительство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-8.svg", alt="icon")
+                            .experience__label Медицина
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-9.svg", alt="icon")
+                            .experience__label Сельское хозяйство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-10.svg", alt="icon")
+                            .experience__label Переработка отходов
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                .mobile-slider.swiper-pagination
+
+    section.trust-us.section
+
+        .container
+
+            .section-title Нам доверяют
+
+
+            .trust-us-wrapper
+
+                .trust-us__content
+
+                    .trust-us__content-title Выбирая аутсорсинг Вы:
+
+                    ul.trust-us__list
+                        li Используете самые современные и эффективные методы управления коллективом 
+                        li Вы не тратите время на поиск сотрудника, на управление и контроль за его работой
+                        li Не платите соцналоги - 30,2 %
+                        li Получаете готовые процессы работы, встроенные в Ваш бизнес
+                        li Расширяете возможности, получая проактивную команду специалистов по цене одного
+                .trust-us__slider
+
+                    .swiper-wrapper
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+    section.get-service.section.section-with-text
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать кадровый аутсорсинг
+
+                .section-text Чтобы обсудить ваши задачи, сформировать КП, ответить на ваши вопросы оставьте заявку на сайте и в течение 15 минут с вами свяжется ведущий специалист.
+                .get-service__form
+
+                    form(action="")
+
+                        .get-service__form-col
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

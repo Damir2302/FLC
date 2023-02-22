@@ -250,6 +250,42 @@ $(document).ready(function() {
       }
     }
 
+    // Налоговый план
+    let planSlider;
+    let initPlanSlider;
+
+    planSliderCheck();
+
+    $(window).on('resize', function() {
+      planSliderCheck()
+    })
+
+    function planSliderCheck() {
+
+      if ($('.t-planning__slider .swiper').length) {
+
+        if ($(window).width() < 744) {
+          if (!initPlanSlider) {
+            initPlanSlider = true;
+            planSlider = new Swiper(".t-planning__slider .swiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+              pagination: {
+                el: '.t-planning__slider .swiper-pagination',
+                clickable: true
+              }
+            })
+          }
+        } else {
+          if (typeof(planSlider) !== "undefined" ) {
+            initPlanSlider = false;
+            planSlider.destroy();
+          }
+        }
+      }
+    }
+
     let casesSlider = new Swiper('.cases__items', {
         slidesPerView: 'auto',
         watchOverflow: true,
@@ -380,6 +416,62 @@ $(document).ready(function() {
       }
     }
 
+    //  Команда судебных юристов на странице Судебное представительство
+    let tLawyer = new Swiper('.t-lawyer .swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 10000,
+        disableOnInteraction: false
+      },
+
+      pagination: {
+          el: '.t-lawyer .swiper-pagination',
+          clickable: true,
+      },
+
+      breakpoints: {
+        744: {
+          pagination: {
+            renderBullet: function (index, className) {
+              let imageContainer = [];
+              $('.t-lawyer__image').each(function(e) {
+                imageContainer.push($('.t-lawyer__image').html())
+              })
+
+              return '<div class="' + className + '">' + imageContainer[index] + `<svg>
+                      <circle cx="30" cy="30" r="30"></circle>
+                      <circle class="progress-bar" id="progress-bar" cx="30" cy="30" r="30"></circle></svg>`  + '</div>';
+            }
+          }
+        },
+
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+
+        1400: {
+          slidesPerView: 1,
+          spaceBetween: 100,
+
+          pagination: {
+            renderBullet: function (index, className) {
+              let imageContainer = [];
+              $('.t-lawyer__image').each(function(e) {
+                imageContainer.push($('.t-lawyer__image').html())
+              })
+
+              return '<div class="' + className + '">' + imageContainer[index] + `<svg>
+                      <circle cx="30" cy="30" r="30"></circle>
+                      <circle class="progress-bar" id="progress-bar" cx="30" cy="30" r="30"></circle></svg>`  + '</div>';
+            }
+          }
+        }
+      }
+
+    });
+
     let compareSlider = new Swiper('.compare__items', {
         slidesPerView: 1,
         // watchOverflow: true,
@@ -436,7 +528,7 @@ $(document).ready(function() {
       }
   });
 
-  
+
 
   let auditResultSldier = new Swiper('.prav-audit-result__items', {
     slidesPerView: 1,

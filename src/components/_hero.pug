@@ -14,7 +14,7 @@ mixin hero(title, text, image)
                             h1= title
                             #hero-title
                         .hero__text= text
-                        button.hero__btn.button-style Оставить заявку
+                        button.hero__btn.button-style(data-popup) Оставить заявку
 
                     .hero__img
                         img(src="assets/images/" + image, alt="img")

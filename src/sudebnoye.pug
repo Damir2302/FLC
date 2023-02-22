@@ -24,7 +24,7 @@ block hero
                         .hero__text
                             p Ответьте на 4 простых вопроса и получите стратегию, правовой анализ вашего дела бесплатно!
 
-                        button.hero__btn.button-style Получить стратегию и анализ дела
+                        button.hero__btn.button-style(data-popup) Получить стратегию и анализ дела
 
                     .hero__img
                         img(src="assets/images/hero-sud.svg")
@@ -508,7 +508,7 @@ block main
                                         .scheme__block
                                             .scheme__block-label Прогноз результата вашего дела
                                             .scheme__block-text Проводим правовой анализ перспектив судебного дела и определяем риски
-                                                a(href="") Узнать прогноз результата и стоимость
+                                                a(data-callback) Узнать прогноз результата и стоимость
 
                                     .scheme__item
                                         .scheme__number 2
@@ -563,6 +563,345 @@ block main
 
                     #tab-6.tabs__content-item
 
-                        .scheme-container
+                        .t-lawyer-container
 
                             .section-title С вами будут работать судебные юристы с опытом работы более 15 лет
+
+                            .t-lawyer
+
+                                .swiper
+
+                                    .swiper-wrapper
+
+                                        .t-lawyer__item.swiper-slide
+
+                                            .t-lawyer__profile
+                                                .t-lawyer__image
+                                                    img(src="assets/images/yurist.jpg", alt="img")
+                                                .t-lawyer__name Антонова Евгения Владимировна
+                                                .t-lawyer__order Ведущий юрист судебного департамента компании «FLC»
+
+                                            .t-lawyer__info
+                                                .t-lawyer__info-row
+                                                    p Образование
+                                                    p Высшее юридическое – окончила Московский открытый социальный Университет по специальности «Юриспруденция»
+                                                .t-lawyer__info-row
+                                                    p Опыт работы в юридической сфере
+                                                    p 19 лет
+                                                .t-lawyer__info-row
+                                                    p Специализация
+                                                    ul
+                                                        li корпоративные споры
+                                                        li банкротство
+                                                        li административные споры
+                                                        li взыскание долгов
+                                                        li трудовые споры
+                                                .t-lawyer__info-row
+                                                    p Количество завершённых дел
+                                                    p 97
+
+                                                .t-lawyer__btn.button-style(data-popup) Получить консультацию&nbsp;юриста
+
+                                        .t-lawyer__item.swiper-slide
+
+                                            .t-lawyer__profile
+                                                .t-lawyer__image
+                                                    img(src="assets/images/yurist.jpg", alt="img")
+                                                .t-lawyer__name Антонова Евгения Владимировна
+                                                .t-lawyer__order Ведущий юрист судебного департамента компании «FLC»
+
+                                            .t-lawyer__info
+                                                .t-lawyer__info-row
+                                                    p Образование
+                                                    p Высшее юридическое – окончила Московский открытый социальный Университет по специальности «Юриспруденция»
+                                                .t-lawyer__info-row
+                                                    p Опыт работы в юридической сфере
+                                                    p 19 лет
+                                                .t-lawyer__info-row
+                                                    p Специализация
+                                                    ul
+                                                        li корпоративные споры
+                                                        li банкротство
+                                                        li административные споры
+                                                        li взыскание долгов
+                                                        li трудовые споры
+                                                .t-lawyer__info-row
+                                                    p Количество завершённых дел
+                                                    p 97
+
+                                                .t-lawyer__btn.button-style(data-popup) Получить консультацию&nbsp;юриста
+
+                                        .t-lawyer__item.swiper-slide
+
+                                            .t-lawyer__profile
+                                                .t-lawyer__image
+                                                    img(src="assets/images/yurist.jpg", alt="img")
+                                                .t-lawyer__name Антонова Евгения Владимировна
+                                                .t-lawyer__order Ведущий юрист судебного департамента компании «FLC»
+
+                                            .t-lawyer__info
+                                                .t-lawyer__info-row
+                                                    p Образование
+                                                    p Высшее юридическое – окончила Московский открытый социальный Университет по специальности «Юриспруденция»
+                                                .t-lawyer__info-row
+                                                    p Опыт работы в юридической сфере
+                                                    p 19 лет
+                                                .t-lawyer__info-row
+                                                    p Специализация
+                                                    ul
+                                                        li корпоративные споры
+                                                        li банкротство
+                                                        li административные споры
+                                                        li взыскание долгов
+                                                        li трудовые споры
+                                                .t-lawyer__info-row
+                                                    p Количество завершённых дел
+                                                    p 97
+
+                                                .t-lawyer__btn.button-style(data-popup) Получить консультацию&nbsp;юриста
+
+                                .custom-pagination.image-pagination.swiper-pagination
+
+
+    section.our-team.section
+
+        .container
+
+            .section-title
+                span FLC — команда с 10-летним опытом
+
+            .our-team-wrapper
+
+                .our-team__members
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member1.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member2.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member3.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member4.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member5.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member6.png", alt="")
+
+                .out-team__content
+
+                    p FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:
+
+                    ul.c-banner__list
+                        li Юридический аутсорсинг;
+                        li Внешнеэкономическая деятельность;
+                        li Договорное право;
+                        li Представительство  в суде;
+                        li Услуги иностранным компаниям;
+                        li Интеллектуальная собственность;
+                        li Налоговое право;
+                        li Правовой аудит;
+                        li Трудовые отношения и защита персональных данных;
+                        li Корпоративное право;
+                        li Релокация бизнеса и ведение бизнеса за рубежом;
+                        li Международное право;
+                        li Сопровождение инвестиционных проектов;
+                        li Запуск стартапов;
+                        li E-commerce.
+
+                    p Наши Клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професионализм, бизнес коммуникацию и конфиденциальность!
+
+    section.section.experience-section.section-with-text
+
+        .container
+
+            .section-title Работаем с широким спектром сфер бизнеса
+            .section-text За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:
+
+            .experience
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-1.svg", alt="icon")
+                            .experience__label Производство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-2.svg", alt="icon")
+                            .experience__label Торговля
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-3.svg", alt="icon")
+                            .experience__label Перевозки, логистика
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-4.svg", alt="icon")
+                            .experience__label Финансовый сектор
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-5.svg", alt="icon")
+                            .experience__label IT-технологии
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-6.svg", alt="icon")
+                            .experience__label Сфера услуг
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-7.svg", alt="icon")
+                            .experience__label Строительство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-8.svg", alt="icon")
+                            .experience__label Медицина
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-9.svg", alt="icon")
+                            .experience__label Сельское хозяйство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-10.svg", alt="icon")
+                            .experience__label Переработка отходов
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                .mobile-slider.swiper-pagination
+
+    section.section.trust-us-section.section-with-text
+
+        .container
+
+            .trust-us
+
+                .section-title Нам доверяют
+                .section-text 8 из 10 руководителей США и Евросоюза передали весь бизнес или его отдельные части на аутсорсинг.
+
+                .trust-us-slider
+
+                    .swiper-wrapper
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+    section.get-service.section.section-with-text
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать бухгалтерский аутсорсинг в Москве
+
+                .section-text Чтобы обсудить Ваши задачи и задать любые интересующие Вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.
+
+                .get-service__form
+
+                    form(action="")
+
+                        .get-service__form-col
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

@@ -187,7 +187,8 @@
     }
 
     @include breakpoint(xl) {
-        margin-left: -20px;
+        margin-left: 0;
+        justify-content: space-between;
     }
 }
 
@@ -209,9 +210,9 @@
 
     @include breakpoint(xl) {
         margin-bottom: 40px;
-        margin-left: 40px;
+        margin-left: 0;
         padding: 25px;
-        width: calc((100% / 3) - 40px);
+        width: calc((100% / 3) - (80px / 3));
         height: 144px;
         box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
     }
@@ -622,7 +623,7 @@
 .scheme__step:nth-child(2),
 .scheme__step:nth-child(4) {
 
-    @include breakpoint(md) {
+    @include breakpoint(lg) {
         margin-left: 200px;
     }
 }
@@ -661,9 +662,13 @@
         top: 50%;
         right: calc(100% + 10px);
         display: block;
-        width: 180px;
+        width: 54px;
         height: 1px;
         border-top: 1px dashed #C4C4C4;
+    }
+
+    @include breakpoint(lg) {
+        width: 180px;
     }
 }
 
@@ -688,9 +693,13 @@
         top: 50%;
         left: calc(100% + 10px);
         display: block;
-        width: 180px;
+        width: 54px;
         height: 1px;
         border-top: 1px dashed #C4C4C4;
+    }
+
+    @include breakpoint(lg) {
+        width: 180px;
     }
 }
 
@@ -712,5 +721,210 @@
     @include breakpoint(md) {
         width: 50px;
     height: 50px;
+    }
+}
+
+.t-lawyer-container .section-title {
+
+    @include breakpoint(xl) {
+        margin: 0 auto 60px;
+        max-width: 900px;
+    }
+}
+
+.t-lawyer {
+    padding: 30px 12px 12px;
+    background: linear-gradient(110.52deg, rgba(102, 103, 171, 0.15) 0%, rgba(255, 255, 255, 0.05) 100.38%);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 26px;
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        padding: 30px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 40px;
+        position: relative;
+    }
+
+    @include breakpoint(xl) {
+        padding: 60px 100px;
+    }
+}
+
+.t-lawyer .swiper {
+    overflow: visible;
+}
+
+.t-lawyer__item {
+    box-sizing: border-box;
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+}
+
+.t-lawyer__profile {
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 4 - 5px);
+        max-width: 200px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 5);
+        max-width: unset;
+    }
+}
+
+.t-lawyer__image {
+    margin: 0 auto 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        margin: 0 auto 20px;
+        width: 180px;
+        height: 180px;
+    }
+
+    @include breakpoint(lg) {
+        width: 340px;
+        height: 340px;
+    }
+
+    @include breakpoint(xl) {
+        width: 387px;
+        height: 387px;
+    }
+}
+
+.t-lawyer__name {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 auto 10px;
+        max-width: 310px;
+    }
+}
+
+.t-lawyer__order {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    @include breakpoint(lg) {
+        margin: 0 auto;
+        max-width: 310px;
+    }
+}
+
+.t-lawyer__info {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-left: 30px;
+        width: calc(100% / 12 * 8 - 5px);
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 20px;
+        width: calc(100% / 12 * 5);
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 100px;
+    }
+}
+
+.t-lawyer__info-row {
+    margin-bottom: 34px;
+}
+
+.t-lawyer__info-row p:first-child {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+    }
+}
+
+.t-lawyer__info-row p:last-child {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.t-lawyer__info-row ul li {
+    margin-bottom: 8px;
+    position: relative;
+
+    @include breakpoint(md) {
+        margin-bottom: 10px;
+    }
+}
+
+.t-lawyer__info-row ul li::before {
+    content: '';
+    margin-right: 15px;
+    background: #6667AB;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px 4px 10px #6667AB;
+    border-radius: 50%;
+}
+
+.t-lawyer__btn {
+    margin: -14px auto 0;
+    padding: 5px 0;
+    max-width: 256px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        margin: 0;
+        padding: 14px 0;
+        max-width: 308px;
+    }
+}
+
+.t-lawyer .image-pagination {
+
+    @include breakpoint(md) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: unset;
+        right: 40px;
+        bottom: unset;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+    }
+
+    @include breakpoint(xl) {
+        right: 30px;
     }
 }

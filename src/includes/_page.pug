@@ -40,6 +40,60 @@ html(lang="ru")
                 include _footer
             // Footer::End
 
+        // Popup::Start
+        #popup.popup
+
+            .popup-close
+
+            .popup-wrapper
+
+                .popup-title Заказать #{title}
+                .popup-subtitle Чтобы обсудить Ваши задачи и задать любые интересующие вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.
+
+                form(action="/")
+
+                    .form-wrapper
+
+                        .form-row
+                            .input-style
+                                input(type="text" placeholder="Ваше имя" required)
+
+                        .form-row
+                            .input-style
+                                input(type="tel" placeholder="Ваш телефон" required)
+
+                        .form-row
+                            .button-style
+                                input(type="submit", value="Оставить заявку")
+
+                        .form-policy-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href="#">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных
+        // Popup::End
+
+        // Popup::Start
+        #popup-callback.popup
+
+            .popup-close
+
+            .popup-wrapper
+
+                .popup-title Узнайте прогноз результата и стоимость услуг юриста по вашему делу
+                .popup-subtitle оставьте свой актуальный номер телефона, специалист позвонит вам с номера +7 (495) 797-16-77 для уточнения деталей вашего дела
+
+                form(action="/")
+
+                    .form-wrapper
+
+                        .form-row
+                            .input-style
+                                input(type="tel" placeholder="Ваш телефон" required)
+
+                        .form-row
+                            .button-style
+                                input(type="submit", value="Узнать прогноз результата")
+
+                        .form-policy-text Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных
+        // Popup::End
+
         // Scripts::Start
         include _loadScripts
         // Scripts::End

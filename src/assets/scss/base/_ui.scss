@@ -74,7 +74,7 @@ main {
 }
 
 #page.bg-overlay::before {
-    background: rgba(0, 0, 0, 0.5);
+    // background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     left: 0;
@@ -104,6 +104,30 @@ input {
     border: none;
     outline: none;
     box-sizing: content-box;
+}
+
+.input-style {
+    padding: 17px 30px 18px;
+    background: #FFFFFF;
+    display: flex;
+    height: 50px;
+    border: 1px solid #E5E5E5;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 26px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.form-row ~ .form-row {
+    margin-top: 20px;
+}
+
+.input-style input {
+    height: 15px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
 }
 
 textarea {
@@ -269,4 +293,108 @@ textarea {
 
     }
 
+}
+
+.custom-pagination {
+    margin-top: 15px;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+    background: #D9D9D9;
+    opacity: 1;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background: #6667AB;
+    width: 10px;
+    height: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image-pagination.swiper-pagination .swiper-pagination-bullet {
+
+    @include breakpoint(md) {
+        background: none;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: none;
+    }
+}
+
+.image-pagination.swiper-pagination .swiper-pagination-bullet ~ div {
+
+    @include breakpoint(md) {
+        margin-left: 20px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: auto;
+        margin-top: 20px;
+    }
+}
+
+.image-pagination.swiper-pagination .swiper-pagination-bullet img {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.image-pagination svg {
+    display: none;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 60px;
+        height: 60px;
+        z-index: 1;
+    }
+}
+
+.image-pagination circle {
+
+    @include breakpoint(md) {
+        max-width: 100px;
+        fill: transparent;
+        stroke: #E1E1E1;
+        stroke-width: 10px;
+        transform-origin: 50% 50%;
+        stroke-dasharray: 0;
+        stroke-dashoffset: 283;
+    }
+}
+
+
+.image-pagination .swiper-pagination-bullet-active circle.progress-bar {
+
+    @include breakpoint(md) {
+        animation: a 10s linear forwards;
+        stroke: #42436F;
+        stroke-dasharray: 283;
+        stroke-dashoffset: 283;
+    }
+}
+
+@keyframes a {
+    0% {
+        stroke-dashoffset: 283
+    }
+
+    to {
+        stroke-dashoffset: 90
+    }
 }

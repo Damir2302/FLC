@@ -1,0 +1,758 @@
+.nalog-page .hero__img {
+
+    @include breakpoint(xl) {
+        padding: 38px 0 32px;
+        max-width: 625px;
+    }
+}
+
+.nalog-page .tabs__nav-item {
+    max-width: 175px;
+    text-align: center;
+}
+
+.nalog-page .section-title {
+    margin-bottom: 12px;
+
+    @include breakpoint(lg) {
+        margin-bottom: 15px;
+    }
+}
+
+.nalog-page .section-text {
+    margin-bottom: 12px;
+
+    @include breakpoint(lg) {
+        margin: 0 auto 15px;
+    }
+}
+
+.custom-tab .tabs__content-item ~ .tabs__content-item {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 70px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 100px;
+    }
+}
+
+.t-planning__container .section-text {
+
+    @include breakpoint(lg) {
+        max-width: 600px;
+    }
+}
+
+.t-planning__subtext {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 45px;
+    }
+}
+
+.t-planning__subtext span {
+    color: #6667AB;
+}
+
+.t-planning__item {
+    margin-bottom: 23px;
+
+    @include breakpoint(md) {
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+        align-items: center;
+    }
+}
+
+.t-planning__wrap {
+    display: flex;
+
+    @include breakpoint(md) {
+        position: relative;
+        width: calc(100% / 12 * 7);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 6 - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: 600px;
+    }
+}
+
+.t-planning__item:nth-child(2) {
+
+    @include breakpoint(md) {
+        flex-direction: row-reverse;
+    }
+}
+
+.t-planning__item:nth-child(2) .t-planning__wrap::before {
+
+    @include breakpoint(md) {
+        content: '';
+        background: url('../images/plan-arrow-snake-1.svg') no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        left: -85px;
+        bottom: calc(100% + 45px);
+        width: 50px;
+        height: 50px;
+    }
+
+    @include breakpoint(lg) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.t-planning__item:nth-child(2) .t-planning__wrap::after {
+
+    @include breakpoint(md) {
+        content: '';
+        background: url('../images/plan-arrow-snake-2.svg') no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: calc(100% + 50px);
+        left: -30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    @include breakpoint(lg) {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.t-planning__item:last-child {
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 80px;
+    }
+}
+
+.t-planning__numb {
+    margin-right: 12px;
+    background: #313155;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 50%;
+
+    @include breakpoint(md) {
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.t-planning__desc {
+
+    @include breakpoint(md) {
+        margin-top: 9px;
+    }
+}
+
+.t-planning__label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.t-planning__desc ul {
+    margin-top: 20px;
+
+    @include breakpoint(lg) {
+        margin-top: 30px;
+    }
+}
+
+.t-planning__desc ul li {
+    display: flex;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.t-planning__desc ul li ~ li {
+    margin-top: 15px;
+}
+
+.t-planning__desc ul li::before {
+    content: '';
+    margin-top: 6px;
+    margin-right: 6px;
+    background: #6667AB;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px #6667AB;
+}
+
+.t-planning__img {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        width: calc(100% / 12 * 5 - 20px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 6 - 10px);
+        max-width: 472px;
+    }
+
+    @include breakpoint(xl) {
+        width: 490px;
+    }
+}
+
+.t-planning__types-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        margin: 0 auto 30px;
+        max-width: 530px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 40px;
+    }
+}
+
+.t-planning__types-title span {
+    color: #6667AB;
+}
+
+.t-planning__slider .swiper {
+    overflow: visible;
+}
+
+.t-planning__slider .swiper-wrapper {
+
+    @include breakpoint(md) {
+        justify-content: space-between;
+    }
+}
+
+.t-planning__slider-item {
+    padding: 20px;
+    background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+    height: auto;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    @include breakpoint(md) {
+        padding: 20px 12px;
+        width: calc(100% / 3 - (20px / 3));
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 3 - (40px / 3));
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 3 - (80px / 3));
+    }
+}
+
+.t-planning__slider-icon {
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+
+    @include breakpoint(lg) {
+        margin-bottom: 30px;
+    }
+}
+
+.t-planning__slider-label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include breakpoint(lg) {
+        margin-bottom: 11px;
+    }
+}
+
+.t-planning__slider-text {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.taxes__container .section-text {
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 60px;
+    }
+}
+
+.taxes {
+    margin-top: 40px;
+}
+
+.taxes__item {
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.taxes__item ~ .taxes__item {
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 156px;
+    }
+}
+
+.taxes__wrap {
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 7 - 5px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 6 - 10px);
+    }
+}
+
+.taxes__block {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+    display: flex;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+
+.taxes__item:first-child .taxes__block:last-child {
+
+    @include breakpoint(md) {
+        position: relative;
+    }
+}
+
+.taxes__item:first-child .taxes__block:last-child::after {
+
+    @include breakpoint(md) {
+        content: '';
+        background: url('../images/plan-arrow-snake-1.svg') no-repeat;
+        background-size: cover;
+        display: block;
+        position: absolute;
+        top: calc(100% + 20px);
+        right: 90px;
+        width: 50px;
+        height: 50px;
+    }
+
+    @include breakpoint(lg) {
+        top: calc(100% - 18px);
+        left: calc(100% + 18px);
+        right: unset;
+        width: 80px;
+        height: 80px;
+    }
+
+    @include breakpoint(xl) {
+        top: calc(100% + 40px);
+        left: calc(100% - 40px);
+    }
+}
+
+.taxes__item:last-child {
+
+    @include breakpoint(md) {
+        flex-direction: row-reverse;
+    }
+}
+
+.taxes__numb {
+    margin-right: 8px;
+    background: #313155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 50%;
+
+    @include breakpoint(md) {
+        margin-right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.taxes__label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+    }
+}
+
+.taxes__text {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.taxes__img {
+    display: none;
+
+    @include breakpoint(md) {
+        display: block;
+        width: calc(100% / 12 * 5 - 15px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 5 + 10px);
+    }
+
+    @include breakpoint(xl) {
+        max-width: 454px;
+    }
+}
+
+.w-taxes {
+    margin-top: 30px;
+    padding: 15px;
+    background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+    border-radius: 20px;
+
+    @include breakpoint(md) {
+        padding: 30px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    @include breakpoint(lg) {
+        max-height: 410px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 60px;
+    }
+}
+
+.w-taxes__important {
+    padding: 20px 20px 0;
+    background: #42436F;
+    color: #fff;
+    border-radius: 20px;
+
+    @include breakpoint(md) {
+        margin-right: 20px;
+        width: 250px;
+        flex-shrink: 0;
+    }
+
+    @include breakpoint(lg) {
+        width: 196px;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 50px;
+        padding: 72px 30px;
+        position: relative;
+        width: 367px;
+        height: 342px;
+        overflow: hidden;
+    }
+}
+
+.w-taxes__important-label {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 122%;
+
+    @include breakpoint(xl) {
+        max-width: 132px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+.w-taxes__important-text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    @include breakpoint(xl) {
+        margin-top: 24px;
+        max-width: 145px;
+    }
+}
+
+.w-taxes__important-img {
+    margin: 24px auto 0;
+    max-width: 147px;
+
+    @include breakpoint(lg) {
+        max-width: 110px;
+    }
+
+    @include breakpoint(xl) {
+        position: absolute;
+        right: 0;
+        bottom: -2px;
+        width: 207px;
+        height: 304px;
+        max-width: unset;
+    }
+}
+
+.w-taxes__list {
+    margin-top: 20px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+    }
+
+    @include breakpoint(lg) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 360px;
+    }
+}
+
+.w-taxes__list-block {
+    margin-bottom: 20px;
+
+    @include breakpoint(md) {
+        margin-bottom: 25px;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: auto;
+        width: calc(50% - 20px);
+    }
+}
+
+.w-taxes__list-block:nth-child(1),
+.w-taxes__list-block:nth-child(2) {
+
+    @include breakpoint(lg) {
+        margin-right: auto;
+    }
+}
+
+.w-taxes__list-block:nth-child(2) {
+
+    @include breakpoint(xl) {
+        margin-bottom: 0;
+    }
+}
+
+.w-taxes__list-label {
+    display: flex;
+}
+
+.w-taxes__list-label span {
+    margin-right: 8px;
+    background: inline('right-arrow.svg') no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+
+    @include breakpoint(md) {
+        margin-right: 15px;
+    }
+}
+
+.w-taxes__list-label p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.w-taxes__list-text {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.z-taxes {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 45px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 80px;
+    }
+}
+
+.z-taxes__text-label {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint(md) {
+        margin-bottom: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.z-taxes__wrap {
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+.z-taxes__text {
+
+    @include breakpoint(md) {
+        width: calc(100% / 12 * 7 - 15px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 7 - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: 710px;
+    }
+}
+
+.z-taxes__text-info {
+    margin-bottom: 10px;
+    padding-left: 12px;
+    font-weight: 300;
+    font-size: 15px;
+    border-left: 4px solid #6667AB;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+    }
+}
+
+.z-taxes__info {
+    margin-top: 20px;
+    padding: 30px 25px;
+    background: #42436F;
+    font-weight: 300;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 20px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        padding: 46px 25px;
+        width: calc(100% / 12 * 5 - 5px);
+    }
+
+    @include breakpoint(lg) {
+        padding: 28px 25px;
+        width: calc(100% / 12 * 5 - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: 452px;
+    }
+}
+
+.z-taxes__info span {
+    font-weight: 600;
+}

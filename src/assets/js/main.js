@@ -1,21 +1,6 @@
 $(document).ready(function () {
-  // ДЛЯ ВСЕХ(!!!!!!) ВСПЛЫВАЮЩИХ ОКОН [Если кликаем вне всплывающего поля, представленных ниже]
-  $("html").on("click", function (e) {
-    if (
-      !$(e.target).closest(".navbar").length &&
-      !$(e.target).closest(".header__burger").length &&
-      !$(e.target).closest(".results__info").length &&
-      !$(e.target).closest(".results__btn").length
-    ) {
-      $("body").removeClass("overflow-hidden");
 
-      $(".navbar").removeClass("opened");
-      $(".header__burger").removeClass("opened");
-
-      $(".results__info").slideUp();
-      $(".results__btn").css("opacity", 1);
-    }
-  });
+  // $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99", 'showMaskOnHover': false})
 
   // HEDAER BURGER MENU
   $(".header__burger").on("click", function () {
@@ -38,17 +23,37 @@ $(document).ready(function () {
   });
 
   // Show the first tab by default
-  $(".tabs__content .tabs__content-item").hide();
-  $(".tabs__content .tabs__content-item:first").show();
+  if(!$(".tabs__content").hasClass("custom-tab")) {
+    $(".tabs__content .tabs__content-item").hide();
+    $(".tabs__content .tabs__content-item:first").show();
+  }
+
+  $("#tab-4").hide();
+
   $(".tabs__nav .tabs__nav-item:first").addClass("tab--active");
 
   // Change tab class and display content
   $(".tabs__nav-item a").on("click", function (event) {
-    event.preventDefault();
+
     $(".tabs__nav .tabs__nav-item").removeClass("tab--active");
     $(this).parent().addClass("tab--active");
-    $(".tabs__content .tabs__content-item").hide();
-    $($(this).attr("href")).show();
+
+    if(!$(".tabs__content").hasClass("custom-tab")) {
+      event.preventDefault();
+      $(".tabs__content .tabs__content-item").hide();
+      $($(this).attr("href")).show();
+    } else {
+
+      if ($(this).attr("href") == "#tab-4") {
+        event.preventDefault();
+        $(".tabs__content .tabs__content-item").hide();
+        $($(this).attr("href")).show();
+      } else {
+        $(".tabs__content .tabs__content-item").show();
+        $("#tab-4").hide();
+      }
+    }
+
   });
 
   $(".js-faq-title").on("click", function (e) {
@@ -139,6 +144,7 @@ $(document).ready(function () {
             $(this).find('.payments__var-text').slideUp()
         }
     })
+
 
   // ACCORDION MOBILE
   $(function () {

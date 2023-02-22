@@ -231,7 +231,7 @@ function jsPlugins(cb) {
 	return gulp.src([
         pathTo.resolve('node_modules', 'jquery/*/jquery.min.js'),
         pathTo.resolve('node_modules', 'swiper/swiper-bundle.min.js'),
-        pathTo.resolve('node_modules', 'inputmask/*/inputmask.min.js'),
+        pathTo.resolve('node_modules', 'inputmask/*/jquery.inputmask.min.js'),
         pathTo.resolve('node_modules', 'ymaps-touch-scroll/*/ymaps-touch-scroll.js'),
         pathTo.resolve('node_modules', '@fancyapps/ui/dist/fancybox.umd.js')
 	])

@@ -1,0 +1,594 @@
+---
+title: FLC | Налоговое планирование
+bodyClass: nalog-page
+---
+
+extends includes/_page
+
+block hero
+    include components/_hero
+    +hero('Налоговое планирование',
+          'Российская аутсорсинговая компания FLC (Full Legal Consulting) - комплексное сопровождение Российских и иностранных компаний !',
+          'hero-nalog.svg')
+
+block main
+
+    section.section.business-support
+
+        .container
+
+            .section-title Чем мы занимаемся
+
+            .wwdo__items
+
+                .swiper-wrapper
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd1.svg", alt="")
+                            img(src="assets/images/wwd1bg.png", alt="")
+                        .wwdo__item-label 10 лет на рынке
+                        .wwdo__item-text 10 лет работы на рынке бухгалтерского аутсорсинга
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd6.svg", alt="")
+                            img(src="assets/images/wwd6bg.png", alt="")
+                        .wwdo__item-label Профи своего дела
+                        .wwdo__item-text У нас работают только ведущие и главные бухгалтера, постоянно проходящие обучение
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd5.svg", alt="")
+                            img(src="assets/images/wwd5bg.png", alt="")
+                        .wwdo__item-label Полное сопровождение
+                        .wwdo__item-text Качество услуг — проверяется аудиторами FLC
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd3.svg", alt="")
+                            img(src="assets/images/wwd3bg.png", alt="")
+                        .wwdo__item-label Работаем во всех отраслях
+                        .wwdo__item-text Отстроенные бизнес-процессы работы с Клиентами
+
+                .wwde__pagination
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.button-style(href='#') Выбрать вид сопровождения
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            |  Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Налоговое планирование
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2") Налоговая оптимизация
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Стоимость
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-4") Готовые кейсы
+
+                .tabs__content.custom-tab
+
+                    #tab-1.tabs__content-item
+
+                        .t-planning__container
+
+                            .section-title Налоговое планирование
+                            .section-text Целями налогового планирования являются оптимизация налоговых платежей и сокращение налоговых потерь по конкретному налогу или группе налогов.
+
+                            .t-planning__subtext Но, <span>прежде чем перейти к налоговому планированию нужно</span>:
+
+                            .t-planning
+
+                                .t-planning__item
+                                    .t-planning__wrap
+                                        .t-planning__numb 1
+                                        .t-planning__desc
+                                            .t-planning__label Выявить налоговые риски, например
+                                            ul
+                                                li риски контроля со стороны налоговых органов;
+                                                li риски увеличения сумм налогов;
+                                                li риски привлечения к уголовной ответственности за применение незаконных схем оптимизации.
+                                    .t-planning__img
+                                        img(src="assets/images/plan-1.svg", alt="img")
+
+                                .t-planning__item
+                                    .t-planning__wrap
+                                        .t-planning__numb 2
+                                        .t-planning__desc
+                                            .t-planning__label Провести анализ налоговых проблем, а именно:
+                                            ul
+                                                li выявить особенности финансово-хозяйственной деятельности компании;
+                                                li определить перечень налогов, ставки налогов и суммы налогов, которые необходимо перечислять в бюджет;
+                                                li проанализировать условия заключенных договоров с контрагентами
+                                    .t-planning__img
+                                        img(src="assets/images/plan-2.svg", alt="img")
+
+                                .t-planning__item
+                                    .t-planning__wrap
+                                        .t-planning__numb 3
+                                        .t-planning__desc
+                                            .t-planning__label Приступить непосредственно к разработке налоговой схемы и начать надо с выбора инструментов для осуществления налогового планирования:
+                                            ul
+                                                li Применение налоговых льгот
+                                                li Оптимизация налоговых последствий при использовании различных форм договоров с контрагентами
+                                                li Применение отдельных элементов налогообложения
+                                                li Использование специальных налоговых режимов, предусмотренных НК РФ, и особых систем налогообложения
+                                                li Применение льгот согласно соглашениям об избежание двойного налогообложения.
+                                                li Использование определенных элементов бухгалтерского учета в целях налогообложения, формирование учетной политики в целях налогообложения.
+                                    .t-planning__img
+                                        img(src="assets/images/plan-3.svg", alt="img")
+
+                            .t-planning__types
+
+                                .t-planning__types-title Соответственно, в зависимости от применяемых инструментов <span>налоговое планирование может базироваться на:</span>
+
+                                .t-planning__slider
+
+                                    .swiper
+
+                                        .swiper-wrapper
+
+                                            .t-planning__slider-item.swiper-slide
+                                                .t-planning__slider-icon
+                                                    img(src="assets/images/piggy-bank.svg", alt="icon")
+                                                .t-planning__slider-label Налоговых льготах
+                                                .t-planning__slider-text выявить особенности финансово-хозяйственной деятельности компании;
+
+                                            .t-planning__slider-item.swiper-slide
+                                                .t-planning__slider-icon
+                                                    img(src="assets/images/map.svg", alt="icon")
+                                                .t-planning__slider-label "Налоговых лазеек"
+                                                .t-planning__slider-text определить перечень налогов, ставки налогов и суммы налогов, которые необходимо перечислять в бюджет;
+
+                                            .t-planning__slider-item.swiper-slide
+                                                .t-planning__slider-icon
+                                                    img(src="assets/images/strategy.svg", alt="icon")
+                                                .t-planning__slider-label Схемах оптимизации
+                                                .t-planning__slider-text специально разработанных схем оптимизации налоговых платежей, которые обычно и являются главным инструментом налогового планирования.
+
+                                    .mobile-slider.swiper-pagination
+
+                    #tab-2.tabs__content-item
+
+                        .taxes__container
+
+                            .section-title Налоговая оптимизация
+                            .section-text Приступая к налоговой оптимизации главное придерживаться следующих принципов:
+
+                            .taxes
+
+                                .taxes__item
+                                    .taxes__wrap
+                                        .taxes__block
+                                            .taxes__numb 1
+                                            .taxes__desc
+                                                .taxes__label Принцип разумности и экономической обоснованности
+                                                .taxes__text т.е. выгода, получаемая от налоговой оптимизации, должна значительно превосходить затраты, которые необходимо осуществить для реализации данного решения;
+
+                                        .taxes__block
+                                            .taxes__numb 2
+                                            .taxes__desc
+                                                .taxes__label Принцип комплексного расчета экономии и потерь
+                                                .taxes__text Перед тем, как внедрить схему оптимизации налогов, необходимо сравнить потенциальную экономию и возможные расходы
+
+                                        .taxes__block
+                                            .taxes__numb 3
+                                            .taxes__desc
+                                                .taxes__label Принцип документального оформления операций
+                                                .taxes__text Все хозяйственные операции налогоплательщика должны быть задокументированы, так как это будет аргументом при проведении налоговой проверки и в качестве доказательств в суде;
+
+                                        .taxes__block
+                                            .taxes__numb 4
+                                            .taxes__desc
+                                                .taxes__label Принцип конфиденциальности
+
+                                    .taxes__img
+                                        img(src="assets/images/taxes-1.svg", alt="img")
+
+                                .taxes__item
+                                    .taxes__wrap
+                                        .taxes__block
+                                            .taxes__numb 5
+                                            .taxes__desc
+                                                .taxes__label Принцип индивидуального подхода
+                                                .taxes__text только если вы знаете все тонкости своего предприятия, можно рекомендовать тот или иной инструмент снижения налогов. Механически переносить одну и ту же схему с одного предприятия в другое нельзя;
+
+                                        .taxes__block
+                                            .taxes__numb 6
+                                            .taxes__desc
+                                                .taxes__label Принцип комплексного расчета экономии и потерь
+                                                .taxes__text Перед тем, как внедрить схему оптимизации налогов, необходимо сравнить потенциальную экономию и возможные расходы
+
+                                        .taxes__block
+                                            .taxes__numb 7
+                                            .taxes__desc
+                                                .taxes__label Принцип комплексной налоговой экономии (принцип многообразия применяемых способов минимизации налогов);
+
+                                        .taxes__block
+                                            .taxes__numb 8
+                                            .taxes__desc
+                                                .taxes__label Принцип заблаговременности.
+                                                .taxes__text Налоговое планирование необходимо осуществлять заблаговременно, а не после проведения какой-либо хозяйственной операции или завершения налогового периода.
+
+                                    .taxes__img
+                                        img(src="assets/images/taxes-2.svg", alt="img")
+
+                            .w-taxes
+
+                                .w-taxes__important
+                                    .w-taxes__important-label Важный момент!
+                                    .w-taxes__important-text Для оптимизации налогового бремени имеет значение выбор следующих показателей:
+                                    .w-taxes__important-img
+                                        img(src="assets/images/attention-img.svg", alt="img")
+
+                                .w-taxes__list
+
+                                    .w-taxes__list-block
+                                        .w-taxes__list-label
+                                            span
+                                            p Начисление амортизации основных средств:
+                                        .w-taxes__list-text Линейный способ, способ списания стоимости по сумме чисел лет срока полезного использования, способ уменьшаемого остатка, способ списания стоимости пропорционально объему продукции (работ);
+
+
+                                    .w-taxes__list-block
+                                        .w-taxes__list-label
+                                            span
+                                            p Списание товарно-материальных ценностей:
+                                        .w-taxes__list-text По себестоимости каждой единицы, но средней себестоимости, по методу FIFO (по себестоимости первых по времени приобретения товарно-материальных ценностей);
+
+                                    .w-taxes__list-block
+                                        .w-taxes__list-label
+                                            span
+                                            p Начисление амортизации нематериальных активов:
+                                        .w-taxes__list-text Линейный способ, способ уменьшаемого остатка, способ списания стоимости пропорционально объему продукции (работ);
+
+                                    .w-taxes__list-block
+                                        .w-taxes__list-label
+                                            span
+                                            p Порядок списания расходов;
+
+                                    .w-taxes__list-block
+                                        .w-taxes__list-label
+                                            span
+                                            p Определение выручки от реализации продукции (работ, услуг) для целей налогообложения.
+
+                            .z-taxes
+
+                                .z-taxes__text-label В заключение отметим, что
+
+                                .z-taxes__wrap
+
+                                    .z-taxes__text
+                                        .z-taxes__text-info Способы законного уменьшения налогов всегда были и будут, прежде всего из-за законодательно установленных различных видов налоговых режимов и льгот. Нестандартное применение различных налоговых режимов и льгот бывает полезным с точки зрения минимизации налогообложения.
+                                        .z-taxes__text-info В современной динамичной и сложной экономике заранее просчитать все налоговые последствия самых разнообразных экономических действий налогоплательщика не представляется возможным, а значит, всегда будут существовать возможности таких действий, которые более выгодны налогоплательщику.
+
+                                    .z-taxes__info <span>Таким образом,</span> возможности применения различных налоговых схем позволяют вносить свои коррективы в процесс налогового планирования, минимизировать налоговые риски и, следовательно, повышать уровень экономической безопасности хозяйствующего субъекта.
+
+                    #tab-3.tabs__content-item
+
+                        .optimization__container
+
+                            .section-title Стоимость налогового планирования/оптимизации
+
+                            .optimization
+
+                                .optimization__first
+                                    .optimization__first-title Стоимость налогового планирования/оптимизации – складывается из нескольких показателей:
+
+                                    .optimization__first__item
+                                        span 1
+                                        p Анализа финансово-хозяйственной деятельности компании и ее специфики.
+
+                                    .optimization__first__item
+                                        span 2
+                                        p Определения потенциально возможных налоговых рисков.
+
+                                    .optimization__first__item
+                                        span 3
+                                        p
+
+                                    .optimization__first__item
+                                        span 4
+                                        p
+
+                                    .optimization__first__item
+                                        span 5
+                                        p
+
+                                    .optimization__first__item
+                                        span 6
+                                        p
+
+                                .optimization__second
+
+    section.our-team.section
+
+        .container
+
+            .section-title
+                span FLC — команда с 10-летним опытом
+
+            .our-team-wrapper
+
+                .our-team__members
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member1.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member2.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member3.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member4.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member5.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member6.png", alt="")
+
+                .out-team__content
+
+                    p FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:
+
+                    ul.c-banner__list
+                        li Юридический аутсорсинг;
+                        li Внешнеэкономическая деятельность;
+                        li Договорное право;
+                        li Представительство  в суде;
+                        li Услуги иностранным компаниям;
+                        li Интеллектуальная собственность;
+                        li Налоговое право;
+                        li Правовой аудит;
+                        li Трудовые отношения и защита персональных данных;
+                        li Корпоративное право;
+                        li Релокация бизнеса и ведение бизнеса за рубежом;
+                        li Международное право;
+                        li Сопровождение инвестиционных проектов;
+                        li Запуск стартапов;
+                        li E-commerce.
+
+                    p Наши Клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професионализм, бизнес коммуникацию и конфиденциальность!
+
+    section.section.experience-section.section-with-text
+
+        .container
+
+            .section-title Работаем с широким спектром сфер бизнеса
+            .section-text За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:
+
+            .experience
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-1.svg", alt="icon")
+                            .experience__label Производство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-2.svg", alt="icon")
+                            .experience__label Торговля
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-3.svg", alt="icon")
+                            .experience__label Перевозки, логистика
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-4.svg", alt="icon")
+                            .experience__label Финансовый сектор
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-5.svg", alt="icon")
+                            .experience__label IT-технологии
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-6.svg", alt="icon")
+                            .experience__label Сфера услуг
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-7.svg", alt="icon")
+                            .experience__label Строительство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-8.svg", alt="icon")
+                            .experience__label Медицина
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-9.svg", alt="icon")
+                            .experience__label Сельское хозяйство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-10.svg", alt="icon")
+                            .experience__label Переработка отходов
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                .mobile-slider.swiper-pagination
+
+    section.section.trust-us-section.section-with-text
+
+        .container
+
+            .trust-us
+
+                .section-title Нам доверяют
+                .section-text 8 из 10 руководителей США и Евросоюза передали весь бизнес или его отдельные части на аутсорсинг.
+
+                .trust-us-slider
+
+                    .swiper-wrapper
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title Посольство Республики Индонезия в Москве
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+    section.get-service.section.section-with-text
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать бухгалтерский аутсорсинг в Москве
+
+                .section-text Чтобы обсудить Ваши задачи и задать любые интересующие Вас вопросы, оставьте заявку на сайте и дождитесь звонка руководителя юридического отдела.
+
+                .get-service__form
+
+                    form(action="")
+
+                        .get-service__form-col
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

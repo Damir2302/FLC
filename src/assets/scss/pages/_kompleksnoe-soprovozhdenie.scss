@@ -60,7 +60,56 @@
     @include breakpoint(xl) {
       margin-bottom: 100px;
     }
+  }
 
+  .tabs__nav-item a {
+    max-width: 170px;
+    text-align: center;
+  }
+
+  #tab-2 .section:nth-child(2) {
+
+    .section-title span {
+        max-width: 733px;
+    }
+
+    .section-text span {
+        max-width: 800px;
+        display: flex;
+        margin: auto;
+    }
+
+  }
+
+  .clients-result {
+    .section-title span{
+        max-width: 996px;
+        display: flex;
+        margin: auto;
+    }
+  }
+
+  .experience-section {
+
+    .section-text span {
+        display: flex;
+        margin: auto;
+        max-width: 996px;
+    }
+  }
+
+  .trust-us-section {
+    .section-text span {
+        display: flex;
+        margin: auto;
+        max-width: 996px;
+    }
+  }
+
+  .hero__text {
+    @include breakpoint(xl) {
+        max-width: 437px;
+    }
   }
 }
 
@@ -210,7 +259,8 @@
   }
 }
 
-.autsorsing-include__content {}
+.autsorsing-include__content {
+}
 
 .autsorsing-include__list {
   @include breakpoint(md) {
@@ -261,7 +311,6 @@
   display: flex;
   flex-wrap: wrap;
 
-
   .acc__panel-important-img {
     display: flex;
     // align-self: center;
@@ -281,15 +330,12 @@
   .acc__panel-important {
     padding: 30px 30px 0 30px;
   }
-
 }
 
 .busines-direction__left {
-
   @include breakpoint(md) {
     width: calc(100% / 12 * 5);
   }
-
 }
 
 .busines-direction__text {
@@ -302,11 +348,9 @@
   color: #000000;
   margin-bottom: 15px;
 
-
   @include breakpoint(lg) {
     margin-bottom: 30px;
   }
-
 }
 
 .busines-direction__list {
@@ -358,7 +402,7 @@
 }
 
 .section-text--bold {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -368,7 +412,6 @@
   color: #000000;
 }
 
-
 .business-way {
   display: flex;
   flex-wrap: wrap;
@@ -376,21 +419,22 @@
   @include breakpoint(md) {
     justify-content: space-between;
   }
-
 }
 
 .business-way__left {
   @include breakpoint(md) {
     width: calc(100% / 12 * 5);
   }
-
 }
 
-.busines-direction__text {}
+.busines-direction__text {
+}
 
-.busines-direction__list {}
+.busines-direction__list {
+}
 
-.busines-direction__list-item {}
+.busines-direction__list-item {
+}
 
 .business-way__right {
   @include breakpoint(md) {
@@ -403,15 +447,14 @@
   flex-wrap: wrap;
   padding: 20px;
   box-sizing: border-box;
-  background: linear-gradient(153.84deg, #F2F1F7 5.12%, #FFFFFF 74.38%);
-  border: 1px solid #F0F0FD;
+  background: linear-gradient(153.84deg, #f2f1f7 5.12%, #ffffff 74.38%);
+  border: 1px solid #f0f0fd;
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
 
   @include breakpoint(lg) {
     padding: 30px;
   }
-
 }
 
 .business-way__item {
@@ -420,22 +463,19 @@
   flex-direction: column;
   margin-bottom: 30px;
 
-
   @include breakpoint(lg) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
-
   &:last-child {
     margin-bottom: 0;
   }
-
 }
 
 .business-way__item-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -445,8 +485,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
 }
 
 .business-way__item-icon {
@@ -461,30 +499,28 @@
     min-height: 40px;
     margin-right: 12px;
   }
-
 }
 
 .business-way__item-text {
-
   @include breakpoint(lg) {
     max-width: 144px;
   }
-
 }
 
 .business-way__item-action {
   @include breakpoint(lg) {
     min-width: 244px;
   }
-
 }
 
-.button-style {}
+.button-style {
+}
 
-.button-style--download {}
+.button-style--download {
+}
 
 .business-way__items-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -499,7 +535,6 @@
   @include breakpoint(xl) {
     margin-bottom: 30px;
   }
-
 }
 
 .business-way__delimeter {
@@ -507,7 +542,7 @@
   justify-content: center;
   margin: auto;
   margin-bottom: 30px;
-  
+
   img {
     // width: 50px;
     // height: 50px;
@@ -518,41 +553,30 @@
   @include breakpoint(md) {
     position: relative;
     left: -90px;
- 
   }
 
   @include breakpoint(xl) {
     width: 80px;
     height: 80px;
   }
-
-
-
 }
 
 .komp-sopr-section {
+  .benefits__table-wrapper {
+    margin-bottom: 30px;
 
-    
-    .benefits__table-wrapper {
-        margin-bottom: 30px;
-
-        @include breakpoint(md) {
-            margin-bottom: 40px;
-        }
-
-
-        @include breakpoint(lg) {
-            margin-bottom: 60px;
-        }
-
-        @include breakpoint(xl) {
-            margin-bottom: 80px;
-        }
-
+    @include breakpoint(md) {
+      margin-bottom: 40px;
     }
 
+    @include breakpoint(lg) {
+      margin-bottom: 60px;
+    }
 
-
+    @include breakpoint(xl) {
+      margin-bottom: 80px;
+    }
+  }
 
   .benefits__table-wrapper:last-child {
     margin-bottom: 0;
@@ -560,10 +584,10 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-  }
+    }
 
-  .table__col {
-      font-size: 15px!important;
+    .table__col {
+      font-size: 15px !important;
       min-width: 100px;
       &:first-child {
         min-width: 240px;
@@ -573,21 +597,12 @@
           justify-content: flex-start;
         }
       }
-  
-  }
-
-  .table__header {
- 
-      .table__col {
-          padding: 25px;
-      }
-    
     }
 
-
-
+    .table__header {
+      .table__col {
+        padding: 25px;
+      }
+    }
   }
-
-
-
 }

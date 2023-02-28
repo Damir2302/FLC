@@ -92,6 +92,10 @@
     filter: unset;
 }
 
+.bus__item:nth-child(1) .bus__item-bg {
+    background: linear-gradient(87.48deg, rgba(102, 103, 171, 0.85) 33.35%, rgba(255, 255, 255, 0.085) 95.79%);
+}
+
 .bus__item p {
     position: relative;
     font-weight: 700;
@@ -339,7 +343,7 @@
 }
 
 .c-banner__info-wrap {
-    
+
 
     @include breakpoint(md) {
         position: relative;
@@ -900,7 +904,7 @@
         margin-bottom: 30px;
         margin-left: 20px;
         width: calc(25% - 20px);
-        
+
     }
 
     @include breakpoint(xl) {
@@ -1023,11 +1027,11 @@
     //      margin: auto;
     // }
 
-    
+
 }
 
 .trust-us-section .trust-us__slide {
-    
+
     @include breakpoint(md) {
         height: auto!important;
     }
@@ -1209,7 +1213,7 @@
             overflow: visible;
         }
 
-        
+
     }
 
     .hero__text {
@@ -1222,9 +1226,9 @@
         @include breakpoint(xl) {
             margin-bottom: 60px;
         }
-        
+
     }
-    
+
     .cases__item-title, .cases__item-content p {
 
         @include breakpoint(md) {
@@ -1264,7 +1268,7 @@
                 height: 100%;
             }
         }
-    
+
     }
 
     .experience-section {

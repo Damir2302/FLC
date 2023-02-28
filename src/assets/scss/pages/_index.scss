@@ -1,3 +1,5 @@
+
+
 .bus__support {
 
     @include breakpoint(md) {
@@ -278,6 +280,11 @@
     @include breakpoint(lg) {
         margin-top: 38px;
     }
+
+    @include breakpoint(xl) {
+        margin-top: 60px;
+    }
+
 }
 
 .c-banner__right {
@@ -673,6 +680,20 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.team-section {
+
+    .container {
+        @include breakpoint(xl) {
+            padding: 0;
+            max-width: 1400px;
+        }
+    }
+
+
+}
+
+
+
 .team .swiper {
     overflow: visible;
 }
@@ -691,7 +712,7 @@
     }
 
     @include breakpoint(xl) {
-        margin-left: calc(-75px / 2);
+        margin-left: -75px;
         margin-bottom: -45px;
     }
 }
@@ -734,6 +755,7 @@
         flex-shrink: 0;
         width: 100px;
         height: 100px;
+        margin-left: 0;
     }
 
     @include breakpoint(lg) {
@@ -780,6 +802,7 @@
         margin-bottom: 20px;
         font-size: 25px;
         line-height: 30px;
+        max-width: 265px;
     }
 }
 
@@ -794,6 +817,10 @@
     @include breakpoint(md) {
         margin-top: auto;
         height: 100%;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 256px;
     }
 }
 
@@ -847,6 +874,7 @@
     border-radius: 26px;
     box-sizing: border-box;
     user-select: none;
+    cursor: pointer;
 
     @include breakpoint(md) {
         margin-bottom: 10px;
@@ -857,6 +885,7 @@
         align-items: center;
         width: calc((100% / 3) - (20px / 3));
         transition: all .4s ease;
+        border-radius: 100px;
     }
 
     @include breakpoint(lg) {
@@ -1072,4 +1101,57 @@
 .blog__item-title {
     font-weight: 600;
     font-size: 15px;
+}
+
+
+
+.rating-stars {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    span {
+        width: 26px;
+        height: 26px;
+        max-width: 26px;
+        max-height: 26px;
+        margin-right: 10px;
+
+        img {
+            height: 100%;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+
+}
+
+.main-page {
+
+    .cases__item-content {
+        @include breakpoint(xl) {
+            margin-left: 100px;
+        }
+    }
+
+    .cases__item-wrap {
+        @include breakpoint(xl) {
+            margin-bottom: 60px;
+        }
+    }
+
+
+}
+
+.trust-us-slider {
+    @include breakpoint(lg) {
+        padding: 3px 0;
+    }
+}
+
+.trust-us__slide {
+    cursor: pointer;
 }

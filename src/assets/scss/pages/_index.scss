@@ -1220,6 +1220,25 @@
         }
     }
 
+    .hero__title {
+        @include breakpoint(xl) {
+            margin-top: 60px;
+        }
+    }
+
+    .hero__img {
+        @include breakpoint(xl) {
+            display: block;
+            height: 494px;
+            width: 815px;
+
+            img {
+                height: 100%;
+            }
+        }
+    
+    }
+
 }
 
 .trust-us-slider {

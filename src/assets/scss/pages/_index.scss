@@ -1175,10 +1175,15 @@
     .cases__items {
 
         @include breakpoint(xl) {
-            padding: 6px;
+            // padding: 10px 5px;
+            // align-items: center;
+            // justify-content: center;
+            // display: flex;
+            padding: 10px 5px;
             align-items: center;
             justify-content: center;
             display: flex;
+            overflow: visible;
         }
 
         
@@ -1254,7 +1259,7 @@
 
 .trust-us-slider {
     @include breakpoint(lg) {
-        padding: 3px 0;
+        padding: 3px 2px;
     }
 }
 

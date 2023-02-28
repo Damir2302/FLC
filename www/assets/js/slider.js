@@ -291,7 +291,7 @@ $(document).ready(function() {
         watchOverflow: true,
         centeredSlides: true,
         loop: false,
-        autoHeight: true,
+        autoHeight: false,
         spaceBetween: 55,
         navigation: {
             nextEl: ".cases__nav-next",

@@ -1214,6 +1214,12 @@
         }
     }
 
+    .trust-us__slide {
+        @include breakpoint(md) {
+            padding: 12px;
+        }
+    }
+
 }
 
 .trust-us-slider {

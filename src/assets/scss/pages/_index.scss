@@ -1153,6 +1153,37 @@
 
     }
 
+    .cases__item {
+
+        @include breakpoint(md) {
+            width: 97%!important;
+        }
+
+        @include breakpoint(xl) {
+            width: 100%!important;
+        }
+    }
+
+    .cases__nav {
+        @include breakpoint(xl) {
+            width: 96%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    .cases__items {
+
+        @include breakpoint(xl) {
+            padding: 6px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
+        
+    }
+
 }
 
 .trust-us-slider {

@@ -1144,6 +1144,15 @@
     }
 
 
+    .cases__item-text {
+
+        @include breakpoint(lg) {
+            margin: auto;
+            max-width: 935px;
+        }
+
+    }
+
 }
 
 .trust-us-slider {

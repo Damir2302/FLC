@@ -54,6 +54,22 @@
       }
     }
   }
+
+  .hero__text p {
+    @include breakpoint(xl) {
+      max-width: 407px;
+    }
+  }
+
+  .wwdo__item-text {
+
+    @include breakpoint(xl) {
+      max-width: 135px;
+    }
+
+
+  }
+
 }
 
 .what-we-do {
@@ -108,6 +124,7 @@
   );
   box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
   height: auto;
+  cursor: pointer;
 
   @include breakpoint(md) {
     padding: 30px;

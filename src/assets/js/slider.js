@@ -32,6 +32,10 @@ $(document).ready(function() {
     }
 
     wwdoSliderCheck();
+
+    $(window).on('resize', function() {
+      wwdoSliderCheck();
+    })
   
 
 
@@ -72,7 +76,6 @@ $(document).ready(function() {
 
     $(window).on('resize', function() {
       tabsNavSliderCheck()
-      wwdoSliderCheck()
     })
 
     function tabsNavSliderCheck() {

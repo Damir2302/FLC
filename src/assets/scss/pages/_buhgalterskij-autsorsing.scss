@@ -906,6 +906,8 @@
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
@@ -937,6 +939,49 @@
     margin-bottom: 30px;
   }
 }
+
+
+.what-autsorsing-do__badge {
+  position: absolute;
+  background: linear-gradient(136.47deg, rgba(102,103,171,0.5) 16.66%, rgba(69,70,138,0.5) 95.94%);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.5px);
+  border-radius: 5px;
+  display: none;
+  padding: 2rem;
+  z-index: 1;
+  top: 79px;
+  max-width: 273px;
+  color: #fff;
+
+  li {
+    list-style: disc;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-left: 20px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+.what-autsorsing-do__item:hover .what-autsorsing-do__badge{
+  @include breakpoint(lg) {
+    display: flex;
+  }
+}
+  
+
 .what-autsorsing-do__item-count {
   border-bottom: 1px solid #6667ab;
   padding-bottom: 15px;
@@ -1193,8 +1238,6 @@
     max-width: 1144px;
     margin: auto;
   }
-
-
 
 }
 .section__table {

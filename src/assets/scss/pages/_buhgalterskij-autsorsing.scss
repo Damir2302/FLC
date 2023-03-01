@@ -62,11 +62,30 @@
   }
 
   .wwdo__item-text {
-
     @include breakpoint(xl) {
-      max-width: 135px;
+      max-width: 133px;
+    }
+  }
+
+  .page-faq__content-text {
+    @include breakpoint(xl) {
+      max-width: 388px;
+    }
+  }
+
+  #tab-3 {
+
+    .section-text span {
+      @include breakpoint(xl) {
+        max-width: 995px;
+        margin: auto;
+        display: block;
+      }
     }
 
+    .section__table {
+      margin-top: 0;
+    }
 
   }
 
@@ -472,6 +491,11 @@
       height: 100%;
       opacity: 1;
     }
+  }
+
+  &.swiper-slide-prev {
+    // height: 99%!important;
+    // align-self: center;
   }
 }
 .outsourcing-options__items .swiper-slide {
@@ -1166,7 +1190,11 @@
   @include breakpoint(md) {
     overflow: unset;
     padding: 0;
+    max-width: 1144px;
+    margin: auto;
   }
+
+
 
 }
 .section__table {
@@ -1272,15 +1300,18 @@
       margin-bottom: 0;
     }
 
-    span {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 18px;
-      color: #000000;
-      margin-top: 40px;
-    }
+  }
+
+  
+  span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 70px;
+    display: flex;
   }
 
 }
@@ -2578,6 +2609,31 @@
 
   @include breakpoint(xl) {
     max-width: 568px;
+  }
+
+}
+
+.c-banner__btn-pres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  img {
+    width: 26px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 45px;
+
+    @include breakpoint(md) {
+      margin-left: 0;
+    }
+
+  }
+
+  span {
+    width: fit-content;
+    text-align: left;
   }
 
 }

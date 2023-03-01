@@ -9,6 +9,7 @@ $(document).ready(function () {
         !$(e.target).closest(".results__btn").length &&
         !$(e.target).closest("[data-popup]").length &&
         !$(e.target).closest("[data-callback]").length &&
+        !$(e.target).closest(".c-banner__btn").length &&
         !$(e.target).closest(".popup").length
         ) {
         resetPopupForm()
@@ -47,5 +48,13 @@ $(document).ready(function () {
     function resetPopupForm() {
         $('.popup form').trigger('reset')
     }
+
+    $('.c-banner__btn').on('click', function(e) {
+        e.preventDefault()
+
+        $('body').addClass('overflow-hidden')
+        $('#page').addClass('bg-overlay')
+        $(`${$(this).attr('href')}`).addClass('opened')
+    })
 
 })

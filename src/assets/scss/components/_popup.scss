@@ -161,4 +161,13 @@
 
 .form-policy-text a {
     text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.select-style select {
+    display: none;
+}
+
+.select-custom {
+    display: none;
 }

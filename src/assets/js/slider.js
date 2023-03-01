@@ -59,6 +59,44 @@ $(document).ready(function() {
 
     });
 
+    // HERO MENU
+    let heroNavSlider;
+    let initHeroNavSlider;
+
+    heroNavSliderCheck();
+
+    $(window).on('resize', function() {
+      heroNavSliderCheck()
+    })
+
+    function heroNavSliderCheck() {
+
+      if ($('.hero__nav .swiper').length) {
+
+        if ($(window).width() < 1400) {
+          if (!initHeroNavSlider) {
+            initHeroNavSlider = true;
+            heroNavSlider = new Swiper(".hero__nav .swiper", {
+              slidesPerView: 'auto',
+              spaceBetween: 12,
+              freeMode: true,
+
+              breakpoints: {
+                744: {
+                  spaceBetween: 40
+                }
+              }
+            })
+          }
+        } else {
+          if (typeof(heroNavSlider) !== "undefined" ) {
+            initHeroNavSlider = false;
+            heroNavSlider.destroy();
+          }
+        }
+      }
+    }
+
     // ТАБЫ
     let tabsNavSlider;
     let inittabsNavSlider;

@@ -94,6 +94,43 @@ html(lang="ru")
                         .form-policy-text Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных
         // Popup::End
 
+        // Popup::Start
+        #popup-order.popup
+
+            .popup-close
+
+            .popup-wrapper
+
+                .popup-title Заказать сопровождение бизнеса в Москве
+                .popup-subtitle Чтобы обсудить Ваши задачи и задать любые интересующие вас вопросы, оставьте заявку на сайте и дождитесь звонка менеджера.
+
+                form(action="/")
+
+                    .form-wrapper
+
+                        .form-row
+
+                            .select-style
+                                .input-style
+                                    input(type="text" placeholder="(можно выбрать несколько)" required)
+
+                                .select-custom(value="")
+                                    .option Бухгалтерское
+                                    .option Юридическое
+                                    .option Кадровое
+                                    .option Комплексное
+
+                        .form-row
+                            .input-style
+                                input(type="tel" placeholder="Ваш телефон" required)
+
+                        .form-row
+                            .button-style
+                                input(type="submit", value="Оставить заявку")
+
+                        .form-policy-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href="#">политики конфиденциальности</a> и соглашаетесь на обработку персональных данных
+        // Popup::End
+
         // Scripts::Start
         include _loadScripts
         // Scripts::End

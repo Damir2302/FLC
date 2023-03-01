@@ -78,6 +78,7 @@
         .section-text--strong span {
             max-width: 996px;
             margin: 0 auto;
+            display: block;
         }
 
         .servcies-steps__title span {
@@ -164,7 +165,7 @@
     .trust-us-section {
         .section-text span {
             @include breakpoint(xl) {
-                max-width: 1005px;
+                max-width: 990px;
                 display: block;
                 margin: 0 auto;
             }
@@ -179,6 +180,15 @@
           margin: auto;
           display: flex;  
         }
+
+    }
+
+    .wwdo__item-text {
+        max-width: 230px;
+    }
+
+    .section-text--find span {
+        max-width: 995px!important;
 
     }
 
@@ -775,7 +785,7 @@
     align-items: center;
 
     @include breakpoint(lg) {
-        max-width: 363px;
+        max-width: 370px;
     }
 
 }

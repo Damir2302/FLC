@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
 
-    if ($(window).width() < 1400) {
+    function wwdoSliderCheck() {
+      if ($(window).width() < 1400) {
         let whatWeDoSlider = new Swiper('.wwdo__items', {
             slidesPerView: 1,
             spaceBetween: 25,
@@ -27,7 +28,15 @@ $(document).ready(function() {
                 },
             }
         });
+      }
     }
+
+    wwdoSliderCheck();
+
+    $(window).on('resize', function() {
+      wwdoSliderCheck();
+    })
+  
 
 
     let outsourcingOptionsSlider = new Swiper('.outsourcing-options__items', {

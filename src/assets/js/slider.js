@@ -306,7 +306,6 @@ $(document).ready(function() {
     let trustUsSlider = new Swiper('.trust-us__slider', {
         slidesPerView: 2,
         spaceBetween: 25,
-        autoHeight: true,
         navigation: {
             nextEl: ".trust-us__nav-next",
             prevEl: ".trust-us__nav-prev",

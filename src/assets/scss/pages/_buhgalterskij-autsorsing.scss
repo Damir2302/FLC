@@ -62,11 +62,30 @@
   }
 
   .wwdo__item-text {
-
     @include breakpoint(xl) {
-      max-width: 135px;
+      max-width: 133px;
+    }
+  }
+
+  .page-faq__content-text {
+    @include breakpoint(xl) {
+      max-width: 388px;
+    }
+  }
+
+  #tab-3 {
+
+    .section-text span {
+      @include breakpoint(xl) {
+        max-width: 995px;
+        margin: auto;
+        display: block;
+      }
     }
 
+    .section__table {
+      margin-top: 0;
+    }
 
   }
 
@@ -472,6 +491,11 @@
       height: 100%;
       opacity: 1;
     }
+  }
+
+  &.swiper-slide-prev {
+    // height: 99%!important;
+    // align-self: center;
   }
 }
 .outsourcing-options__items .swiper-slide {
@@ -882,6 +906,8 @@
   border-radius: 20px;
   padding: 20px;
   margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
 
   &:last-child {
     margin-bottom: 0;
@@ -913,6 +939,49 @@
     margin-bottom: 30px;
   }
 }
+
+
+.what-autsorsing-do__badge {
+  position: absolute;
+  background: linear-gradient(136.47deg, rgba(102,103,171,0.5) 16.66%, rgba(69,70,138,0.5) 95.94%);
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(7.5px);
+  border-radius: 5px;
+  display: none;
+  padding: 2rem;
+  z-index: 1;
+  top: 79px;
+  max-width: 273px;
+  color: #fff;
+
+  li {
+    list-style: disc;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-left: 20px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
+.what-autsorsing-do__item:hover .what-autsorsing-do__badge{
+  @include breakpoint(lg) {
+    display: flex;
+  }
+}
+  
+
 .what-autsorsing-do__item-count {
   border-bottom: 1px solid #6667ab;
   padding-bottom: 15px;
@@ -1166,6 +1235,8 @@
   @include breakpoint(md) {
     overflow: unset;
     padding: 0;
+    max-width: 1144px;
+    margin: auto;
   }
 
 }
@@ -1272,15 +1343,18 @@
       margin-bottom: 0;
     }
 
-    span {
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 300;
-      font-size: 15px;
-      line-height: 18px;
-      color: #000000;
-      margin-top: 40px;
-    }
+  }
+
+  
+  span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    margin-top: 70px;
+    display: flex;
   }
 
 }
@@ -2578,6 +2652,31 @@
 
   @include breakpoint(xl) {
     max-width: 568px;
+  }
+
+}
+
+.c-banner__btn-pres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  img {
+    width: 26px;
+    height: 30px;
+    margin-right: 15px;
+    margin-left: 45px;
+
+    @include breakpoint(md) {
+      margin-left: 0;
+    }
+
+  }
+
+  span {
+    width: fit-content;
+    text-align: left;
   }
 
 }

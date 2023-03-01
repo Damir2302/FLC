@@ -3,7 +3,28 @@
         @include breakpoint(xl) {
             max-width: 388px;
         }
+    }
+
+    .wwdo__item-text {
+        max-width: 230px;
+    }
+
+    
+  #tab-5 {
+
+    .section-text span {
+      @include breakpoint(xl) {
+        max-width: 995px;
+        margin: auto;
+        display: block;
       }
+    }
+
+    .table__body .table__row .table__col:nth-child(3) {
+        background-color: #fff;
+    }
+
+  }
 }
 
 .section-tab-text--max-width {

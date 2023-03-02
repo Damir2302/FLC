@@ -2682,3 +2682,27 @@
   }
 
 }
+
+.experience-section {
+
+  .section-title span {
+    @include breakpoint(lg) {
+      max-width: 630px;
+      display: block;
+      margin: auto;
+    }
+
+    @include breakpoint(xl) {
+      max-width: 100%;
+    }
+
+  }
+
+  .section-text span {
+    max-width: 995px;
+    display: flex;
+    margin: auto;
+  }
+
+
+}

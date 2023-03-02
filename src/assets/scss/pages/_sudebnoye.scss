@@ -9,6 +9,16 @@
     }
 }
 
+.sud-pred  {
+
+    .wwdo__item-text {
+        max-width: 230px;
+    }
+
+
+}
+
+
 .sud-pred .hero__inner {
 
     @include breakpointMax(md) {
@@ -142,7 +152,7 @@
 }
 
 .sud-pred .wwdo__item {
-    padding: 20px 20px 84px;
+    padding: 20px 20px;
 }
 
 .sud-pred .wwde__pagination {

@@ -2686,7 +2686,7 @@
 .experience-section {
 
   .section-title span {
-    @include breakpoint(lg) {
+    @include breakpoint(md) {
       max-width: 630px;
       display: block;
       margin: auto;

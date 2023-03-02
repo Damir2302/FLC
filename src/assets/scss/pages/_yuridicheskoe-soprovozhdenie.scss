@@ -50,6 +50,10 @@
         display: block;
       }
 
+      @include breakpoint(lg) {
+        max-width: 800px;
+      }
+
       @include breakpoint(xl) {
         max-width: 995px;
         margin: auto;

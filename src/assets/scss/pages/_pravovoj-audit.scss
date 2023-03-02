@@ -63,10 +63,33 @@
 
     #tab-1 {
 
+        .section-title span {
+            @include breakpoint(md) {
+                max-width: 568px;
+                margin: auto;
+                display: flex;
+            }
+
+            @include breakpoint(lg) {
+                max-width: 100%;
+            }
+          
+        }
         .section-text span {
-            max-width: 995px;
-            margin: auto;
-            display: flex;
+
+            @include breakpoint(lg) {
+                max-width: 600px;
+                margin: auto;
+                display: flex;
+            }
+
+            @include breakpoint(xl) {
+                max-width: 995px;
+                margin: auto;
+                display: flex;
+            }
+
+     
         }
     }
 
@@ -78,6 +101,7 @@
             display: flex;
         }
     }
+
 
 }
 

@@ -43,6 +43,13 @@
   #tab-2 {
 
     .section-text span {
+
+      @include breakpoint(md) {
+        max-width: 577px;
+        margin: auto;
+        display: block;
+      }
+
       @include breakpoint(xl) {
         max-width: 995px;
         margin: auto;

@@ -8,7 +8,7 @@
   .table__col {
     min-width: 100px;
     &:first-child {
-      min-width: 240px;
+      min-width: 510px;
       font-weight: 600;
       @include breakpoint(xl) {
         min-width: 510px;
@@ -56,7 +56,16 @@
     max-width: 387px;
   }
 
+  .benefits__table {
+    min-width: 1200px;
+  }
+
 }
+
+.benefits__table {
+  min-width: 1200px;
+}
+
 
 .table__list {
   display: flex;

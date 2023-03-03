@@ -31,16 +31,6 @@
     max-width: 38rem;
   }
 
-  .our-team ul.c-banner__list {
-    @include breakpoint(md) {
-      max-height: 300px;
-    }
-
-    @include breakpoint(lg) {
-      max-height: 250px;
-    }
-  }
-
   .out-team__content {
     @include breakpoint(lg) {
       width: calc(50% - 4rem);

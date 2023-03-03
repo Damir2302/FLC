@@ -9,7 +9,7 @@
         max-width: 230px;
     }
 
-    
+
   #tab-5 {
 
     .section-text span {
@@ -155,16 +155,6 @@
 
     .benefits__table {
         min-width: 744px;
-    }
-
-    .out-team__content ul.c-banner__list {
-        @include breakpoint(md) {
-            max-height: 30rem;
-        }
-
-        @include breakpoint(lg) {
-            max-height: 25rem;
-        }
     }
 
 }

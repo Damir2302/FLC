@@ -223,6 +223,14 @@
     height: 10px;
     border-radius: 50%;
     box-shadow: 0px 4px 10px #6667AB;
+
+    @include breakpoint(md) {
+        margin-right: 9px;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 15px;
+    }
 }
 
 .t-planning__img {
@@ -290,6 +298,7 @@
     }
 
     @include breakpoint(lg) {
+        padding: 20px;
         width: calc(100% / 3 - (40px / 3));
     }
 
@@ -1071,23 +1080,107 @@
     color: #fff;
 }
 
-.nalog-page .cases__item-title {
+.nalog-page .cases {
+    overflow: visible;
+
+    @include breakpoint(lg) {
+        overflow: hidden;
+    }
+}
+
+.nalog-page .cases__item {
+    padding: 20px 12px;
+    height: auto;
+
+    @include breakpoint(md) {
+        padding: 40px 30px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 40px 60px 40px 40px;
+    }
 
     @include breakpoint(xl) {
+        padding: 82px 102px 82px 62px;
+    }
+}
+
+.nalog-page .cases__item-title {
+    margin-bottom: 15px;
+
+    @include breakpoint(lg) {
         margin-bottom: 30px;
     }
 }
 
 .nalog-page .cases__item-img {
     margin: 0 auto;
+    flex-shrink: 0;
     width: 130px;
     height: 120px;
+    min-width: unset;
+    min-height: unset;
+
+    @include breakpoint(md) {
+        width: 180px;
+        height: 166px;
+    }
+
+    @include breakpoint(lg) {
+        width: 206px;
+        height: 189px;
+    }
+
+    @include breakpoint(xl) {
+        width: 300px;
+        height: 278px;
+    }
+}
+
+.nalog-page .cases__item-content {
+
+    @include breakpoint(md) {
+        margin: 0 0 0 20px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 0 0 34px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 0 0 52px;
+    }
 }
 
 .nalog-page .cases__item-content p {
 
-    @include breakpoint(xl) {
+    @include breakpoint(lg) {
         margin-bottom: 30px;
+    }
+}
+
+.nalog-page .cases__item-content p:last-child {
+    margin-bottom: 0;
+}
+
+.nalog-page .cases__pagination {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.nalog-page .cases__nav {
+    display: none;
+
+    @include breakpoint(lg) {
+        position: absolute;
+        display: flex;
+        width: 100%;
     }
 }
 

@@ -30,12 +30,6 @@
   .acc__desc-nav-item-inner {
     max-width: 38rem;
   }
-
-  .out-team__content {
-    @include breakpoint(lg) {
-      width: calc(50% - 4rem);
-    }
-  }
 }
 
 .acc__panel-list--bold {

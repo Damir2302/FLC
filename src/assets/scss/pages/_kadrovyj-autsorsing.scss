@@ -1,54 +1,47 @@
 .kadr-auts {
-
-    .hero__img {
-        @include breakpoint(xl) {
-            height: 480px;
-            padding: 30px 0;
-        }
-
-        img {
-            @include breakpoint(xl) {
-                height: 100%;
-            }
-        }
+  .hero__img {
+    @include breakpoint(xl) {
+      height: 480px;
+      padding: 30px 0;
     }
 
-    .tabs__nav-item a {
-        max-width: 231px;
-        text-align: center;
+    img {
+      @include breakpoint(xl) {
+        height: 100%;
+      }
     }
+  }
 
+  .tabs__nav-item a {
+    max-width: 231px;
+    text-align: center;
+  }
 
   .hero__text {
     @include breakpoint(xl) {
-        max-width: 407px;
+      max-width: 407px;
     }
   }
 
   .wwdo__item-text {
     max-width: 230px;
-}
+  }
 
-.acc__desc-nav-item-inner {
+  .acc__desc-nav-item-inner {
     max-width: 38rem;
-}
+  }
 
-    .out-team__content {
-        @include breakpoint(lg) {
-            width: calc(50% - 4rem);
-        }
-
+  .out-team__content {
+    @include breakpoint(lg) {
+      width: calc(50% - 4rem);
     }
-
+  }
 }
-
 
 .acc__panel-list--bold {
-
-    .acc__panel-list-item {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-    }
-
+  .acc__panel-list-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }

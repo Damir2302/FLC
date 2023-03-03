@@ -1,4 +1,12 @@
 $(document).ready(function () {
+
+  wwdoSliderCheck();
+
+  $(window).on("resize", function () {
+    wwdoSliderCheck();
+  });
+
+
   function wwdoSliderCheck() {
     if ($(window).width() < 1400) {
       let whatWeDoSlider = new Swiper(".wwdo__items", {
@@ -28,11 +36,13 @@ $(document).ready(function () {
     }
   }
 
-  wwdoSliderCheck();
+
+  outsourcingOptionsSliderCheck();
 
   $(window).on("resize", function () {
-    wwdoSliderCheck();
+    outsourcingOptionsSliderCheck();
   });
+
 
   function outsourcingOptionsSliderCheck() {
     let outsourcingOptionsSlider = new Swiper(".outsourcing-options__items", {
@@ -69,11 +79,7 @@ $(document).ready(function () {
     });
   }
 
-  outsourcingOptionsSliderCheck();
 
-  $(window).on("resize", function () {
-    outsourcingOptionsSliderCheck();
-  });
 
   // HERO MENU
   let heroNavSlider;
@@ -140,6 +146,12 @@ $(document).ready(function () {
     }
   }
 
+  workMetodsSldierCheck();
+
+  $(window).on("resize", function () {
+    workMetodsSldierCheck();
+  });
+
   function workMetodsSldierCheck() {
     let workMetodsSldier = new Swiper(".work-metods__items", {
       slidesPerView: "auto",
@@ -159,12 +171,12 @@ $(document).ready(function () {
       },
     });
   }
-  workMetodsSldierCheck();
+
+  reviewsSliderCheck();
 
   $(window).on("resize", function () {
-    workMetodsSldierCheck();
+    reviewsSliderCheck();
   });
-
   function reviewsSliderCheck() {
     let reviewsSlider = new Swiper(".reviews__items", {
       slidesPerView: 1,
@@ -199,11 +211,7 @@ $(document).ready(function () {
     });
   }
 
-  reviewsSliderCheck();
 
-  $(window).on("resize", function () {
-    reviewsSliderCheck();
-  });
 
   // Диаграмма на главной
   let resultsSlider;
@@ -394,6 +402,14 @@ $(document).ready(function () {
     }
   }
 
+
+  casesSliderCheck();
+
+  $(window).on("resize", function () {
+    casesSliderCheck();
+  });
+
+
   // Стоимость налогового планирования
   let optiSlider;
   let initOptiSlider;
@@ -428,6 +444,7 @@ $(document).ready(function () {
     }
   }
 
+
   function casesSliderCheck() {
     let casesSlider = new Swiper(".cases__items", {
       slidesPerView: "auto",
@@ -447,10 +464,10 @@ $(document).ready(function () {
     });
   }
 
-  casesSliderCheck();
+  trustUsSliderCheck();
 
   $(window).on("resize", function () {
-    casesSliderCheck();
+    trustUsSliderCheck();
   });
 
   function trustUsSliderCheck() {
@@ -495,10 +512,10 @@ $(document).ready(function () {
     });
   }
 
-  trustUsSliderCheck();
+  trustUsOnMainSliderCheck();
 
   $(window).on("resize", function () {
-    trustUsSliderCheck();
+    trustUsOnMainSliderCheck();
   });
 
   function trustUsOnMainSliderCheck() {
@@ -530,11 +547,7 @@ $(document).ready(function () {
     });
   }
 
-  trustUsOnMainSliderCheck();
 
-  $(window).on("resize", function () {
-    trustUsOnMainSliderCheck();
-  });
 
   // Виды судебных споров
   let litigationSlider;
@@ -576,6 +589,12 @@ $(document).ready(function () {
       }
     }
   }
+
+  tLawyerCheck();
+
+  $(window).on("resize", function () {
+    tLawyerCheck();
+  });
 
   function tLawyerCheck() {
     //  Команда судебных юристов на странице Судебное представительство
@@ -648,10 +667,10 @@ $(document).ready(function () {
     });
   }
 
-  tLawyerCheck();
+  compareSliderCheck();
 
   $(window).on("resize", function () {
-    tLawyerCheck();
+    compareSliderCheck();
   });
 
   function compareSliderCheck() {
@@ -685,10 +704,10 @@ $(document).ready(function () {
     });
   }
 
-  compareSliderCheck();
+  variantsSldierCheck();
 
   $(window).on("resize", function () {
-    compareSliderCheck();
+    variantsSldierCheck();
   });
 
   function variantsSldierCheck() {
@@ -718,10 +737,10 @@ $(document).ready(function () {
     });
   }
 
-  variantsSldierCheck();
+  auditResultSldierCheck();
 
   $(window).on("resize", function () {
-    variantsSldierCheck();
+    auditResultSldierCheck();
   });
 
   function auditResultSldierCheck() {
@@ -751,10 +770,10 @@ $(document).ready(function () {
     });
   }
 
-  auditResultSldierCheck();
+  workRulesSliderCheck();
 
   $(window).on("resize", function () {
-    auditResultSldierCheck();
+    workRulesSliderCheck();
   });
 
   function workRulesSliderCheck() {
@@ -775,9 +794,5 @@ $(document).ready(function () {
     }
   }
 
-  workRulesSliderCheck();
-
-  $(window).on("resize", function () {
-    workRulesSliderCheck();
-  });
+ 
 });

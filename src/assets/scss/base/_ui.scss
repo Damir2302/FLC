@@ -231,11 +231,11 @@ textarea {
     }
 
     @include breakpoint(lg) {
-      padding-bottom: 80px;
+      padding-bottom: 60px;
     }
 
     @include breakpoint(xl) {
-      padding-bottom: 100px;
+      padding-bottom: 70px;
     }
 }
 

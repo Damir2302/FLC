@@ -112,13 +112,21 @@ html(lang="ru")
 
                             .select-style
                                 .input-style
-                                    input(type="text" placeholder="(можно выбрать несколько)" required)
+                                    span Виды сопровождения (можно выбрать несколько)
+                                    .arrow-down
 
-                                .select-custom(value="")
+                                .select-custom
                                     .option Бухгалтерское
                                     .option Юридическое
                                     .option Кадровое
                                     .option Комплексное
+
+                                select(multiple)
+                                    option
+                                    option(value="Бухгалтерское") Бухгалтерское
+                                    option(value="Юридическое") Юридическое
+                                    option(value="Кадровое") Кадровое
+                                    option(value="Комплексное") Комплексное
 
                         .form-row
                             .input-style

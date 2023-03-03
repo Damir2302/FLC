@@ -247,6 +247,59 @@ $(document).ready(function () {
     }
   }
 
+    // Диаграмма на 'Налоговое планирование'
+    let results2Slider;
+    let initResults2Slider;
+
+    results2SliderCheck();
+
+    $(window).on("resize", function () {
+      results2SliderCheck();
+    });
+
+    function results2SliderCheck() {
+      if ($(".results .swiper").length) {
+        if ($(window).width() < 1400) {
+          if (!initResults2Slider) {
+            initResults2Slider = true;
+            results2Slider = new Swiper(".results .swiper", {
+              slidesPerView: 1,
+              spaceBetween: 30,
+
+              pagination: {
+                el: ".results .swiper-pagination",
+                clickable: true,
+              },
+
+              breakpoints: {
+                744: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+
+                1024: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+
+                  navigation: {
+                    nextEl: ".results__nav-next",
+                    prevEl: ".results__nav-prev",
+                  }
+                }
+              }
+
+
+            });
+          }
+        } else {
+          if (typeof results2Slider !== "undefined") {
+            initResults2Slider = false;
+            results2Slider.destroy();
+          }
+        }
+      }
+    }
+
   // Команда FLC
   let teamSlider;
   let initTeamSlider;
@@ -349,11 +402,48 @@ $(document).ready(function () {
     }
   }
 
+
   casesSliderCheck();
 
   $(window).on("resize", function () {
     casesSliderCheck();
   });
+
+
+  // Стоимость налогового планирования
+  let optiSlider;
+  let initOptiSlider;
+
+  optiSliderCheck();
+
+  $(window).on("resize", function () {
+    optiSliderCheck();
+  });
+
+  function optiSliderCheck() {
+    if ($(".optimization__block .swiper").length) {
+      if ($(window).width() < 744) {
+        if (!initOptiSlider) {
+          initOptiSlider = true;
+          optiSlider = new Swiper(".optimization__block .swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            pagination: {
+              el: ".optimization__block .swiper-pagination",
+              clickable: true,
+            },
+          });
+        }
+      } else {
+        if (typeof optiSlider !== "undefined") {
+          initOptiSlider = false;
+          optiSlider.destroy();
+        }
+      }
+    }
+  }
+
 
   function casesSliderCheck() {
     let casesSlider = new Swiper(".cases__items", {

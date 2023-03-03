@@ -57,4 +57,45 @@ $(document).ready(function () {
         $(`${$(this).attr('href')}`).addClass('opened')
     })
 
+    $('.select-style .input-style').on('click', function() {
+
+        if ($(this).hasClass('select')) {
+            $(this).removeClass('select')
+            $(this).parent().find('.select-custom').slideUp(200)
+        } else {
+            $(this).addClass('select')
+            $(this).parent().find('.select-custom').slideDown(200)
+        }
+    })
+
+    let selectedItems = [];
+
+    $('.select-custom .option').on('click', function() {
+        $(this).toggleClass('selected')
+
+        if ($(this).hasClass('selected')) {
+            selectedItems.push($(this).text())
+            $(`.select-style select option[value='${$(this).text()}']`).attr('selected', true)
+        } else {
+            selectedItems = [];
+            $(this).parent().find('.selected').each(function(e) {
+                selectedItems.push($(this).text())
+            })
+            $(`.select-style select option[value='${$(this).text()}']`).removeAttr('selected')
+        }
+
+        if (selectedItems == '') {
+            $('.select-style .input-style span').text('Виды сопровождения (можно выбрать несколько)')
+        } else {
+            $('.select-style .input-style span').text(selectedItems.join(', '))
+        }
+    })
+
+    $('html').on('click', function(e) {
+        if (!$(e.target).closest(".select-style").length) {
+            $('.select-style .input-style').removeClass('select')
+            $('.select-custom').slideUp(200)
+        }
+    })
+
 })

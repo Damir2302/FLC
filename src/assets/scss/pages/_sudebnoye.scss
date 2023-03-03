@@ -18,7 +18,6 @@
 
 }
 
-
 .sud-pred .hero__inner {
 
     @include breakpointMax(md) {
@@ -936,5 +935,38 @@
 
     @include breakpoint(xl) {
         right: 30px;
+    }
+}
+
+.sud-pred .out-team__list {
+
+    @include breakpoint(lg) {
+        margin-right: 30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 0;
+    }
+}
+
+.sud-pred .out-team__list li {
+
+    @include breakpoint(lg) {
+        width: calc(100% / 5 * 2 + 20px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+.sud-pred .out-team__list li:nth-child(even) {
+
+    @include breakpoint(lg) {
+        width: calc(100% / 5 * 2 + 15px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 3 - 10px);
     }
 }

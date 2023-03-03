@@ -1244,17 +1244,3 @@
         display: none;
     }
 }
-
-.nalog-page .out-team__content ul.c-banner__list {
-
-    @include breakpoint(xl) {
-        flex-direction: row;
-    }
-}
-
-.nalog-page .out-team__content ul.c-banner__list li {
-
-    @include breakpoint(xl) {
-        width: calc(50% - 20px);
-    }
-}

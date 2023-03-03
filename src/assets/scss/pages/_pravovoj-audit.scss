@@ -377,7 +377,10 @@
 }
 
 .prav-audit-result__item:hover .prav-audit-result__item-badge {
-    display: block;
+    @include breakpoint(lg) {
+        display: block;
+    }
+
 }
 
 .prav-audit-result__item:last-child:hover {

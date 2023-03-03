@@ -44,6 +44,13 @@
 
     }
 
+    .out-team__content {
+        @include breakpoint(lg) {
+            width: calc(50% - 4rem);
+        }
+       
+    }
+
 }
 
 

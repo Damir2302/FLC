@@ -2,6 +2,22 @@ $(document).ready(function () {
 
   $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99", 'showMaskOnHover': false})
 
+  // Back to Top Button
+
+  let btn = $('#backToTop');
+
+  $(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+  } else {
+      btn.removeClass('show');
+  }
+  });
+
+  btn.on('click', function() {
+  $('html, body').animate({scrollTop:0}, '300');
+  });
+
   // HEDAER BURGER MENU
   $(".header__burger").on("click", function () {
     if ($(this).hasClass("opened")) {

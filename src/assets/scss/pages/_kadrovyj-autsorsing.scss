@@ -33,6 +33,17 @@
     max-width: 38rem;
 }
 
+    ul.c-banner__list {
+        @include breakpoint(md) {
+            max-height: 300px;
+        }
+
+        @include breakpoint(lg) {
+            max-height: 250px;
+        }
+
+    }
+
 }
 
 

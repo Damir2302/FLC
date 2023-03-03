@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-.nalog-page .section-title {
+.taxes__container .section-title {
     margin-bottom: 12px;
 
     @include breakpoint(lg) {
@@ -19,7 +19,7 @@
     }
 }
 
-.nalog-page .section-text {
+.taxes__container .section-text {
     margin-bottom: 12px;
 
     @include breakpoint(lg) {
@@ -27,25 +27,18 @@
     }
 }
 
-.custom-tab .tabs__content-item ~ .tabs__content-item {
-    margin-top: 60px;
+.t-planning__container .section-title {
+    margin-bottom: 12px;
 
     @include breakpoint(md) {
-        margin-top: 70px;
-    }
-
-    @include breakpoint(lg) {
-        margin-top: 80px;
-    }
-
-    @include breakpoint(xl) {
-        margin-top: 100px;
+        margin-bottom: 15px;
     }
 }
 
 .t-planning__container .section-text {
 
     @include breakpoint(lg) {
+        margin: 0 auto 15px;
         max-width: 600px;
     }
 }
@@ -755,4 +748,420 @@
 
 .z-taxes__info span {
     font-weight: 600;
+}
+
+.optimization__container .section-title {
+
+    @include breakpoint(md) {
+        margin: 0 auto 16px;
+        max-width: 490px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 auto 50px;
+        max-width: 580px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 60px;
+    }
+}
+
+.optimization {
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.optimization__first {
+
+    @include breakpoint(lg) {
+        width: calc(100% / 12 * 5 + 20px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 12 * 4 + 20px);
+    }
+}
+
+.optimization__first-title {
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+        font-size: 19px;
+        line-height: 125%;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 30px;
+    }
+}
+
+.optimization__first-block {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.optimization__first__item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 30px;
+        width: auto;
+    }
+}
+
+.optimization__first__item  span {
+    margin-right: 12px;
+    background: #313155;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 50%;
+
+    @include breakpoint(md) {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.optimization__first__item p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.optimization__second {
+
+    @include breakpoint(lg) {
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(100% / 12 * 7 - 10px);
+    }
+}
+
+.optimization__info {
+
+    @include breakpoint(md) {
+        margin-top: 10px;
+        max-width: 615px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+    }
+}
+
+.optimization__info-text {
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.optimization__info-text::before {
+    content: '';
+    margin-right: 8px;
+    background: inline('right-arrow.svg') no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+
+    @include breakpoint(md) {
+        margin-top: 3px;
+        margin-right: 15px;
+    }
+}
+
+.optimization__info-text a {
+    font-weight: 600;
+    color: #6667AB;
+}
+
+.optimization__block {
+
+    @include breakpoint(lg) {
+        margin-top: 30px;
+    }
+}
+
+.optimization__block .swiper {
+    overflow: visible;
+}
+
+.optimization__block .swiper-wrapper {
+
+    @include breakpoint(md) {
+        justify-content: space-between;
+    }
+}
+
+.optimization__block-item {
+    padding: 20px;
+    background: linear-gradient(153.84deg, rgba(102, 103, 171, 0.1) 5.12%, rgba(255, 255, 255, 0.05) 74.38%);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7.5px);
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        padding: 30px;
+        width: calc(50% - 5px);
+    }
+
+    @include breakpoint(lg) {
+        padding: 20px 12px;
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(xl) {
+        padding: 42px 42px 25px;
+    }
+}
+
+.optimization__block-icon {
+    margin: 0 auto 20px;
+    width: 60px;
+    height: 60px;
+
+    @include breakpoint(md) {
+        margin: 0 auto 24px;
+        width: 70px;
+        height: 70px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 38px;
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.optimization__block-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0 auto 20px;
+        max-width: 210px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 12px;
+        max-width: unset;
+    }
+}
+
+.optimization__block-price {
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 28px;
+    }
+}
+
+.optimization__block-price span {
+    font-weight: 600;
+    font-size: 20px;
+
+    @include breakpoint(md) {
+        font-size: 25px;
+    }
+}
+
+.optimization__block-btn {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+
+    @include breakpoint(md) {
+        max-width: 276px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 244px;
+    }
+}
+
+.optimization__block-btn ~ .optimization__block-btn {
+    margin-top: 10px;
+}
+
+.optimization__block-btn a {
+    display: block;
+}
+
+.optimization__block-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.optimization__block-btn span::before {
+    content: '';
+    margin-right: 10px;
+    background: inline('i_.svg') no-repeat;
+    background-size: cover;
+    display: block;
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.nalog-page .cases__item-title {
+
+    @include breakpoint(xl) {
+        margin-bottom: 30px;
+    }
+}
+
+.nalog-page .cases__item-img {
+    margin: 0 auto;
+    width: 130px;
+    height: 120px;
+}
+
+.nalog-page .cases__item-content p {
+
+    @include breakpoint(xl) {
+        margin-bottom: 30px;
+    }
+}
+
+.nalog-page .results-section .container {
+
+    @include breakpoint(xl) {
+        max-width: 1405px;
+    }
+}
+
+.nalog-page .results {
+
+    @include breakpoint(lg) {
+        position: relative;
+    }
+}
+
+.nalog-page .results__item {
+
+    @include breakpoint(xl) {
+        padding: 80px 12px 11px;
+        width: 233px;
+    }
+}
+
+.nalog-page .results__nav {
+    display: none;
+
+    @include breakpoint(lg) {
+        position: absolute;
+        top: calc(50% - (29px / 2));
+        left: -22px;
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% + 44px);
+        z-index: 9;
+    }
+
+    @include breakpoint(xl) {
+        display: none;
+    }
+}
+
+.nalog-page .results__nav-prev,
+.nalog-page .results__nav-next {
+
+    @include breakpoint(lg) {
+        width: 12px;
+        height: 29px;
+        cursor: pointer;
+    }
+}
+
+.nalog-page .results .mobile-slider {
+
+    @include breakpoint(md) {
+        display: block;
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.nalog-page .out-team__content ul.c-banner__list {
+
+    @include breakpoint(xl) {
+        flex-direction: row;
+    }
+}
+
+.nalog-page .out-team__content ul.c-banner__list li {
+
+    @include breakpoint(xl) {
+        width: calc(50% - 20px);
+    }
 }

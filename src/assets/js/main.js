@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  // $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99", 'showMaskOnHover': false})
+  $('input[type="tel"]').inputmask({"mask": "+7 (999) 99-99-99", 'showMaskOnHover': false})
 
   // HEDAER BURGER MENU
   $(".header__burger").on("click", function () {
@@ -34,26 +34,12 @@ $(document).ready(function () {
 
   // Change tab class and display content
   $(".tabs__nav-item a").on("click", function (event) {
+    event.preventDefault();
 
     $(".tabs__nav .tabs__nav-item").removeClass("tab--active");
     $(this).parent().addClass("tab--active");
-
-    if(!$(".tabs__content").hasClass("custom-tab")) {
-      event.preventDefault();
-      $(".tabs__content .tabs__content-item").hide();
-      $($(this).attr("href")).show();
-    } else {
-
-      if ($(this).attr("href") == "#tab-4") {
-        event.preventDefault();
-        $(".tabs__content .tabs__content-item").hide();
-        $($(this).attr("href")).show();
-      } else {
-        $(".tabs__content .tabs__content-item").show();
-        $("#tab-4").hide();
-      }
-    }
-
+    $(".tabs__content .tabs__content-item").hide();
+    $($(this).attr("href")).show();
   });
 
   $(".js-faq-title").on("click", function (e) {

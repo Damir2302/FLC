@@ -122,6 +122,19 @@
         max-width: 437px;
     }
   }
+
+  #tab-5 .section-with-text {
+    text-align: left;
+  }
+
+  .out-team__list {
+    li {
+      @include breakpoint(xl) {
+        max-width: 280px;
+      }
+    }
+  }
+
 }
 
 .work-rules {
@@ -515,6 +528,9 @@
 .business-way__item-text {
   @include breakpoint(lg) {
     max-width: 144px;
+  }
+  @include breakpoint(xl) {
+    max-width: 217px;
   }
 }
 

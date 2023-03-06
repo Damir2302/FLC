@@ -115,6 +115,15 @@
   #tab-5 .section-with-text {
     text-align: left;
   }
+
+  .out-team__list {
+    li {
+      @include breakpoint(xl) {
+        max-width: 280px;
+      }
+    }
+  }
+
 }
 
 .work-rules {

@@ -1,4 +1,16 @@
 .yur-sorp {
+
+  .hero__img {
+
+    @include breakpoint(lg) {
+      max-width: 473px;
+    }
+
+    @include breakpoint(xl) {
+      max-width: 700px;
+    }
+  }
+
   .table__body .table__col:first-child {
     display: flex;
     flex-direction: column;

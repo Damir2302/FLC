@@ -1,5 +1,28 @@
 .prav-audit {
 
+    .hero__main {
+
+        @include breakpoint(lg) {
+            margin-bottom: 30px;
+            width: 471px;
+        }
+
+        @include breakpoint(xl) {
+            margin: 40px 0;
+            width: 508px;
+        }
+    }
+
+    .hero__img {
+
+        @include breakpoint(lg) {
+            max-width: 471px;
+        }
+
+        @include breakpoint(xl) {
+            max-width: 560px;
+        }
+    }
 
     .acc__panel-list-inner-item {
         margin-left: 0;
@@ -19,26 +42,26 @@
     }
 
     .one-time-services__text {
-    
+
         @include breakpoint(md) {
             width: calc( 100% / 12 * 6 );
             margin-bottom: 0;
         }
-    
+
         @include breakpoint(lg) {
             padding: 44px 30px;
             width: calc( 100% / 12 * 5.5 );
             height: auto;
         }
-    
+
     }
-    
+
     .one-time-services__list {
 
         @include breakpoint(md) {
             width: calc( 100% / 12 * 6.2 );
         }
-    
+
     }
 
     .one-time-services__list-item {
@@ -49,7 +72,7 @@
         max-width: 200px;
         text-align: center;
     }
-    
+
 
     .hero__text {
         @include breakpoint(xl) {
@@ -73,7 +96,7 @@
             @include breakpoint(lg) {
                 max-width: 100%;
             }
-          
+
         }
         .section-text span {
 
@@ -89,7 +112,7 @@
                 display: flex;
             }
 
-     
+
         }
     }
 
@@ -147,7 +170,7 @@
     @include breakpoint(md) {
         width: calc( 100% / 12 * 6);
     }
-  
+
 }
 
 .due-diligence__important-img {

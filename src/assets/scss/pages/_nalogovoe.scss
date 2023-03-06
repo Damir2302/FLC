@@ -1,5 +1,9 @@
 .nalog-page .hero__img {
 
+    @include breakpoint(lg) {
+        max-width: 471px;
+    }
+
     @include breakpoint(xl) {
         padding: 38px 0 32px;
         max-width: 625px;

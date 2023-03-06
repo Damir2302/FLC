@@ -25,7 +25,12 @@
     }
 
     @include breakpoint(md) {
+        padding-bottom: 30px;
         align-items: center;
+    }
+
+    @include breakpoint(lg) {
+        padding-bottom: 100px;
     }
 }
 
@@ -45,6 +50,13 @@
 
     @include breakpoint(lg) {
         font-size: 40px;
+    }
+}
+
+.sud-pred .hero__text {
+
+    @include breakpoint(xl) {
+        max-width: 407px;
     }
 }
 

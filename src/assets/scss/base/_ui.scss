@@ -425,7 +425,7 @@ textarea {
     display: block;
     width: 20px;
     height: 30px;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translateX(3px);
 }
 
 #backToTop:hover {

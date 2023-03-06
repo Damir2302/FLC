@@ -30,6 +30,18 @@
   .acc__desc-nav-item-inner {
     max-width: 38rem;
   }
+
+  .our-team {
+    .out-team__list {
+      li {
+        @include breakpoint(xl) {
+          max-width: 258px;
+        }
+      }
+    }
+  }
+
+
 }
 
 .acc__panel-list--bold {

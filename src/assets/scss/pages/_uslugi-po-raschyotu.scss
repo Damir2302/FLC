@@ -1,0 +1,83 @@
+.uslugi-po-raschyotu .hero__inner {
+
+    @include breakpoint(lg) {
+        margin-top: 15px;
+    }
+}
+
+.uslugi-po-raschyotu .hero__main {
+
+    @include breakpoint(xl) {
+        width: calc(100% / 12 * 5 + 80px);
+    }
+}
+
+.uslugi-po-raschyotu .hero__img {
+
+    @include breakpoint(lg) {
+      max-width: 473px;
+    }
+
+    @include breakpoint(xl) {
+      max-width: 700px;
+    }
+}
+
+.uslugi-po-raschyotu .what-autsorsing-do .section-text,
+.uslugi-po-raschyotu .section-tab-text .section-text {
+
+    @include breakpoint(lg) {
+        margin: 0 auto 40px;
+        max-width: 995px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 60px;
+    }
+}
+
+.uslugi-po-raschyotu .table__row--white {
+    text-transform: uppercase;
+    border-top: 2px solid #313155;
+    border-bottom: 2px solid #313155;
+}
+
+.uslugi-po-raschyotu .table__item:first-child .table__row--white {
+    border-top: none;
+}
+
+.uslugi-po-raschyotu .table__item .table__row:not(.table__row--white) .table__col:first-child {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.uslugi-po-raschyotu .table__col span {
+    padding: 15px;
+}
+
+.uslugi-po-raschyotu .page-faq__content-text ul {
+    padding-left: 15px;
+}
+
+.uslugi-po-raschyotu .what-autsorsing-do__item-count span {
+
+    @include breakpoint(lg) {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.uslugi-po-raschyotu .trust-us-wrapper {
+    display: block;
+
+    @include breakpoint(xl) {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 820px;
+    }
+}

@@ -1,0 +1,115 @@
+.podgotovka .hero__inner {
+
+    @include breakpoint(lg) {
+        margin-top: 15px;
+    }
+}
+
+.podgotovka .hero__img {
+
+    @include breakpoint(lg) {
+      max-width: 473px;
+    }
+
+    @include breakpoint(xl) {
+      max-width: 700px;
+    }
+}
+
+.podgotovka .what-autsorsing-do .section-text {
+
+    @include breakpoint(lg) {
+        margin: 0 auto 40px;
+        max-width: 640px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 60px;
+    }
+}
+
+.podgotovka .section-tab-text .section-text {
+
+    @include breakpoint(lg) {
+        margin: 0 auto 40px;
+        max-width: 995px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 60px;
+    }
+}
+
+.podgotovka .what-autsorsing-do .section-text--strong {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.podgotovka .what-autsorsing-do__items {
+
+    @include breakpoint(xl) {
+        margin-left: -45px;
+    }
+}
+
+.podgotovka .what-autsorsing-do__item {
+
+    @include breakpoint(xl) {
+        margin-left: 45px;
+        width: calc(100% / 3 - 45px);
+    }
+}
+
+.podgotovka .what-autsorsing-do .section-text--bottom {
+    margin: 20px auto 0;
+}
+
+.podgotovka .table__row--white {
+    text-transform: uppercase;
+    border-top: 2px solid #313155;
+    border-bottom: 2px solid #313155;
+}
+
+.podgotovka .table__item:first-child .table__row--white {
+    border-top: none;
+}
+
+.podgotovka .table__item .table__row:not(.table__row--white) .table__col:first-child {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.podgotovka .table__col span {
+    padding: 15px;
+}
+
+.podgotovka .page-faq__content-text ul {
+    padding-left: 15px;
+}
+
+.podgotovka .page-faq__content-text ul li {
+    list-style: disc;
+}
+
+.podgotovka .what-autsorsing-do__item-count span {
+
+    @include breakpoint(lg) {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.podgotovka .trust-us-wrapper {
+    display: block;
+
+    @include breakpoint(xl) {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 820px;
+    }
+}

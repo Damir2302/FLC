@@ -1,0 +1,617 @@
+---
+title : FLC | Консультации по бухучету
+bodyClass: consultation
+---
+
+extends includes/_page
+
+block hero
+    include components/_hero
+    +hero('Консультации по бухучету',
+          'Российская аутсорсинговая комипания  FLC (Full Legal Consulting) — все виды услуг по кадровому учету для бизнеса в одной компании!',
+          'consultation-hero.svg')
+
+block main
+
+    section.what-we-do.section
+
+        .container
+
+            .section-title Чем мы занимаемся
+
+            .wwdo__items
+
+                .swiper-wrapper
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd1.svg", alt="")
+                            img(src="assets/images/wwd1bg.png", alt="")
+
+                        .wwdo__item-title Более 9 лет на рынке
+
+                        .wwdo__item-text Работаем на рынке аутсорсинговых услуг по сопровождению бизнеса коммерческих компаний в России с 2013 года
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd6.svg", alt="")
+                            img(src="assets/images/wwd6bg.png", alt="")
+
+                        .wwdo__item-title Профи своего дела
+
+                        .wwdo__item-text Являемся профессиональной командой аутсорсеров
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd5.svg", alt="")
+                            img(src="assets/images/wwd5bg.png", alt="")
+
+                        .wwdo__item-title Полное сопровождение
+
+                        .wwdo__item-text Работаем с Клиентами как на полном сопровождении их бизнеса по всем  направлениям одновременно (Full support), так и на сопровождении отдельных направлений
+
+                    .wwdo__item.swiper-slide
+
+                        .wwdo__item-icon
+                            img(src="assets/images/wwd3.svg", alt="")
+                            img(src="assets/images/wwd3bg.png", alt="")
+
+                        .wwdo__item-title Работаем во всех отраслях
+
+                        .wwdo__item-text За 10 лет работы на рынке отработали схемы сопровождения коммерческих компаний по всем отраслям бизнеса
+
+                .wwde__pagination
+
+    section.section.ceo-banner
+
+        .container
+
+            .c-banner
+
+                .c-banner__left
+                    .c-banner__title Сопровождаем бизнес коммерческих компаний в России по следующим направлениям:
+
+                    ul.c-banner__list
+                        li Юридическое сопровождение;
+                        li Бухгалтерский аутсорсинг;
+                        li Финансовое и налоговое планирование;
+                        li Аудит (бухгалтерский и правовой/Due Diligence);
+                        li Кадровое сопровождение;
+                        li ВЭД (импорт/экспорт);
+                        li Корпоративный аутсорсинг;
+                        li Судебное сопровождение;
+                        li Сопровождение иностранных компаний в России;
+                        li Интеллектуальная собственность.
+
+                    a.c-banner__btn.c-banner__btn-pres.button-style(href='#')
+                        img(src="assets/images/present-ic.svg", alt="")
+                        span Посмотреть презентацию
+
+                .c-banner__right
+                    .c-banner__img
+                        img(src='assets/images/svetlana.png' alt='img')
+                    .c-banner__info-wrap
+                        .c-banner__name
+                            span Светлана Буравцова
+                            div Генеральный директор
+                        .c-banner__info Практика налогового планирования, внешнеэкономической деятельности  и правового аудита
+
+    section.site-tabs.section
+
+        .container
+
+            .section__tabs
+
+                .tabs__nav
+
+                    .swiper-wrapper
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-1") Схема работы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-2") Цены
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-3") Отзывы
+
+                        .tabs__nav-item.swiper-slide
+
+                            a(href="#tab-4") Кейсы
+
+                .tabs__content
+
+                    #tab-1.tabs__content-item
+
+                        .what-autsorsing-do.section-with-text
+
+                            .section-title Схема работы FLC
+
+                            .what-autsorsing-do__items
+
+                                .what-autsorsing-do__item
+                                    .what-autsorsing-do__item-count
+                                        span 1
+                                    .what-autsorsing-do__text Если ваша компания заключает с нами договор на абонентское бухгалтерское обслуживание, то вы можете обратиться к нашему специалисту в любое удобное время. Консультации по ведению бухгалтерского учета предоставляются при личной встрече в вашем офисе, по телефону, электронной почте или в виде письменного заключения.
+
+                                .what-autsorsing-do__item
+                                    .what-autsorsing-do__item-count
+                                        span 2
+                                    .what-autsorsing-do__text Если вам необходима разовая консультация по бухгалтерскому учету, то мы также готовы вам помочь. Консультации по бухучету предоставляются после оплаты по схеме 50/50 или же в 100% размере. Вы можете посетить наш офис, вызвать специалиста на встречу, пообщаться с ним по телефону или заказать письменное заключение со ссылками на нормативно-правовую базу.
+
+                            .tab__content-btn.button-style Оставить заявку
+
+                    #tab-2.tabs__content-item
+
+                        .section-tab-text.section-with-text
+
+                            .section-title Стоимость услуг
+
+                            .section-text
+                                span Основываясь на 10-летнем опыте работы с коммерческими компаниями, наша команда FLC подготовила готовые пакеты юридического сопровождения, однако мы можем сформировать и индивидуальный пакет под потребности каждого Клиента, для этого <a target="_blank">скачайте Анкету</a>, заполните ее и пришлите нам на почту <a href="mailto:flc@f-jurist.ru">flc@f-jurist.ru</a>:
+
+                            .benefits__table-wrapper
+
+                                .benefits__table
+                                    .table__header.table__row
+                                        .table__col Услуги
+                                        .table__col Цена, рубли
+                                        .table__col Примечания
+
+                                    .table__body
+
+                                        .table__row
+                                            .table__col Консультация по вопросам бухгалтерского учета
+                                            .table__col
+                                                b 300 ₽
+                                            .table__col
+                                                span  за 15 минут
+
+                            .button-style.section-tab-text__btn Оставить заявку
+
+                    #tab-3.tabs__content-item
+
+                        .reviews
+
+                            .section-title Отзывы
+
+                            .reviews__items
+
+                                .swiper-wrapper
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review3.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review1.png", alt="")
+
+                                    .reviews__item.swiper-slide
+
+                                        .reviews__item-img
+                                            img(src="assets/images/review2.png", alt="")
+
+                                .reviews__pagination.slider__pagination
+
+                                .reviews__items-nav
+
+                                    .reviews__items-nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+
+                                    .reviews__items-nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+                    #tab-4.tabs__content-item
+
+                        .cases
+
+                            .section-title
+                                span Кейсы
+
+                            .cases__items
+
+                                .swiper-wrapper
+
+                                    .cases__item.swiper-slide
+
+                                        a(href="assets/images/review3.png" data-fancybox).cases__item-img
+                                            img(src="assets/images/review3.png", alt="")
+                                            .cases__item-img-icon
+                                                img(src="assets/images/plus-ic.svg", alt="")
+
+                                        .cases__item-content
+
+                                            .cases__item-title Дело: А40-176415/18
+
+                                            p
+                                                b Цель:
+                                                |  установление отсутствия ответственности Поставщика в связи с поставкой некачественного оборудования
+
+                                            p
+                                                b Особенности:
+                                                |  некачественность оборудования признано Поставщиком
+
+                                            p
+                                                b Результат:
+                                                |  выиграли суд первой, апелляционной и кассационной инстанций, взыскали юридические
+
+                                            p
+                                                b Срок:
+                                                |  13 месяцев расходы
+
+                                .cases__pagination.slider__pagination
+
+                                .cases__nav
+                                    .cases__nav-prev
+                                        img(src="assets/images/arrow-prev.svg", alt="")
+                                    .cases__nav-next
+                                        img(src="assets/images/arrow-next.svg", alt="")
+
+    section.page-faq.section
+
+        .container
+
+            .section-title Консультации по бухгалтерскому учету
+
+            .page-faq-wrapper
+
+                .page-faq__content
+
+                    .page-faq__content-text Профессиональные консультации по бухгалтерскому учету от специалистов компании FLC помогут вам найти ответы на любые сложные вопросы, связанные с системой налогообложения, кадровой политикой, составлением отчетности. Мы оказываем разовые бухгалтерские услуги, а также предлагаем бухгалтерское обслуживание на постоянной абонентской основе.
+
+                    .button-style.page-faq__btn Оставить заявку
+
+                .page__faq-items
+
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+                                span.faq__text Когда требуются консультации по бухучету?
+                            .faq__content.js-faq-content
+                                p Здесь будет текст
+                    .b-faq
+                        .faq__item
+                            .faq__title.js-faq-title
+                                .faq__spoiler.js-faq-rotate
+                                    span.faq__symbol
+                                        .arrow-down
+
+                                span.faq__text Компания FLC предоставляет консультации по бухгалтерскому учету, затрагивающие следующие аспекты:
+                            .faq__content.js-faq-content
+                                p Здесь будет текст
+
+    section.section.results-section
+
+        .container
+
+            .section-title Результаты наших Клиентов после запуска работы с нами:
+
+            .results
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=5 data-level=1)
+                                    span 0
+                                .results__diagram-value(data-value=30 data-level=3)
+                                    span 0
+                            .results__label Увеличили время на развитие бизнеса
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Скорректировали порядок оплаты с Покупателями, чтобы не получать авансовые оплаты в конце квартала
+                                .results__info-btn Скрыть
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=0 data-level=0)
+                                    span 0
+                                .results__diagram-value(data-value=33 data-level=3)
+                                    span 0
+                            .results__label Сэкономленные деньги вложили в развитие
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Уменьшили расходы на юриста на 33%
+                                .results__info-btn Скрыть
+
+                        .results__item.swiper-slide
+                            .results__diagram
+                                .results__diagram-value(data-value=15 data-level=2)
+                                    span 0
+                                .results__diagram-value(data-value=32 data-level=3)
+                                    span 0
+                            .results__label Увеличили выручки
+                            .results__btn.button-style.button-style--light Узнать больше
+                            .results__info
+                                p Уменьшили расходы на юриста на 33%
+                                .results__info-btn Скрыть
+
+                .swiper-pagination.mobile-slider
+
+    section.our-team.section
+
+        .container
+
+            .section-title
+                span FLC — команда с 10-летним опытом
+
+            .our-team-wrapper
+
+                .our-team__members
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member1.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member2.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member3.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member4.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member5.png", alt="")
+
+                    .our-team__member
+
+                        .our-team__member-img
+                            img(src="assets/images/member6.png", alt="")
+
+                .out-team__content
+
+                    p FLC предлагает комплексное юридическое сопровождение компаний в Москве. Мы работаем по 15 направлениям:
+
+                    ul.out-team__list
+                        li Юридический аутсорсинг;
+                        li Трудовые отношения и защита персональных данных;
+                        li Внешнеэкономическая деятельность;
+                        li Корпоративное право;
+                        li Договорное право;
+                        li Релокация бизнеса и ведение бизнеса за рубежом;
+                        li Представительство  в суде;
+                        li Международное право;
+                        li Услуги иностранным компаниям;
+                        li Сопровождение инвестиционных проектов;
+                        li Интеллектуальная собственность;
+                        li Запуск стартапов;
+                        li Налоговое право;
+                        li E-commerce.
+                        li Правовой аудит;
+
+                    p Наши клиенты получают первоклассные юридические услуги по конкурентным ценам. Это не только удобно, но и выгодно. Гарантируем высокий уровень сервиса, професиионализм, бизнес коммуникацию и конфиденциальность!
+
+    section.section.experience-section.section-with-text
+
+        .container
+
+            .section-title
+                span Работаем с широким спектром сфер бизнеса
+            .section-text
+                span За более чем 10-летний опыт работы мы приобрели и продолжаем сотрудничать с компаниями ведущими бизнес в следующих отраслях:
+
+            .experience
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-1.svg", alt="icon")
+                            .experience__label Производство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-2.svg", alt="icon")
+                            .experience__label Торговля
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-3.svg", alt="icon")
+                            .experience__label Перевозки, логистика
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-4.svg", alt="icon")
+                            .experience__label Финансовый сектор
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-5.svg", alt="icon")
+                            .experience__label IT-технологии
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-6.svg", alt="icon")
+                            .experience__label Сфера услуг
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-7.svg", alt="icon")
+                            .experience__label Строительство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-8.svg", alt="icon")
+                            .experience__label Медицина
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-9.svg", alt="icon")
+                            .experience__label Сельское хозяйство
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                        .experience__item.swiper-slide
+                            .experience__image
+                                img(src="assets/images/exp-10.svg", alt="icon")
+                            .experience__label Переработка отходов
+                            .experience__info Международные перевозки Внутренние перевозки Экспедиторы
+
+                .mobile-slider.swiper-pagination
+
+    section.trust-us.section.section-with-text
+
+        .container
+
+            .section-title Нам доверяют
+
+            .trust-us-wrapper
+
+                .trust-us__slider-2
+
+                    .swiper-wrapper
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust1.png", alt="")
+                            .trust-us__title  Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Россия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust3.png", alt="")
+                            .trust-us__title АОЭ, Дубай
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust4.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust5.png", alt="")
+                            .trust-us__title Чехия
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust6.png", alt="")
+                            .trust-us__title Япония
+
+                        .trust-us__slide.swiper-slide
+                            .trust-us__slide-logo
+                                img(src="assets/images/trust2.png", alt="")
+                            .trust-us__title Япония
+
+
+                    .trust-us__pagination.slider__pagination
+
+                    .trust-us__nav
+                        .trust-us__nav-prev
+                            img(src="assets/images/arrow-prev.svg", alt="")
+                        .trust-us__nav-next
+                            img(src="assets/images/arrow-next.svg", alt="")
+
+    section.get-service.section.section-with-text
+
+        .container
+
+            .get-service-wrapper
+
+                .section-title
+                    span Заказать консультацию по бухучету в Москве
+
+                .section-text Если вам требуется консультация по бухгалтерии, обратитесь к специалистам компании FLC в Москве. Наши телефоны и адрес электронной почты вы найдете в разделе «Контакты». Кроме этого, вы можете лично посетить наш офис или заполнить онлайн-форму в конце страницы.
+
+                .get-service__form
+
+                    form(action="")
+
+                        .get-service__form-col
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваше имя")
+                            label(for="").get-service__form-label
+                                input(type="text" placeholder="Ваш телефон")
+
+                        .get-service__form-col
+                            .get-service__form-label
+                                button(type="submit").button-style.get-service__form-btn Оставить заявку
+                            .get-service__form-label
+                                .get-service__form-text Нажимая на кнопку “Оставить заявку”, вы принимаете условия <a href >политики конфиденциальности</a> и соглашаетесь на обработку персональных данных

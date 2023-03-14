@@ -2299,6 +2299,8 @@
   padding: 10px 40px 10px 10px;
   box-sizing: border-box;
   display: flex;
+  cursor: pointer;
+  user-select: none;
 
 
   @include breakpoint(md) {

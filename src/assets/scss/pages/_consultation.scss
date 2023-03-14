@@ -1,0 +1,125 @@
+.finance .hero__inner {
+
+    @include breakpoint(lg) {
+        margin-top: 15px;
+    }
+}
+
+.consultation .hero__img {
+
+    @include breakpoint(lg) {
+      max-width: 473px;
+    }
+
+    @include breakpoint(xl) {
+      max-width: 700px;
+    }
+}
+
+.consultation .section-title {
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+    }
+}
+
+.consultation .section-tab-text .section-text {
+
+    @include breakpoint(lg) {
+        margin: 0 auto 40px;
+        max-width: 995px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 auto 60px;
+    }
+}
+
+.consultation .what-autsorsing-do__items {
+
+    @include breakpoint(md) {
+        margin-left: 0;
+        justify-content: space-between;
+    }
+}
+
+.consultation .what-autsorsing-do__item {
+
+    @include breakpoint(md) {
+        margin-left: 0;
+        width: calc(50% - 5px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(50% - (45px / 2));
+    }
+}
+
+.consultation .what-autsorsing-do__item-count span {
+
+    @include breakpoint(lg) {
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+.consultation .table__row:nth-child(odd) {
+    background: #F5F7FE;
+}
+
+.consultation .trust-us-wrapper {
+    display: block;
+
+    @include breakpoint(xl) {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 820px;
+    }
+}
+
+.trust-us__slider-2 {
+    margin-top: 30px;
+    position: relative;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+    }
+
+    @include breakpoint(lg) {
+      padding: 0 30px;
+      overflow: hidden;
+    }
+
+  }
+
+.trust-us__slider-2 .swiper-wrapper {
+
+    @include breakpoint(lg) {
+        padding: 20px 6px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0;
+    }
+
+}
+
+.trust-us__slider-2 .trust-us__slide {
+
+    @include breakpoint(md) {
+        height: auto!important;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 0!important;
+        margin-bottom: 20px;
+    }
+}
